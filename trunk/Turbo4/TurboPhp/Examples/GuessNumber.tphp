@@ -1,0 +1,768 @@
+object DesignForm_1_1_2: TDesignForm_1_1_2
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 368
+  ClientWidth = 580
+  Color = clWhite
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TpLabel1: TTpLabel
+    Left = 46
+    Top = 16
+    Width = 400
+    Height = 29
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Caption = 'Guess a number between 1 - 100'
+    DesignOpaque = True
+    FitStyleToText = False
+    HAlign = haLeft
+    Style.Color = clDefault
+    Style.Font.FontColor = 8404992
+    Style.Font.FontDecoration = fdNone
+    Style.Font.FontFamily = 'Verdana'
+    Style.Font.FontSizePx = 24
+    VAlign = vaMiddle
+  end
+  object TpForm1: TTpForm
+    Left = 46
+    Top = 58
+    Width = 410
+    Height = 248
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    DefaultButton = GuessButton
+    DesignOpaque = True
+    Inputs = <
+      item
+        DisplayName = 'Number'
+        WebName = 'Number'
+        WebValue = '-1'
+      end
+      item
+        DisplayName = 'Tries'
+        WebName = 'Tries'
+        WebValue = '0'
+      end>
+    Method = fmPost
+    ShowGrid = True
+    Style.Border.BorderWidth = '1'
+    Style.Border.BorderStyle = bsNone
+    object RestartButton: TTpButton
+      Left = 0
+      Top = 172
+      Width = 86
+      Height = 26
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Start Over'
+      OnClick = 'RestartButtonClick'
+      OnGenerate = 'RestartButtonGenerate'
+    end
+    object GuessLabel: TTpLabel
+      Left = 0
+      Top = 76
+      Width = 294
+      Height = 37
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoSize = False
+      Caption = 'No Guess Yet'
+      DesignOpaque = False
+      FitStyleToText = True
+      Style.Font.FontColor = 8404992
+      Style.Font.FontDecoration = fdNone
+      Style.Font.FontFamily = 'Verdana'
+      Style.Font.FontSizePx = 24
+      Style.Padding.Padding = 4
+    end
+    object GuessButton: TTpButton
+      Left = 104
+      Top = 20
+      Width = 58
+      Height = 26
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Guess'
+      OnClick = 'GuessButtonClick'
+    end
+    object TriesLabel: TTpLabel
+      Left = 0
+      Top = 136
+      Width = 326
+      Height = 19
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoSize = False
+      Caption = 'TriesLabel'
+      DesignOpaque = False
+      FitStyleToText = False
+      OnGenerate = 'TriesLabelGenerate'
+    end
+    object Guess: TTpInput
+      Left = 0
+      Top = 20
+      Width = 98
+      Height = 26
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end
+        item
+          EventName = 'onLoad'
+        end>
+      AutoSize = False
+      Password = False
+    end
+    object TpLabel2: TTpLabel
+      Left = 0
+      Top = 229
+      Width = 410
+      Height = 19
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alBottom
+      Caption = 'Binary search requires ~6.65 iterations.'
+      DesignOpaque = False
+      FitStyleToText = False
+    end
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = PhpPage
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnInsertComponent = DCLiteDesignerInsertComponent
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object PhpPage: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        FunctionName = 'FocusGuessInput'
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    Height = 400
+    PageLayout = plFixedLeft
+    Style.Color = clWhite
+    JsSource.Strings = (
+      'function FocusGuessInput(inSender, inIndex)'
+      '{'
+      '  document.forms.TpForm1.tguessnumber_Guess.focus();'
+      '  document.forms.TpForm1.tguessnumber_Guess.select();'
+      '}')
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/GuessNumber.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TGuessNumber extends TTpPage'
+      '{'
+      '  function PickNumber()'
+      '  {'
+      '    $this->Number->Value = rand(0, 100);'
+      '    $this->Tries->Value = 0;'
+      '  }'
+      ''
+      '  function Answer($inMsg, $inColor)'
+      '  {'
+      '    $this->GuessLabel->Content = $inMsg;'
+      '    $this->GuessLabel->Styles['#39'background-color'#39'] = $inColor;'
+      '  }'
+      ''
+      '  function RestartButtonClick(&$inSender)'
+      '  {'
+      '    $this->Guess->Value = '#39#39';'
+      '    $this->PickNumber();'
+      '  }'
+      ''
+      '  function RestartButtonGenerate(&$inSender)'
+      '  {'
+      
+        '    $inSender->Hidden = ($this->Number->Value != $this->Guess->V' +
+        'alue);'
+      '    /// This works too:'
+      '    //if ($Number->Value != $Guess->Value)'
+      '    //  $inSender->Stylize('#39'display'#39', '#39'none'#39');'
+      '  }'
+      ''
+      '  function TriesLabelGenerate(&$inSender)'
+      '  {'
+      '    $inSender->Content = '#39'# of tries: '#39' . $this->Tries->Value;'
+      '  }'
+      ''
+      '  function GuessButtonClick(&$inSender)'
+      '  {'
+      '    if ($this->Guess->Value == '#39#39')'
+      '      return;'
+      '    //'
+      '    if ($this->Number->Value < 0)'
+      '      $this->PickNumber();'
+      '    //'
+      '    $this->Tries->Value++;'
+      '    //'
+      '    if ($this->Guess->Value == $this->Number->Value)'
+      
+        '      $this->Answer($this->Guess->Value. '#39', You Got It!'#39', '#39'light' +
+        'green'#39');'
+      '    else if ($this->Guess->Value > $this->Number->Value)'
+      
+        '      $this->Answer($this->Guess->Value . '#39' is too high'#39', '#39'red'#39')' +
+        ';'
+      '    else'
+      
+        '      $this->Answer($this->Guess->Value . '#39' is too low'#39', '#39'yellow' +
+        #39');'
+      '  }'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$GuessNumber = new TGuessNumber($tpTemplateFile);'
+      '$GuessNumber->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+end

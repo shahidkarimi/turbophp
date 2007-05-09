@@ -1,0 +1,591 @@
+object DesignForm_1: TDesignForm_1
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 768
+  ClientWidth = 580
+  Color = clWhite
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TpLabel1: TTpLabel
+    Left = 40
+    Top = 316
+    Width = 444
+    Height = 19
+    DesignOnly = False
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    AutoSize = False
+    Caption = 'TpLabel1'
+    DesignOpaque = False
+    FitStyleToText = False
+    OnGenerate = 'TpLabel1Generate'
+  end
+  object TpForm1: TTpForm
+    Left = 0
+    Top = 0
+    Width = 580
+    Height = 208
+    DesignOnly = False
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = False
+    Inputs = <
+      item
+      end>
+    Method = fmPost
+    object TpButton1: TTpButton
+      Left = 4
+      Top = 176
+      Width = 61
+      Height = 26
+      DesignOnly = False
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onLoad'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Submit'
+    end
+    object TpRepeater1: TTpRepeater
+      Left = 0
+      Top = 0
+      Width = 580
+      Height = 144
+      DesignOnly = False
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onLoad'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alTop
+      DesignOpaque = False
+      Count = 3
+      object TpPanel1: TTpPanel
+        Left = 0
+        Top = 0
+        Width = 580
+        Height = 44
+        DesignOnly = False
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onLoad'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alTop
+        DesignOpaque = False
+        object TpSelect1: TTpSelect
+          Left = 8
+          Top = 10
+          Width = 188
+          Height = 24
+          DesignOnly = False
+          JavaScript = <
+            item
+              EventName = 'onKeyDown'
+            end
+            item
+              EventName = 'onKeyPress'
+            end
+            item
+              EventName = 'onKeyUp'
+            end
+            item
+              EventName = 'onMouseDown'
+            end
+            item
+              EventName = 'onMouseUp'
+            end
+            item
+              EventName = 'onMouseMove'
+            end
+            item
+              EventName = 'onMouseOver'
+            end
+            item
+              EventName = 'onMouseOut'
+            end
+            item
+              EventName = 'onClick'
+            end
+            item
+              EventName = 'onDblClick'
+            end
+            item
+              EventName = 'onLoad'
+            end
+            item
+              EventName = 'onAbort'
+            end
+            item
+              EventName = 'onError'
+            end
+            item
+              EventName = 'onMove'
+            end
+            item
+              EventName = 'onResize'
+            end
+            item
+              EventName = 'onScroll'
+            end
+            item
+              EventName = 'onReset'
+            end
+            item
+              EventName = 'onSubmit'
+            end
+            item
+              EventName = 'onBlur'
+            end
+            item
+              EventName = 'onChange'
+            end
+            item
+              EventName = 'onFocus'
+            end
+            item
+              EventName = 'onSelect'
+            end>
+          ItemIndex = 0
+          OnSubmit = 'TpSelect1Submit'
+          OnGenerate = 'TpSelect1Generate'
+        end
+      end
+    end
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = Page
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnDragDrop = DCLiteDesignerDragDrop
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object Page: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    PageLayout = plFixedLeft
+    Debug = True
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/SelectExample2.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TSelectExample2 extends TTpPage'
+      '{'
+      '  // The select options'
+      
+        '  var $Options = array("apple" => "Red Fruit", "banana" => "Yell' +
+        'ow Fruit", "pear" => "Green Fruit");'
+      '  // The initial values for the 3 select repetitions'
+      '  var $Values = array('#39'apple'#39', '#39'banana'#39', '#39'pear'#39');'
+      ''
+      '  function TpSelect1Generate(&$inSender)'
+      '  {'
+      '    // The options are the same for each Select repetition'
+      '    // so we will only set them once.'
+      '    if ($inSender->Index == 0)'
+      '      $inSender->Options = $this->Options;'
+      '    // Each Select repetition gets it'#39's own value.'
+      '    $inSender->Selected = $this->Values[$inSender->Index];'
+      '  }'
+      ''
+      '  function TpSelect1Submit(&$inSender)'
+      '  {'
+      
+        '    // Store the indexed value of this Select into an array in t' +
+        'he'
+      '    // application.'
+      
+        '    // Note: in this event, the submitted data is only available' +
+        ' in'
+      
+        '    // the Value property, not in Selected or GetSelectedValue()' +
+        '.'
+      '    $this->Values[$inSender->Index] = $inSender->Value;'
+      '  }'
+      ''
+      '  function TpLabel1Generate(&$inSender)'
+      '  {'
+      '    $inSender->Caption = "Selected fruit: " .'
+      '      $this->TpSelect1->GetSelectedValue() .'
+      '        " (" . $this->TpSelect1->Selected . ")";'
+      '  }'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$SelectExample2 = new TSelectExample2($tpTemplateFile);'
+      '$SelectExample2->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+end

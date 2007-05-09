@@ -1,0 +1,330 @@
+object PageViewForm: TPageViewForm
+  Left = 293
+  Top = 110
+  Width = 731
+  Height = 596
+  Caption = 'PageViewForm'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Shell Dlg 2'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DocumentPanel: TPanel
+    Left = 0
+    Top = 0
+    Width = 723
+    Height = 562
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    object ClientDockSite: TdxDockSite
+      Left = 0
+      Top = 0
+      Width = 723
+      Height = 562
+      Align = alClient
+      DockType = 0
+      OriginalWidth = 723
+      OriginalHeight = 562
+      object dxLayoutDockSite1: TdxLayoutDockSite
+        Left = 0
+        Top = 0
+        Width = 723
+        Height = 562
+        DockType = 1
+        OriginalWidth = 300
+        OriginalHeight = 200
+      end
+      object dxHorizContainerDockSite1: TdxHorizContainerDockSite
+        Left = 0
+        Top = 0
+        Width = 723
+        Height = 562
+        ActiveChildIndex = -1
+        AllowFloating = True
+        AutoHide = False
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 252
+        OriginalHeight = 140
+        object dxVertContainerDockSite2: TdxVertContainerDockSite
+          Left = 0
+          Top = 0
+          Width = 183
+          Height = 562
+          ActiveChildIndex = -1
+          AllowFloating = True
+          AutoHide = False
+          CaptionButtons = [cbMaximize]
+          DockType = 2
+          OriginalWidth = 183
+          OriginalHeight = 422
+          object PaletteDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 183
+            Height = 358
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Palette'
+            CaptionButtons = [cbMaximize]
+            DockType = 3
+            OriginalWidth = 183
+            OriginalHeight = 358
+          end
+          object ComponentListDock: TdxDockPanel
+            Left = 0
+            Top = 562
+            Width = 183
+            Height = 164
+            Visible = False
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Component List'
+            CaptionButtons = [cbMaximize]
+            DockType = 3
+            OriginalWidth = 183
+            OriginalHeight = 164
+          end
+          object ControlTreeDock: TdxDockPanel
+            Left = 0
+            Top = 358
+            Width = 183
+            Height = 166
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Page Explorer'
+            CaptionButtons = [cbMaximize]
+            DockType = 3
+            OriginalWidth = 183
+            OriginalHeight = 166
+          end
+          object InspectorDock: TdxDockPanel
+            Left = 0
+            Top = 524
+            Width = 183
+            Height = 38
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Inspector'
+            CaptionButtons = [cbMaximize]
+            OnResize = InspectorDockResize
+            DockType = 3
+            OriginalWidth = 183
+            OriginalHeight = 38
+          end
+        end
+        object dxTabContainerDockSite2: TdxTabContainerDockSite
+          Left = 183
+          Top = 0
+          Width = 540
+          Height = 562
+          ActiveChildIndex = 0
+          AllowFloating = True
+          AutoHide = False
+          CaptionButtons = [cbMaximize]
+          DockType = 2
+          OriginalWidth = 540
+          OriginalHeight = 422
+          object DesignDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Design'
+            CaptionButtons = []
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 422
+            object DesignPages: TPageControl
+              Left = 0
+              Top = 0
+              Width = 536
+              Height = 504
+              ActivePage = DesignSheet
+              Align = alClient
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -9
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              MultiLine = True
+              ParentFont = False
+              TabOrder = 0
+              TabPosition = tpRight
+              object DesignSheet: TTabSheet
+                Caption = 'Surface'
+                object RulersLeftPanel: TPanel
+                  Left = 0
+                  Top = 25
+                  Width = 24
+                  Height = 471
+                  Align = alLeft
+                  BevelOuter = bvNone
+                  Caption = 'RulersLeftPanel'
+                  TabOrder = 0
+                  object LeftRuler: TRsRuler
+                    Left = 0
+                    Top = 0
+                    Width = 24
+                    Height = 471
+                    Units = ruPixel
+                    Flat = False
+                    ScaleColor = clWindow
+                    TickColor = clWindowText
+                    VersionInfo = 'Version 4.0 (c) Roos Software 2003'
+                    Direction = rdLeft
+                    ScaleDir = rsdNormal
+                    Scale = 100
+                    HairLine = False
+                    HairLinePos = -1
+                    HairLineStyle = hlsLine
+                    ShowMinus = True
+                    Align = alClient
+                    Font.Charset = DEFAULT_CHARSET
+                    Font.Color = clWindowText
+                    Font.Height = -12
+                    Font.Name = 'Arial'
+                    Font.Style = []
+                    ParentFont = False
+                  end
+                end
+                object RulesTopPanel: TPanel
+                  Left = 0
+                  Top = 0
+                  Width = 511
+                  Height = 25
+                  Align = alTop
+                  BevelOuter = bvNone
+                  Caption = 'RulesTopPanel'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -12
+                  Font.Name = 'Arial'
+                  Font.Style = []
+                  ParentFont = False
+                  TabOrder = 1
+                  object TopRuler: TRsRuler
+                    Left = 24
+                    Top = 0
+                    Width = 487
+                    Height = 25
+                    Units = ruPixel
+                    Flat = False
+                    ScaleColor = clWindow
+                    TickColor = clWindowText
+                    VersionInfo = 'Version 4.0 (c) Roos Software 2003'
+                    Direction = rdTop
+                    ScaleDir = rsdNormal
+                    Scale = 100
+                    HairLine = False
+                    HairLinePos = -1
+                    HairLineStyle = hlsLine
+                    ShowMinus = True
+                    Align = alClient
+                  end
+                  object RsRulerCorner: TRsRulerCorner
+                    Left = 0
+                    Top = 0
+                    Width = 24
+                    Height = 25
+                    Hint = 'pixel'
+                    Units = ruPixel
+                    Flat = False
+                    ScaleColor = clWindow
+                    TickColor = clWindowText
+                    VersionInfo = 'Version 4.0 (c) Roos Software 2003'
+                    Align = alLeft
+                    Position = cpLeftTop
+                  end
+                end
+              end
+              object OutputSheet: TTabSheet
+                Caption = 'HTML'
+                ImageIndex = 1
+              end
+              object HideSheet: TTabSheet
+                Caption = 'HideSheet'
+                ImageIndex = 2
+                TabVisible = False
+              end
+            end
+          end
+          object PhpDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'PHP'
+            CaptionButtons = [cbMaximize]
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 422
+          end
+          object HtmlDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            Visible = False
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'HTML'
+            CaptionButtons = [cbMaximize]
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 140
+          end
+          object JsDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'JavaScript'
+            CaptionButtons = [cbMaximize]
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 140
+          end
+          object PreviewDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Preview'
+            CaptionButtons = [cbMaximize]
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 422
+          end
+          object DebugDock: TdxDockPanel
+            Left = 0
+            Top = 0
+            Width = 536
+            Height = 504
+            AllowFloating = True
+            AutoHide = False
+            Caption = 'Debug'
+            CaptionButtons = [cbMaximize]
+            DockType = 1
+            OriginalWidth = 540
+            OriginalHeight = 422
+          end
+        end
+      end
+    end
+  end
+end

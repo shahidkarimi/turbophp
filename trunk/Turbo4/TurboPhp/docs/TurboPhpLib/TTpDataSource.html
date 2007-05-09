@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpDataSource</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpDataSource</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generic source for data sets.</p>
+		<p class="notes">
+			Located in <a class="field" href="_TpDb_php.html">/TpDb.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a222">222</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a>
+      |
+      --TTpDataSource</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../TurboPhpLib/TTpQuery.html">TTpQuery</a></td>
+					<td>
+											Generic SQL query object.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">object;</span>
+					<a href="#$Db" title="details" class="var-name">$Db</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Field" title="details" class="var-name">$Field</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnBeforeExecute" title="details" class="var-name">$OnBeforeExecute</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnFailure" title="details" class="var-name">$OnFailure</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnSuccess" title="details" class="var-name">$OnSuccess</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Result" title="details" class="var-name">$Result</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$Row" title="details" class="var-name">$Row</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$RowIndex" title="details" class="var-name">$RowIndex</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#DoExecute" title="details" class="method-name">DoExecute</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#EOF" title="details" class="method-name">EOF</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Execute" title="details" class="method-name">Execute</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">Value</span>
+										<a href="#GetField" title="details" class="method-name">GetField</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inFieldId</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetItems" title="details" class="method-name">GetItems</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$outItems</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Next" title="details" class="method-name">Next</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Rewind" title="details" class="method-name">Rewind</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Db" id="$Db"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">object;</span>
+			<span class="var-name">$Db</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a228">228</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reference to the linked DB connection object.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Field" id="$Field"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Field</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a252">252</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default field for accessing list data.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../TurboPhpLib/TTpDataSource.html#methodGetItems">TTpDataSource::GetItems()</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnBeforeExecute" id="$OnBeforeExecute"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnBeforeExecute</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a257">257</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event fired before data is accessed.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnFailure" id="$OnFailure"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnFailure</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a262">262</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event fired if there is an error with data access.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnSuccess" id="$OnSuccess"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnSuccess</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a267">267</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event fired if data was accessed successfully.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Result" id="$Result"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Result</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a236">236</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Query result. Actual type and value depends on the type of data source.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Row" id="$Row"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$Row</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a241">241</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A row of data. Usually a hash.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$RowIndex" id="$RowIndex"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$RowIndex</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a246">246</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Index of the last row of data returned.</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Element">TTpObj::$Element</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Page">TTpObj::$Page</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$RawAttrs">TTpObj::$RawAttrs</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodDoExecute" id="DoExecute"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">DoExecute</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a288">288</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Hook function for executing a data query.</p>
+<p class="description"><p>Subclasses extend this function to provide specific functionality.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			DoExecute
+		</span>
+				()
+			</div>
+	
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../TurboPhpLib/TTpODBCDbList.html#methodDoExecute">TTpODBCDbList::DoExecute()</a>
+							</li>
+					<li>
+				<a href="../TurboPhpLib/TTpODBCTableList.html#methodDoExecute">TTpODBCTableList::DoExecute()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodEOF" id="EOF"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">EOF</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a325">325</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">True if the end of data has been reached.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			EOF
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodExecute" id="Execute"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Execute</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a302">302</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Perform data acess.</p>
+<p class="description"><p>Fires <a href="../TurboPhpLib/TTpDataSource.html#var$OnBeforeExecute">OnBeforeExecute</a> then calls ExecuteQuery.  Subsequently fires <a href="../TurboPhpLib/TTpDataSource.html#var$OnFailure">OnFailure</a> or <a href="../TurboPhpLib/TTpDataSource.html#var$OnSuccess">OnSuccess</a> depending  on the value of <a href="../TurboPhpLib/TTpDataSource.html#var$Result">Result</a>.  This function is called automatically if data access  functions are invoked and data is not yet available.  Specifically <a href="../TurboPhpLib/TTpDataSource.html#methodNext">Next</a>, <a href="../TurboPhpLib/TTpDataSource.html#methodRewind">Rewind</a> and <a href="../TurboPhpLib/TTpDataSource.html#methodGetField">GetField</a>  will call Execute if needed.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Execute
+		</span>
+				()
+			</div>
+	
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../TurboPhpLib/TTpQuery.html#methodExecute">TTpQuery::Execute()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodGetField" id="GetField"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetField</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a366">366</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get field data from the current row.</p>
+<p class="description"><p>Calls <a href="../TurboPhpLib/TTpDataSource.html#methodExecute">Execute</a> if needed.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of key $inFieldId in the array <a href="../TurboPhpLib/TTpDataSource.html#var$Row">$Row</a>, or false  if the key does not exist.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Value</span>
+		<span class="method-name">
+			GetField
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inFieldId</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodGetItems" id="GetItems"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetItems</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a389">389</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add an entire column of the result data to $outItems.</p>
+<p class="description"><p>The column identified by the <a href="../TurboPhpLib/TTpDataSource.html#var$Field">$Field</a> property is copied.  By default, the first column of the data set is used.</p><p>This function implements the TpListSource functionality  for data sources.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetItems
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$outItems</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodNext" id="Next"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Next</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a350">350</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fill <a href="../TurboPhpLib/TTpDataSource.html#var$Row">$Row</a> with the next row of data.</p>
+<p class="description"><p>Calls <a href="../TurboPhpLib/TTpDataSource.html#methodExecute">Execute</a> if needed.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Next
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodRewind" id="Rewind"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Rewind</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a333">333</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rewinds the row pointer to the first row in the result set.</p>
+<p class="description"><p>Calls <a href="../TurboPhpLib/TTpDataSource.html#methodExecute">Execute</a> if needed.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Rewind
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpSilentObj.html#methodGenerate">TTpSilentObj::Generate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignAttributes">TTpObj::AssignAttributes()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignTag">TTpObj::AssignTag()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDumpVar">TTpObj::DumpVar()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 16 Jan 2005 21:18:18 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

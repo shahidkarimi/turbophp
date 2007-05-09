@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpRepeater</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpRepeater</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-methods">Methods</a>
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A container which can output itself multiple times.</p>
+<p class="description"><p>A repeater will generate itself as a series of rows until <a href="../TurboPhpLib/TTpRepeater.html#var$Count">$Count</a>  iterations have been completed or <a href="../TurboPhpLib/TTpRepeater.html#var$Stop">$Stop</a> becomes true.  The <a href="../TurboPhpLib/TTpRepeater.html#var$OnRepeat">$OnRepeat</a> event is fired once before each iteration.  Controls inside the repeater will fire <a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">OnGenerate</a> events every  iteration.  The <a href="../TurboPhpLib/TTpRepeater.html#var$Index">$Index</a> property indicates the current iteration  (zero based, i.e., the first iteration has an $Index of zero).</p></p>
+		<p class="notes">
+			Located in <a class="field" href="_TpLib_php.html">/TpLib.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2032">2032</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpControl.html">TTpControl</a>
+      |
+      --TTpRepeater</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-methods">Methods</a>
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">Integer</span>
+					<a href="#$Count" title="details" class="var-name">$Count</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">Integer</span>
+					<a href="#$Index" title="details" class="var-name">$Index</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$OnRepeat" title="details" class="var-name">$OnRepeat</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">Boolean</span>
+					<a href="#$Stop" title="details" class="var-name">$Stop</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<span class="disabled">Vars</span>
+						
+			
+										| 
+									<a href="#sec-methods">Methods</a>
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Count" id="$Count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">Integer</span>
+			<span class="var-name">$Count</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2044">2044</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of iterations to repeat.</p>
+<p class="description"><p>If set to zero, the repeater will continue until <a href="../TurboPhpLib/TTpRepeater.html#var$Stop">$Stop</a> is true.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Index" id="$Index"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">Integer</span>
+			<span class="var-name">$Index</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2038">2038</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Current iteration number (zero based).</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnRepeat" id="$OnRepeat"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$OnRepeat</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2069">2069</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event that is fired before each repeat.</p>
+<p class="description"><p>The $OnRepeat event is fired once before each iteration.</p><p>The <a href="../TurboPhpLib/TTpRepeater.html#var$Index">$Index</a> property indicates the current iteration  (zero based, that is, the first iteration has $Index = zero).</p><p>Set <a href="../TurboPhpLib/TTpRepeater.html#var$Stop">$Stop</a> to true inside this event to stop generation immediately.</p><p><a href="../TurboPhpLib/TTpRepeater.html#var$Stop">$Stop</a> will already be true if  <a href="../TurboPhpLib/TTpRepeater.html#var$Index">$Index</a> = <a href="../TurboPhpLib/TTpRepeater.html#var$Count">$Count</a> and <a href="../TurboPhpLib/TTpRepeater.html#var$Count">$Count</a> &gt; 0.  In this case, you may set <a href="../TurboPhpLib/TTpRepeater.html#var$Stop">$Stop</a> to false to continue repeating</p><p>Note that controls inside the repeater will fire <a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">OnGenerate</a> events  each iteration.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Stop" id="$Stop"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">Boolean</span>
+			<span class="var-name">$Stop</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2052">2052</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set true to stop the repeater.</p>
+<p class="description"><p>The repeater will iterate until there have been <a href="../TurboPhpLib/TTpRepeater.html#var$Count">$Count</a> interations  or until $Stop becomes true. If <a href="../TurboPhpLib/TTpRepeater.html#var$Count">$Count</a> is zero, the repeater  will repeat indefinitely until $Stop is true.</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$App">TTpObj::$App</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$DebugFlag">TTpObj::$DebugFlag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Elt">TTpObj::$Elt</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<span class="disabled">Methods</span>
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 12 Nov 2004 16:34:04 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

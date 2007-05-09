@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpTable</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpTable</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-methods">Methods</a>
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A dynamic table.</p>
+<p class="description"><p>A table whose layout and content are specified at runtime (i.e. using PHP).</p><p>Set the number of cells with the <a href="../TurboPhpLib/TTpTable.html#var$Rows">$Rows</a> and <a href="../TurboPhpLib/TTpTable.html#var$Cols">$Cols</a> properties.</p><p>Each time a cell is generated, the <a href="../TurboPhpLib/TTpTable.html#var$OnCell">$OnCell</a> event is fired.  The row number is held in <a href="../TurboPhpLib/TTpTable.html#var$Row">$Row</a> and the col number in <a href="../TurboPhpLib/TTpTable.html#var$Col">$Col</a>  (zero-based).  Use the <a href="../TurboPhpLib/TTpTable.html#var$OnCell">$OnCell</a> event to specify the <a href="../TurboPhpLib/TTpTable.html#var$RowSpan">$RowSpan</a> and  <a href="../TurboPhpLib/TTpTable.html#var$ColSpan">$ColSpan</a> for the cell, to setup <a href="../TurboPhpLib/TTpTable.html#var$CellAttributes">$CellAttributes</a>,  and assign <a href="../TurboPhpLib/TTpObj.html#var$Content">$Content</a>.</p></p>
+		<p class="notes">
+			Located in <a class="field" href="_TpLib_php.html">/TpLib.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2133">2133</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpControl.html">TTpControl</a>
+      |
+      --TTpTable</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-methods">Methods</a>
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$CellAttributes" title="details" class="var-name">$CellAttributes</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Col" title="details" class="var-name">$Col</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Cols" title="details" class="var-name">$Cols</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$ColSpan" title="details" class="var-name">$ColSpan</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$HeaderCell" title="details" class="var-name">$HeaderCell</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnCell" title="details" class="var-name">$OnCell</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnRow" title="details" class="var-name">$OnRow</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Row" title="details" class="var-name">$Row</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$RowAttributes" title="details" class="var-name">$RowAttributes</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Rows" title="details" class="var-name">$Rows</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$RowSpan" title="details" class="var-name">$RowSpan</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<span class="disabled">Vars</span>
+						
+			
+										| 
+									<a href="#sec-methods">Methods</a>
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$CellAttributes" id="$CellAttributes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$CellAttributes</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2198">2198</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of name, value HTML attribute pairs for the current cell.</p>
+<p class="description"><p>Example:  $this-&gt;CellAttributes['color'] = 'green';</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Col" id="$Col"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Col</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2173">2173</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Index of the current column (first column has index zero).</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Cols" id="$Cols"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Cols</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2144">2144</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of columns to generate.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$ColSpan" id="$ColSpan"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$ColSpan</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2185">2185</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of columns the current cell will span. Generally set inside  an <a href="../TurboPhpLib/TTpTable.html#var$OnCell">OnCell</a> event handler.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$HeaderCell" id="$HeaderCell"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$HeaderCell</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2191">2191</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set to true to cause the current cell to be a header cell  (i.e. to have a &lt;th&gt; tag instead of &lt;td&gt; tag).</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnCell" id="$OnCell"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnCell</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2154">2154</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event that fires before a cell is generated.</p>
+<p class="description"><p>The row number of the current cell is available in <a href="../TurboPhpLib/TTpTable.html#var$Row">$Row</a>  and the column number in <a href="../TurboPhpLib/TTpTable.html#var$Col">$Col</a> (zero-based).  Use this event event to specify the <a href="../TurboPhpLib/TTpTable.html#var$RowSpan">$RowSpan</a> and  <a href="../TurboPhpLib/TTpTable.html#var$ColSpan">$ColSpan</a> for the cell, to setup <a href="../TurboPhpLib/TTpTable.html#var$CellAttributes">$CellAttributes</a>,  and assign <a href="../TurboPhpLib/TTpObj.html#var$Content">$Content</a>.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnRow" id="$OnRow"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnRow</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2163">2163</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event that fires before a row is generated.</p>
+<p class="description"><p>The row number of the current row is available in <a href="../TurboPhpLib/TTpTable.html#var$Row">$Row</a>  (zero-based).  Use this event event to specify <a href="../TurboPhpLib/TTpTable.html#var$RowAttributes">$RowAttributes</a> or to  calculate row-based values.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Row" id="$Row"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Row</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2168">2168</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Index of the current row (first row has index zero).</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$RowAttributes" id="$RowAttributes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$RowAttributes</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2205">2205</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of name, value HTML attribute pairs for the current row.</p>
+<p class="description"><p>Example:  $this-&gt;RowAttributes['color'] = 'blue';</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Rows" id="$Rows"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Rows</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2139">2139</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of rows to generate.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$RowSpan" id="$RowSpan"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$RowSpan</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2179">2179</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of rows the current cell will span. Generally set inside  an <a href="../TurboPhpLib/TTpTable.html#var$OnCell">OnCell</a> event handler.</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$App">TTpObj::$App</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$DebugFlag">TTpObj::$DebugFlag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Elt">TTpObj::$Elt</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<span class="disabled">Methods</span>
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 12 Nov 2004 16:34:05 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

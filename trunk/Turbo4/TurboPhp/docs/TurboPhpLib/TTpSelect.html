@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpSelect</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpSelect</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Represents a select object (aka combo-box or menu).</p>
+		<p class="notes">
+			Located in <a class="field" href="_TpLib_php.html">/TpLib.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2216">2216</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpInput.html">TTpInput</a>
+      |
+      --<a href="../TurboPhpLib/TTpClickable.html">TTpClickable</a>
+         |
+         --TTpSelect</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$Options" title="details" class="var-name">$Options</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Selected" title="details" class="var-name">$Selected</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Source" title="details" class="var-name">$Source</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#GetSelectedValue" title="details" class="method-name">GetSelectedValue</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#SetSelectedValue" title="details" class="method-name">SetSelectedValue</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inValue</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Options" id="$Options"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$Options</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2225">2225</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of options to display.</p>
+<p class="description"><p>The <a href="../TurboPhpLib/TTpSelect.html#var$Selected">$Selected</a> property always refers to a key  of this array. The key could be an integer index, or a string if  if $Options is a hashed array.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Selected" id="$Selected"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Selected</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2234">2234</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Key of the selected item in the <a href="../TurboPhpLib/TTpSelect.html#var$Options">Options</a> array.</p>
+<p class="description"><p>Read this property to discover the selected value. Write this property  to change the selection.  To read/write the selected {@var value} use the <a href="../TurboPhpLib/TTpSelect.html#methodGetSelectedValue">GetSelectedValue</a>  or <a href="../TurboPhpLib/TTpSelect.html#methodSetSelectedValue">SetSelectedValue</a> methods.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Source" id="$Source"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Source</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2240">2240</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reference to a <a href="../TurboPhpLib/TTpListSource.html">TTpListSource</a> object which will supply the option  array.</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpClickable.html">TTpClickable</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpClickable.html#var$OnClick">TTpClickable::$OnClick</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpInput.html">TTpInput</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$Encoded">TTpInput::$Encoded</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$Index">TTpInput::$Index</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$OldValue">TTpInput::$OldValue</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$OnSubmit">TTpInput::$OnSubmit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$Successful">TTpInput::$Successful</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$Value">TTpInput::$Value</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpInput.html#var$Values">TTpInput::$Values</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Element">TTpObj::$Element</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Page">TTpObj::$Page</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$RawAttrs">TTpObj::$RawAttrs</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodGetSelectedValue" id="GetSelectedValue"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetSelectedValue</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2367">2367</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the value of the selected option.</p>
+<p class="description"><p>Where the <a href="../TurboPhpLib/TTpSelect.html#var$Selected">$Selected</a> property is a key into the <a href="../TurboPhpLib/TTpSelect.html#var$Options">Options</a>  array, this function returns instead the <strong>value</strong> for that key.  This function validates <a href="../TurboPhpLib/TTpSelect.html#var$Selected">$Selected</a> by setting it to the default  value if it is improper.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			GetSelectedValue
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodSetSelectedValue" id="SetSelectedValue"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">SetSelectedValue</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a2384">2384</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the value of the selected option.</p>
+<p class="description"><p>Where the <a href="../TurboPhpLib/TTpSelect.html#var$Selected">$Selected</a> property is a key into the <a href="../TurboPhpLib/TTpSelect.html#var$Options">Options</a>  array, this function returns instead the <strong>value</strong> for that key.  This function validates <a href="../TurboPhpLib/TTpSelect.html#var$Selected">$Selected</a> by setting it to the default  value if it is improper.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			SetSelectedValue
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inValue</span>)
+			</div>
+	
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpInput.html">TTpInput</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpInput.html#methodGetDefaultValue">TTpInput::GetDefaultValue()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpInput.html#methodSetIndex">TTpInput::SetIndex()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignAttributes">TTpObj::AssignAttributes()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignTag">TTpObj::AssignTag()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDumpVar">TTpObj::DumpVar()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 16 Jan 2005 21:19:00 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>
