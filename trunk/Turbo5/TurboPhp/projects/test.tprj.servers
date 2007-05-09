@@ -1,0 +1,21 @@
+object _1201: TServersItem
+  DisplayName = 'Servers'
+  ImageIndex = 0
+  DefaultServerName = '_B259'
+  object _B259: TServerItem
+    DisplayName = 'localhost'
+    ImageIndex = 0
+    Source = 'C:\Inetpub\wwwroot'
+    Host = 'http://localhost'
+    Root = 'C:\Inetpub\wwwroot'
+    Target = stDisk
+  end
+  object _FFAE: TServerItem
+    DisplayName = 'itch.homeip.net'
+    ImageIndex = 0
+    Source = 'C:\Inetpub\wwwroot'
+    Host = 'http://itch.homeip.net'
+    Root = 'C:\Inetpub\wwwroot'
+    Target = stDisk
+  end
+end

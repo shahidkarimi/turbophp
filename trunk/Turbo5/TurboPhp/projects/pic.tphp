@@ -1,0 +1,40 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 588
+  ClientWidth = 788
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htImage1: ThtImage
+    Left = 438
+    Top = 0
+    Width = 350
+    Height = 527
+    Align = alRight
+    AltText = 'htImage1'
+    AutoAspect = False
+    AutoSize = True
+    HAlign = haDefault
+    Caption = 'htImage1'
+    Outline = True
+    Picture.Filename = 'D:\Pictures\BlackWidow\www.andrewblake.com\members\dahlia015.jpg'
+    Style.Font.FontDecoration = []
+  end
+  object DesignController1: TDesignController
+    Container = Owner
+    OnChange = DesignController1Change
+    Left = 40
+    Top = 20
+  end
+end

@@ -1,0 +1,230 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 800
+  ClientWidth = 850
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htLabel3: ThtLabel
+    Left = 0
+    Top = 24
+    Width = 850
+    Height = 44
+    ExtraAttributes = 'hint="JS Tooltips!"'
+    Align = alTop
+    AutoSize = False
+    HAlign = haLeft
+    Caption = 'htLabel3'
+    Outline = False
+    Style.Font.FontDecoration = [fdUnderline, fdOverline]
+    Style.Font.FontFamily = 'Arial'
+    Style.Font.FontSizePx = 24
+    WordWrap = False
+  end
+  object htLabel4: ThtLabel
+    Left = 0
+    Top = 0
+    Width = 850
+    Height = 24
+    ExtraAttributes = 'hint="JS Tooltips!"'
+    Align = alTop
+    AutoSize = False
+    HAlign = haDefault
+    Outline = True
+    Style.Font.FontDecoration = []
+    WordWrap = False
+  end
+  object htImage1: ThtImage
+    Left = 0
+    Top = 316
+    Width = 68
+    Height = 484
+    Hint = 'htImage1'
+    Align = alLeft
+    AltText = 'htImage1'
+    AutoAspect = False
+    AutoSize = False
+    HAlign = haDefault
+    Caption = 'htImage1'
+    Outline = True
+    Picture.Filename = 
+      'D:\Assets\IconExperience\business\48x48\shadow\calendar_preferen' +
+      'ces.png'
+    Style.Font.FontDecoration = []
+  end
+  object htImage2: ThtImage
+    Left = 198
+    Top = 316
+    Width = 590
+    Height = 484
+    Hint = 'htImage2'
+    Align = alClient
+    AltText = 'htImage2'
+    AutoAspect = True
+    AutoSize = False
+    HAlign = haDefault
+    Caption = 'htImage2'
+    Outline = True
+    Picture.Filename = 'D:\File Cabinet\Joshua\2005_04_01\DSCN0012.JPG'
+    Style.Font.FontDecoration = []
+  end
+  object htLabel7: ThtLabel
+    Left = 68
+    Top = 316
+    Width = 86
+    Height = 484
+    ExtraAttributes = 'hint="JS Tooltips!"'
+    Align = alLeft
+    AutoSize = False
+    HAlign = haDefault
+    Caption = 'htLabel7'
+    Outline = False
+    Style.Font.FontDecoration = []
+    WordWrap = False
+  end
+  object htLabel8: ThtLabel
+    Left = 788
+    Top = 316
+    Width = 62
+    Height = 484
+    ExtraAttributes = 'hint="JS Tooltips!"'
+    Align = alRight
+    AutoSize = False
+    HAlign = haDefault
+    Caption = 'htLabel8'
+    Outline = False
+    Style.Font.FontDecoration = []
+    WordWrap = False
+  end
+  object htGeneric1: ThtGeneric
+    Left = 154
+    Top = 316
+    Width = 44
+    Height = 484
+    Align = alLeft
+    HAlign = haDefault
+    Outline = False
+    Style.Font.FontDecoration = []
+  end
+  object htPanel1: ThtPanel
+    Left = 0
+    Top = 140
+    Width = 850
+    Height = 176
+    Align = alTop
+    Outline = False
+    Style.Font.FontDecoration = []
+    Transparent = True
+    object htLabel1: ThtLabel
+      Left = 1
+      Top = 0
+      Width = 222
+      Height = 44
+      ExtraAttributes = 'hint="JS Tooltips!"'
+      AutoSize = False
+      HAlign = haLeft
+      Caption = 'htLabel1'
+      Outline = True
+      Style.Font.FontDecoration = []
+      WordWrap = False
+    end
+    object htLabel5: ThtLabel
+      Left = 439
+      Top = 79
+      Width = 124
+      Height = 40
+      ExtraAttributes = 'hint="JS Tooltips!"'
+      AutoSize = True
+      HAlign = haDefault
+      Caption = 'htLabel5'
+      Outline = True
+      Style.Color = clMaroon
+      Style.Font.FontColor = clInfoBk
+      Style.Font.FontDecoration = []
+      Style.Font.FontFamily = 'Trebuchet MS'
+      Style.Font.FontSizePx = 32
+      WordWrap = False
+    end
+    object htLabel6: ThtLabel
+      Left = 0
+      Top = 132
+      Width = 850
+      Height = 44
+      ExtraAttributes = 'hint="JS Tooltips!"'
+      Align = alBottom
+      AutoSize = False
+      HAlign = haDefault
+      Caption = 'htLabel6'
+      Outline = False
+      Style.Font.FontDecoration = []
+      WordWrap = False
+    end
+  end
+  object htAutoTable1: ThtAutoTable
+    Left = 0
+    Top = 68
+    Width = 850
+    Height = 72
+    Align = alTop
+    Outline = True
+    Style.Font.FontDecoration = []
+    object htLabel2: ThtLabel
+      Left = 0
+      Top = 0
+      Width = 110
+      Height = 28
+      AutoSize = False
+      HAlign = haDefault
+      Caption = ' htLabel2 '
+      Outline = False
+      Style.Font.FontDecoration = []
+      WordWrap = False
+    end
+  end
+  object DesignController1: TDesignController
+    Container = Owner
+    OnChange = DesignController1Change
+    OnGetAddClass = DesignController1GetAddClass
+    OnSelectionChange = DesignController1SelectionChange
+    Left = 40
+    Top = 20
+  end
+  object Document: TTurboPhpDocumentData
+    PHP.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/Page%%.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TPage%% extends TTpPage'
+      '{'
+      '  // Implementation'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$Page%% = new TPage%%($tpTemplateFile);'
+      '$Page%%->Run();'
+      ''
+      '?>')
+    JavaScript.Strings = (
+      '// JavaScript')
+  end
+  object tpTooltipComponent1: TtpTooltipComponent
+    Priority = 0
+  end
+end

@@ -1,0 +1,74 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 588
+  ClientWidth = 600
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htPanel1: ThtPanel
+    Left = 0
+    Top = 0
+    Width = 600
+    Height = 144
+    Align = alTop
+    Outline = False
+    Style.Font.FontDecoration = []
+    Style.Padding.Padding = 16
+    Transparent = True
+    object htPanel2: ThtPanel
+      Left = 0
+      Top = 0
+      Width = 600
+      Height = 144
+      Outline = False
+      Style.Color = 11917793
+      Style.Font.FontDecoration = []
+      Style.Padding.Padding = 16
+      Transparent = True
+    end
+  end
+  object DesignController1: TDesignController
+    Container = Owner
+    OnChange = DesignController1Change
+    OnGetAddClass = DesignController1GetAddClass
+    OnSelectionChange = DesignController1SelectionChange
+    Left = 40
+    Top = 20
+  end
+  object Document: TTurboPhpDocumentData
+    BodyStyle.Font.FontDecoration = []
+    JavaScript.Strings = (
+      '// JavaScript')
+    PHP.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/Page%%.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TPage%% extends TTpPage'
+      '{'
+      '  // Implementation'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$Page%% = new TPage%%($tpTemplateFile);'
+      '$Page%%->Run();'
+      ''
+      '?>')
+  end
+end

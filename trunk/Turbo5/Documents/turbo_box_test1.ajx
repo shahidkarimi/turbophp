@@ -1,0 +1,561 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 818
+  ClientWidth = 807
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htAjaxPanel1: ThtAjaxPanel
+    Left = 0
+    Top = 0
+    Width = 807
+    Height = 818
+    JavaScript = <
+      item
+        Name = 'onKeyDown'
+      end
+      item
+        Name = 'onKeyPress'
+      end
+      item
+        Name = 'onKeyUp'
+      end
+      item
+        Name = 'onMouseDown'
+      end
+      item
+        Name = 'onMouseUp'
+      end
+      item
+        Name = 'onMouseMove'
+      end
+      item
+        Name = 'onMouseOver'
+      end
+      item
+        Name = 'onMouseOut'
+      end
+      item
+        Name = 'onClick'
+      end
+      item
+        Name = 'onDblClick'
+      end
+      item
+        Name = 'onLoad'
+      end
+      item
+        Name = 'onAbort'
+      end
+      item
+        Name = 'onError'
+      end
+      item
+        Name = 'onMove'
+      end
+      item
+        Name = 'onResize'
+      end
+      item
+        Name = 'onScroll'
+      end
+      item
+        Name = 'onReset'
+      end
+      item
+        Name = 'onSubmit'
+      end
+      item
+        Name = 'onBlur'
+      end
+      item
+        Name = 'onChange'
+      end
+      item
+        Name = 'onFocus'
+      end
+      item
+        Name = 'onSelect'
+      end>
+    Align = alClient
+    Outline = False
+    Style.Color = 13434828
+    Style.Font.FontDecoration = []
+    Transparent = True
+    object htTurboBox1: ThtTurboBox
+      Left = 0
+      Top = 112
+      Width = 807
+      Height = 108
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alTop
+      Caption = 'Yay Box Header'
+      Outline = True
+      Style.Font.FontDecoration = []
+    end
+    object htTurboBox2: ThtTurboBox
+      Left = 0
+      Top = 618
+      Width = 807
+      Height = 200
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alBottom
+      Caption = 'htTurboBox2'
+      Outline = True
+      Style.Color = clDefault
+      Style.Font.FontDecoration = []
+    end
+    object htTurboBox3: ThtTurboBox
+      Left = 0
+      Top = 220
+      Width = 260
+      Height = 398
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alLeft
+      Caption = 'htTurboBox3'
+      Outline = True
+      Style.Font.FontDecoration = []
+    end
+    object htTurboBox4: ThtTurboBox
+      Left = 0
+      Top = 0
+      Width = 807
+      Height = 112
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alTop
+      Caption = 'htTurboBox4'
+      Outline = False
+      Style.Font.FontDecoration = []
+    end
+    object htTurboBox5: ThtTurboBox
+      Left = 689
+      Top = 220
+      Width = 118
+      Height = 398
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alRight
+      Caption = 'htTurboBox5'
+      Outline = False
+      Style.Font.FontDecoration = []
+    end
+    object htTurboBox6: ThtTurboBox
+      Left = 579
+      Top = 220
+      Width = 110
+      Height = 398
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alRight
+      Caption = 'htTurboBox6'
+      Outline = False
+      Style.Font.FontDecoration = []
+    end
+  end
+end

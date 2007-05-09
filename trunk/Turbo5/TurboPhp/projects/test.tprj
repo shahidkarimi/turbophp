@@ -1,0 +1,42 @@
+object _1: TLrProjectItem
+  ImageIndex = 0
+  object _BEA5: TLrFolderItem
+    Tag = 2
+    DisplayName = 'Root'
+    ImageIndex = 4
+    object _F6C6: TLrFolderItem
+      DisplayName = 'turbophp5'
+      ImageIndex = 0
+      Source = 'turbophp5'
+      object _75A4: TDocumentItem
+        DisplayName = 'certs.tphp'
+        ImageIndex = 5
+        Source = 'C:\Projects\Turbo5\TurboPhp\projects\certs.tphp'
+      end
+      object _75F7: TDocumentItem
+        Tag = 1
+        DisplayName = 'pic.tphp'
+        ImageIndex = 5
+        Source = 'C:\Projects\Turbo5\TurboPhp\projects\pic.tphp'
+      end
+      object _F693: TDocumentItem
+        Tag = 2
+        DisplayName = 'junk.tphp'
+        ImageIndex = 5
+        Source = 'C:\Projects\Turbo5\TurboPhp\projects\junk.tphp'
+      end
+      object _09E8: TLrFolderItem
+        Tag = 1
+        DisplayName = 'images'
+        ImageIndex = 0
+        Source = 'images'
+      end
+      object _F7B4: TDocumentItem
+        Tag = 4
+        DisplayName = 'test.tajx'
+        ImageIndex = 5
+        Source = 'C:\Projects\Turbo5\TurboPhp\projects\test.tajx'
+      end
+    end
+  end
+end
