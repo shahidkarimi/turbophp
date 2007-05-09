@@ -1,0 +1,37 @@
+BODY {
+	FONT-FAMILY: Arial,Helvetica,san-serif; FONT-SIZE: 10pt
+}
+A.CompName {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.PME_Links {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.PME_Links:visited {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.PME_Links:hover {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.PME_Title {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.PME_Name {
+	COLOR: #05b6ff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.DelphiTitle {
+	COLOR: #000000; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.DelphiSyntax {
+	COLOR: #008000; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.BcbTitle {
+	COLOR: #000000; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.BcbSyntax {
+	COLOR: #008000; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.DescrLabel {
+	COLOR: #000080; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+

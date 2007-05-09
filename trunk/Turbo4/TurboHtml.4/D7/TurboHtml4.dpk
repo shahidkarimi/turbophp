@@ -1,0 +1,91 @@
+package TurboHtml4;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TurboHtml 4 Runtime D7'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcljpg,
+  vcl,
+  vclie;
+
+contains
+  ThWebControl in '..\ThWebControl.pas',
+  ThAnchor in '..\ThAnchor.pas',
+  ThAttributeList in '..\ThAttributeList.pas',
+  ThButton in '..\ThButton.pas',
+  ThChangeNotifier in '..\ThChangeNotifier.pas',
+  ThCheckBox in '..\ThCheckBox.pas',
+  ThComponent in '..\ThComponent.pas',
+  ThCssStyle in '..\ThCssStyle.pas',
+  ThCustomCtrl in '..\ThCustomCtrl.pas',
+  ThForm in '..\ThForm.pas',
+  ThGenerator in '..\ThGenerator.pas',
+  ThGraphicCtrl in '..\ThGraphicCtrl.pas',
+  ThGraphicUtils in '..\ThGraphicUtils.pas',
+  ThHeaderComponent in '..\ThHeaderComponent.pas',
+  ThHtmlDocument in '..\ThHtmlDocument.pas',
+  ThHtmlPage in '..\ThHtmlPage.pas',
+  ThImage in '..\ThImage.pas',
+  ThImageButton in '..\ThImageButton.pas',
+  ThInput in '..\ThInput.pas',
+  ThLabel in '..\ThLabel.pas',
+  ThPanel in '..\ThPanel.pas',
+  ThPathUtils in '..\ThPathUtils.pas',
+  ThPicture in '..\ThPicture.pas',
+  ThSelect in '..\ThSelect.pas',
+  ThSpacer in '..\ThSpacer.pas',
+  ThStyledCtrl in '..\ThStyledCtrl.pas',
+  ThStyleList in '..\ThStyleList.pas',
+  ThStylePainter in '..\ThStylePainter.pas',
+  ThStyleSheet in '..\ThStyleSheet.pas',
+  ThTabs in '..\ThTabs.pas',
+  ThTag in '..\ThTag.pas',
+  ThTextArea in '..\ThTextArea.pas',
+  ThTextPaint in '..\ThTextPaint.pas',
+  ThVclUtils in '..\ThVclUtils.pas',
+  ThWebBrowserUtils in '..\ThWebBrowserUtils.pas',
+  ThCellSorter in '..\ThCellSorter.pas',
+  ThComponentIterator in '..\ThComponentIterator.pas',
+  ThAlignUtils in '..\ThAlignUtils.pas',
+  ThRegExpr in '..\ThRegExpr.pas',
+  ThWebVariable in '..\ThWebVariable.pas',
+  ThWebDataDictionary in '..\ThWebDataDictionary.pas',
+  ThContent in '..\ThContent.pas',
+  ThStructuredDocument in '..\ThStructuredDocument.pas',
+  ThStructuredHtml in '..\ThStructuredHtml.pas',
+  ThImageList in '..\ThImageList.pas',
+  ThJavaScript in '..\ThJavaScript.pas',
+  ThInterfaces in '..\ThInterfaces.pas',
+  ThListSource in '..\ThListSource.pas',
+  ThNotifierList in '..\ThNotifierList.pas',
+  ThPageControl in '..\ThPageControl.pas',
+  ThAnchorStyles in '..\ThAnchorStyles.pas',
+  ThHtmlBox in '..\ThHtmlBox.pas',
+  ThMessages in '..\ThMessages.pas',
+  ThCellPanel in '..\ThCellPanel.pas',
+  ThGraphicButton in '..\ThGraphicButton.pas';
+
+end.

@@ -1,0 +1,20 @@
+; This file was created by GenHelpPro.
+; This file is maintained by HCW. Do not modify this file directly.
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=F:\Turbo4\TurboHtml.4\GenHelp\TurboHtmld7.log
+LCID=0x809 0x0 0x0
+CHARSET=0
+REPORT=Yes
+TITLE=TurboHtmld7
+HLP=TurboHtmld7.hlp
+[WINDOWS]
+Main="TurboHtmld7",,27904,,,f2
+Pme="TurboHtmld7",(40,320,280,640),4,(r14811135),(r12632256)
+Example="TurboHtmld7",(360,160,640,320),12292,,(r12632256)
+[FILES]
+F:\Turbo4\TurboHtml.4\GenHelp\TurboHtmld7.rtf
+[MAP]
+[CONFIG]
+BrowseButtons()
+CreateButton(btn_history,History,History())

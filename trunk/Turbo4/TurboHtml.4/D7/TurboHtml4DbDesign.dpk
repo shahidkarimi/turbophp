@@ -1,0 +1,54 @@
+package TurboHtml4DbDesign;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TurboHtml4 DB Design D7'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  designide,
+  vclactnband,
+  vclx,
+  vcl,
+  dbrtl,
+  dclado,
+  designdgm,
+  dcldb,
+  vcldesigner,
+  dclstd,
+  vcldb,
+  adortl,
+  dcctd7,
+  bdertl,
+  vcljpg,
+  TurboHtml4,
+  TurboHtml4Db;
+
+contains
+  ThDataConnectionProperty in '..\ThDataConnectionProperty.pas',
+  ThDbReg in '..\ThDbReg.pas',
+  ThConnectionStringEdit in '..\ThConnectionStringEdit.pas' {ThConnectionStringEditForm};
+
+end.

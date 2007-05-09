@@ -1,0 +1,710 @@
+%FILE_VERSION%
+3
+%RICH_TEXT%
+%WINHELPTEMPLATE%
+Normal
+%MANUALTEMPLATE%
+Manual
+%HTMLHELPTEMPLATE%
+Normal
+%HTMLTEMPLATE%
+Normal
+%WIN_HELP_FILE_TYPE%
+1,1,0,0
+%HTML_HELP_FILE_TYPE%
+1,1,0,0
+%HTML_FILE_TYPE%
+1,1,0,0
+%MAN_FILE_TYPE%
+1,1,0,0
+%VCL_VERSION_MASK%
+128
+%DOT_NET_VERSION_MASK%
+0
+%HELP_LANG%
+2057
+%FONTS%
+Arial
+Symbol
+Helv
+Courier
+Courier New
+%IMPORTED_FILES%
+..\..\TurboPhp.4\bin\TpLabel.pas
+..\ThWebControl.pas
+..\ThLabel.pas
+..\ThCheckBox.pas
+%COMPONENT%
+Globals
+%METHOD%
+ThAttr
+%DELPHI_SYNTAX%
+\f4\s2 function ThAttr(\b const\b0  inName: \b string\b0 ; inValue: Integer): \b string\b0 ; \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%METHOD%
+ThPaintOutline
+%DELPHI_SYNTAX%
+\f4\s2 procedure ThPaintOutline(inCanvas: TCanvas; \b const\b0  inRect: TRect; inColor: TColor=clBlack; inPenStyle: TPenStyle=psDash; inPenWidth: Integer=1); \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%PROPERTY%
+ssHAlign
+%DELPHI_SYNTAX%
+\f4\s2 ssHAlign: \b array\b0 [TThHAlign]\b of\b0  \b string\b0 =('', 'left', 'center', 'right'); \par
+%UNIT%
+ThLabel
+%NAMESPACE%
+ThLabel
+%PROPERTY%
+ssVAlign
+%DELPHI_SYNTAX%
+\f4\s2 ssVAlign: \b array\b0 [TThVAlign]\b of\b0  \b string\b0 =('', 'top', 'middle', 'bottom', 'baseline'); \par
+%UNIT%
+ThLabel
+%NAMESPACE%
+ThLabel
+%PROPERTY%
+THM_BASE
+%DELPHI_SYNTAX%
+\f4\s2 THM_BASE=WM_APP + 27; \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%PROPERTY%
+THM_CHANGE
+%DELPHI_SYNTAX%
+\f4\s2 THM_CHANGE=THM_BASE; \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%PROPERTY%
+THM_DESIGN_ADJUST
+%DELPHI_SYNTAX%
+\f4\s2 THM_DESIGN_ADJUST=THM_BASE + 1; \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%COMPONENT%
+TThCheckBox
+%UNIT%
+ThCheckBox
+%NAMESPACE%
+ThCheckBox
+%DERIVED_FROM%
+TThCustomCheckBox
+%PROPERTY%
+Align
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Align; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+AutoSize
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  AutoSize \b default\b0  true; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Caption
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Caption; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Checked
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Checked; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Style
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Style; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+StyleClass
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  StyleClass; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Visible
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Visible; \par
+%PUBLISHED%
+%INHERITED%
+%COMPONENT%
+TThCustomCheckBox
+%UNIT%
+ThCheckBox
+%NAMESPACE%
+ThCheckBox
+%DERIVED_FROM%
+TThWebGraphicControl
+%METHOD%
+ButtonHeight
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  ButtonHeight: Integer; \par
+%PROTECTED%
+%METHOD%
+ButtonWidth
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  ButtonWidth: Integer; \par
+%PROTECTED%
+%METHOD%
+Create
+%DELPHI_SYNTAX%
+\f4\s2 \b constructor\b0  Create(AOwner: TComponent); \b override\b0 ; \par
+%METHOD%
+GetInputName
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetInputName: \b string\b0 ; \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+GetInputType
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetInputType: \b string\b0 ; \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+Paint
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Paint; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+PaintCheck
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  PaintCheck(inX, inY: Integer); \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+PerformAutoSize
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  PerformAutoSize; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+SetChecked
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetChecked(\b const\b0  Value: Boolean); \par
+%PROTECTED%
+%METHOD%
+Tag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Tag(inTag: TThTag); \b override\b0 ; \par
+%PROTECTED%
+%PROPERTY%
+AutoSize
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  AutoSize \b default\b0  true; \par
+%PROTECTED%
+%INHERITED%
+%PROPERTY%
+Checked
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Checked: Boolean \b read\b0  FChecked \b write\b0  SetChecked; \par
+%PROTECTED%
+%COMPONENT%
+TThLabel
+%UNIT%
+ThLabel
+%NAMESPACE%
+ThLabel
+%DERIVED_FROM%
+TThWebGraphicControl
+%METHOD%
+CellTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  CellTag(inTag: TThTag); \b override\b0 ; \par
+%METHOD%
+Create
+%DELPHI_SYNTAX%
+\f4\s2 \b constructor\b0  Create(AOwner: TComponent); \b override\b0 ; \par
+%METHOD%
+Destroy
+%DELPHI_SYNTAX%
+\f4\s2 \b destructor\b0  Destroy; \b override\b0 ; \par
+%METHOD%
+GetHtml
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetHtml: \b string\b0 ; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+LabelTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  LabelTag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+Paint
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Paint; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+PerformAutoSize
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  PerformAutoSize; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+SetAnchor
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetAnchor(\b const\b0  Value: TThAnchor); \par
+%PROTECTED%
+%METHOD%
+SetFitStyleToText
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetFitStyleToText(\b const\b0  Value: Boolean); \par
+%PROTECTED%
+%METHOD%
+SetHAlign
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetHAlign(\b const\b0  Value: TThHAlign); \par
+%PROTECTED%
+%METHOD%
+SetVAlign
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetVAlign(\b const\b0  Value: TThVAlign); \par
+%PROTECTED%
+%METHOD%
+SetWordWrap
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetWordWrap(\b const\b0  Value: Boolean); \par
+%PROTECTED%
+%METHOD%
+Tag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Tag(inTag: TThTag); \b override\b0 ; \par
+%PROTECTED%
+%PROPERTY%
+Align
+%DELPHI_SYNTAX%
+\b\f4 property\b0  Align; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Anchor
+%DELPHI_SYNTAX%
+\b\f4 property\b0  Anchor: TThAnchor \b read\b0  FAnchor \b write\b0  SetAnchor; \par
+%PUBLISHED%
+%PROPERTY%
+AutoSize
+%DELPHI_SYNTAX%
+\b\f4 property\b0  AutoSize \b default\b0  true; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Caption
+%DELPHI_SYNTAX%
+\b\f4 property\b0  Caption; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+DesignOpaque
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  DesignOpaque; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+FitStyleToText
+%DELPHI_SYNTAX%
+\b\f4 property\b0  FitStyleToText: Boolean \b read\b0  FFitStyleToText \b write\b0  SetFitStyleToText; \par
+%PUBLISHED%
+%PROPERTY%
+HAlign
+%DELPHI_SYNTAX%
+ property HAlign: TThHAlign read FHAlign write SetHAlign default haDefault; \par
+%PUBLISHED%
+%PROPERTY%
+Style
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Style; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+StyleClass
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  StyleClass; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+VAlign
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  VAlign: TThVAlign \b read\b0  FVAlign \b write\b0  SetVAlign \b default\b0  vaDefault; \par
+%PUBLISHED%
+%PROPERTY%
+Visible
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Visible; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+WordWrap
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  WordWrap: Boolean \b read\b0  FWordWrap \b write\b0  SetWordWrap \b default\b0  false; \par
+%PUBLISHED%
+%COMPONENT%
+TThOnTag
+%DELPHI_SYNTAX%
+\f4\s2 TThOnTag=\b procedure\b0 (inSender: TObject; inTag: TThTag) \b of\b0  \b object\b0 ; \par
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%COMPONENT%
+TThRadio
+%UNIT%
+ThCheckBox
+%NAMESPACE%
+ThCheckBox
+%DERIVED_FROM%
+TThCustomCheckBox
+%METHOD%
+GetInputName
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetInputName: \b string\b0 ; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+GetInputType
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetInputType: \b string\b0 ; \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+PaintCheck
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  PaintCheck(inX, inY: Integer); \b override\b0 ; \par
+%PROTECTED%
+%METHOD%
+SetGroup
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  SetGroup(\b const\b0  Value: Integer); \par
+%PROTECTED%
+%PROPERTY%
+Align
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Align; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+AutoSize
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  AutoSize \b default\b0  true; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Caption
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Caption; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Checked
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Checked; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Group
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Group: Integer \b read\b0  FGroup \b write\b0  SetGroup; \par
+%PUBLISHED%
+%PROPERTY%
+Style
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Style; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+StyleClass
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  StyleClass; \par
+%PUBLISHED%
+%INHERITED%
+%PROPERTY%
+Visible
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Visible; \par
+%PUBLISHED%
+%INHERITED%
+%COMPONENT%
+TThWebControl
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%DERIVED_FROM%
+TThWebControlBase
+%EVENT%
+OnTag
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  OnTag: TThOnTag \b read\b0  FOnTag \b write\b0  FOnTag; \par
+%METHOD%
+AdjustMargins
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  AdjustMargins(\b var\b0  ioRect: TRect); \b virtual\b0 ; \par
+%METHOD%
+CellTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  CellTag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+Create
+%DELPHI_SYNTAX%
+\f4\s2 \b constructor\b0  Create(inOwner: TComponent); \b override\b0 ; \par
+%METHOD%
+Destroy
+%DELPHI_SYNTAX%
+\f4\s2 \b destructor\b0  Destroy; \b override\b0 ; \par
+%METHOD%
+DoTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  DoTag(inTag: TThTag); \par
+%PROTECTED%
+%METHOD%
+GetHtml
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetHtml: \b string\b0 ; \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+GetTagHtml
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetTagHtml: \b string\b0 ; \par
+%PROTECTED%
+%METHOD%
+ListJsAttributes
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  ListJsAttributes(inAttrs: TThAttributeList); \b virtual\b0 ; \par
+%METHOD%
+Publish
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Publish(inDoc: TThStructuredHtml); \b virtual\b0 ; \par
+%METHOD%
+StylizeTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  StylizeTag(inTag: TThTag); \par
+%PROTECTED%
+%METHOD%
+Tag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Tag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%PROPERTY%
+Html
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Html: \b string\b0  \b read\b0  GetHtml; \par
+%READONLY%
+%PROPERTY%
+JavaScript
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  JavaScript: TThJavaScriptEvents \b read\b0  FJavaScript \b write\b0  SetJavaScript; \par
+%PUBLISHED%
+%COMPONENT%
+TThWebGraphicControl
+%UNIT%
+ThWebControl
+%NAMESPACE%
+ThWebControl
+%DERIVED_FROM%
+TThStyledGraphicControl
+%EVENT%
+OnTag
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  OnTag: TThOnTag \b read\b0  FOnTag \b write\b0  FOnTag; \par
+%METHOD%
+CellTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  CellTag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+Create
+%DELPHI_SYNTAX%
+\f4\s2 \b constructor\b0  Create(inOwner: TComponent); \b override\b0 ; \par
+%METHOD%
+Destroy
+%DELPHI_SYNTAX%
+\f4\s2 \b destructor\b0  Destroy; \b override\b0 ; \par
+%METHOD%
+DoTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  DoTag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+GetHtml
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetHtml: \b string\b0 ; \b virtual\b0 ; \par
+%PROTECTED%
+%METHOD%
+GetTagHtml
+%DELPHI_SYNTAX%
+\f4\s2 \b function\b0  GetTagHtml: \b string\b0 ; \par
+%PROTECTED%
+%METHOD%
+ListJsAttributes
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  ListJsAttributes(inAttrs: TThAttributeList); \b virtual\b0 ; \par
+%METHOD%
+Publish
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Publish(inDoc: TThStructuredHtml); \b virtual\b0 ; \par
+%METHOD%
+StylizeTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  StylizeTag(inTag: TThTag); \par
+%PROTECTED%
+%METHOD%
+Tag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  Tag(inTag: TThTag); \b virtual\b0 ; \par
+%PROTECTED%
+%PROPERTY%
+Html
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  Html: \b string\b0  \b read\b0  GetHtml; \par
+%READONLY%
+%PROPERTY%
+JavaScript
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  JavaScript: TThJavaScriptEvents \b read\b0  FJavaScript \b write\b0  SetJavaScript; \par
+%PUBLISHED%
+%COMPONENT%
+TTpLabel
+%UNIT%
+TpLabel
+%NAMESPACE%
+TpLabel
+%DERIVED_FROM%
+TThLabel
+%EVENT%
+OnGenerate
+%DELPHI_SYNTAX%
+\f4\s2 \b property\b0  OnGenerate: TTpEvent \b read\b0  FOnGenerate \b write\b0  FOnGenerate; \par
+%PUBLISHED%
+%METHOD%
+LabelTag
+%DELPHI_SYNTAX%
+\f4\s2 \b procedure\b0  LabelTag(inTag: TThTag); \b override\b0 ; \par
+%PROTECTED%
+%CONTENTS%
+0,TTpLabel	TTpLabel
+1,Methods	TTpLabel.Methods
+2,LabelTag	TTpLabel.Methods.LabelTag
+1,Events	TTpLabel.Events
+2,OnGenerate	TTpLabel.Events.OnGenerate
+0,Globals	Globals
+1,Properties	Globals.Properties
+2,THM_BASE	Globals.Properties.THM_BASE
+2,THM_CHANGE	Globals.Properties.THM_CHANGE
+2,THM_DESIGN_ADJUST	Globals.Properties.THM_DESIGN_ADJUST
+2,ssHAlign	Globals.Properties.ssHAlign
+2,ssVAlign	Globals.Properties.ssVAlign
+1,Methods	Globals.Methods
+2,ThAttr	Globals.Methods.ThAttr
+2,ThPaintOutline	Globals.Methods.ThPaintOutline
+0,Types
+1,TThOnTag	TThOnTag
+0,TThWebControl	TThWebControl
+1,Methods	TThWebControl.Methods
+2,GetHtml	TThWebControl.Methods.GetHtml
+2,GetTagHtml	TThWebControl.Methods.GetTagHtml
+2,CellTag	TThWebControl.Methods.CellTag
+2,DoTag	TThWebControl.Methods.DoTag
+2,StylizeTag	TThWebControl.Methods.StylizeTag
+2,Tag	TThWebControl.Methods.Tag
+2,Create	TThWebControl.Methods.Create
+2,Destroy	TThWebControl.Methods.Destroy
+2,AdjustMargins	TThWebControl.Methods.AdjustMargins
+2,ListJsAttributes	TThWebControl.Methods.ListJsAttributes
+2,Publish	TThWebControl.Methods.Publish
+1,Properties	TThWebControl.Properties
+2,Html	TThWebControl.Properties.Html
+2,JavaScript	TThWebControl.Properties.JavaScript
+1,Events	TThWebControl.Events
+2,OnTag	TThWebControl.Events.OnTag
+0,TThWebGraphicControl	TThWebGraphicControl
+1,Methods	TThWebGraphicControl.Methods
+2,GetHtml	TThWebGraphicControl.Methods.GetHtml
+2,GetTagHtml	TThWebGraphicControl.Methods.GetTagHtml
+2,CellTag	TThWebGraphicControl.Methods.CellTag
+2,DoTag	TThWebGraphicControl.Methods.DoTag
+2,StylizeTag	TThWebGraphicControl.Methods.StylizeTag
+2,Tag	TThWebGraphicControl.Methods.Tag
+2,Create	TThWebGraphicControl.Methods.Create
+2,Destroy	TThWebGraphicControl.Methods.Destroy
+2,ListJsAttributes	TThWebGraphicControl.Methods.ListJsAttributes
+2,Publish	TThWebGraphicControl.Methods.Publish
+1,Properties	TThWebGraphicControl.Properties
+2,Html	TThWebGraphicControl.Properties.Html
+2,JavaScript	TThWebGraphicControl.Properties.JavaScript
+1,Events	TThWebGraphicControl.Events
+2,OnTag	TThWebGraphicControl.Events.OnTag
+0,TThLabel	TThLabel
+1,Methods	TThLabel.Methods
+2,GetHtml	TThLabel.Methods.GetHtml
+2,SetAnchor	TThLabel.Methods.SetAnchor
+2,SetFitStyleToText	TThLabel.Methods.SetFitStyleToText
+2,SetHAlign	TThLabel.Methods.SetHAlign
+2,SetVAlign	TThLabel.Methods.SetVAlign
+2,SetWordWrap	TThLabel.Methods.SetWordWrap
+2,LabelTag	TThLabel.Methods.LabelTag
+2,PerformAutoSize	TThLabel.Methods.PerformAutoSize
+2,Paint	TThLabel.Methods.Paint
+2,Tag	TThLabel.Methods.Tag
+2,Create	TThLabel.Methods.Create
+2,Destroy	TThLabel.Methods.Destroy
+2,CellTag	TThLabel.Methods.CellTag
+1,Properties	TThLabel.Properties
+2,Align	TThLabel.Properties.Align
+2,Anchor	TThLabel.Properties.Anchor
+2,AutoSize	TThLabel.Properties.AutoSize
+2,Caption	TThLabel.Properties.Caption
+2,DesignOpaque	TThLabel.Properties.DesignOpaque
+2,FitStyleToText	TThLabel.Properties.FitStyleToText
+2,HAlign	TThLabel.Properties.HAlign
+2,Style	TThLabel.Properties.Style
+2,StyleClass	TThLabel.Properties.StyleClass
+2,WordWrap	TThLabel.Properties.WordWrap
+2,VAlign	TThLabel.Properties.VAlign
+2,Visible	TThLabel.Properties.Visible
+0,TThCustomCheckBox	TThCustomCheckBox
+1,Methods	TThCustomCheckBox.Methods
+2,SetChecked	TThCustomCheckBox.Methods.SetChecked
+2,ButtonHeight	TThCustomCheckBox.Methods.ButtonHeight
+2,ButtonWidth	TThCustomCheckBox.Methods.ButtonWidth
+2,GetInputName	TThCustomCheckBox.Methods.GetInputName
+2,GetInputType	TThCustomCheckBox.Methods.GetInputType
+2,PaintCheck	TThCustomCheckBox.Methods.PaintCheck
+2,Paint	TThCustomCheckBox.Methods.Paint
+2,PerformAutoSize	TThCustomCheckBox.Methods.PerformAutoSize
+2,Tag	TThCustomCheckBox.Methods.Tag
+2,Create	TThCustomCheckBox.Methods.Create
+1,Properties	TThCustomCheckBox.Properties
+2,AutoSize	TThCustomCheckBox.Properties.AutoSize
+2,Checked	TThCustomCheckBox.Properties.Checked
+0,TThCheckBox	TThCheckBox
+1,Properties	TThCheckBox.Properties
+2,Align	TThCheckBox.Properties.Align
+2,AutoSize	TThCheckBox.Properties.AutoSize
+2,Caption	TThCheckBox.Properties.Caption
+2,Checked	TThCheckBox.Properties.Checked
+2,Style	TThCheckBox.Properties.Style
+2,StyleClass	TThCheckBox.Properties.StyleClass
+2,Visible	TThCheckBox.Properties.Visible
+0,TThRadio	TThRadio
+1,Methods	TThRadio.Methods
+2,GetInputName	TThRadio.Methods.GetInputName
+2,GetInputType	TThRadio.Methods.GetInputType
+2,SetGroup	TThRadio.Methods.SetGroup
+2,PaintCheck	TThRadio.Methods.PaintCheck
+1,Properties	TThRadio.Properties
+2,Align	TThRadio.Properties.Align
+2,AutoSize	TThRadio.Properties.AutoSize
+2,Caption	TThRadio.Properties.Caption
+2,Checked	TThRadio.Properties.Checked
+2,Group	TThRadio.Properties.Group
+2,Style	TThRadio.Properties.Style
+2,StyleClass	TThRadio.Properties.StyleClass
+2,Visible	TThRadio.Properties.Visible

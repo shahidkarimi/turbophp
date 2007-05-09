@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = TurboHtml4.bpl TurboHtml4Db.bpl TurboPhpLib.bpl MyTpComponent.bpl \
+  MyTpProperty.bpl TpMoreControls.bpl TurboPhp.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+TurboHtml4.bpl: TurboHtml.4\D7\TurboHtml4.dpk
+  $(DCC)
+
+TurboHtml4Db.bpl: TurboHtml.4\D7\TurboHtml4Db.dpk
+  $(DCC)
+
+TurboPhpLib.bpl: TurboPhp\CDK\Source\D7\TurboPhpLib.dpk
+  $(DCC)
+
+TpMoreControls.bpl: TurboPhp\CDK\TpMoreControls\TpMoreControls.dpk
+  $(DCC)
+
+MyTpProperty.bpl: TurboPhp\CDK\MyTpProperty\MyTpProperty.dpk
+  $(DCC)
+
+TurboPhp.exe: TurboPhp\bin\TurboPhp.dpr
+  $(DCC)
+
+MyTpComponent.bpl: TurboPhp\CDK\MyTpComponent\MyTpComponent.dpk
+  $(DCC)
+
+
