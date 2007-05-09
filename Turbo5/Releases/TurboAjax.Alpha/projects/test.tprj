@@ -1,0 +1,22 @@
+object _1: TLrProjectItem
+  ImageIndex = 0
+  object _D33F: TLrFolderItem
+    Tag = 2
+    DisplayName = 'Root'
+    ImageIndex = 4
+    object _AB46: TDocumentItem
+      DisplayName = 'test.tajx'
+      ImageIndex = 5
+      Source = 
+        'C:\Projects\Turbo5\Releases\TurboAjax.Alpha.02\projects\test.taj' +
+        'x'
+    end
+    object _AED4: TDocumentItem
+      DisplayName = 'test2.tajx'
+      ImageIndex = 5
+      Source = 
+        'C:\Projects\Turbo5\Releases\TurboAjax.Alpha.02\projects\test2.ta' +
+        'jx'
+    end
+  end
+end

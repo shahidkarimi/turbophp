@@ -1,0 +1,13 @@
+object _A1F4: TServersItem
+  DisplayName = 'Servers'
+  ImageIndex = 0
+  DefaultServerName = '_02D5'
+  object _02D5: TServerItem
+    DisplayName = 'Test'
+    ImageIndex = 0
+    Source = 'C:\Inetpub\wwwroot\turbophp5'
+    Host = 'http://localhost/turbophp5'
+    Root = 'C:\Inetpub\wwwroot\turbophp5'
+    Target = stDisk
+  end
+end

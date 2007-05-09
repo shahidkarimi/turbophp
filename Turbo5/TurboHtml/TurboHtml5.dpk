@@ -1,0 +1,75 @@
+package TurboHtml5;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TurboHtml 5 for D7'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcljpg,
+  dbrtl,
+  adortl,
+  LrLibD7;
+
+contains
+  htColumns in 'htColumns.pas',
+  htReg in 'htReg.pas',
+  htRows in 'htRows.pas',
+  htInterfaces in 'htInterfaces.pas',
+  htLayout in 'htLayout.pas',
+  htAutoTable in 'htAutoTable.pas',
+  htMarkup in 'htMarkup.pas',
+  htGenerator in 'htGenerator.pas',
+  LrProfiles in 'LrProfiles.pas',
+  htPanel in 'htPanel.pas',
+  htPaint in 'htPaint.pas',
+  htLabel in 'htLabel.pas',
+  htUtils in 'htUtils.pas',
+  LrControls in 'LrControls.pas',
+  htStylePainter in 'htStylePainter.pas',
+  htStyle in 'htStyle.pas',
+  htStyleList in 'htStyleList.pas',
+  htControls in 'htControls.pas',
+  htPicture in 'htPicture.pas',
+  htPersistBase in 'htPersistBase.pas',
+  htImage in 'htImage.pas',
+  htTypes in 'htTypes.pas',
+  htJavaScript in 'htJavaScript.pas',
+  htGeneric in 'htGeneric.pas',
+  htTag in 'htTag.pas',
+  htAttributeList in 'htAttributeList.pas',
+  htComponent in 'htComponent.pas',
+  htInput in 'htInput.pas',
+  htButton in 'htButton.pas',
+  htDatabaseProfile in 'htDatabaseProfile.pas',
+  htDb in 'htDb.pas',
+  htSelect in 'htSelect.pas',
+  htFlowPanel in 'htFlowPanel.pas',
+  htColumnsPanel in 'htColumnsPanel.pas',
+  htAjaxPanel in 'htAjaxPanel.pas',
+  htTurboBox in 'htTurboBox.pas',
+  htTurboSplitter in 'htTurboSplitter.pas';
+
+end.

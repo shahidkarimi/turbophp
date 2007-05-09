@@ -1,0 +1,15 @@
+object _0771: ThtDatabasesItem
+  Tag = 1
+  DisplayName = 'Databases'
+  ImageIndex = 2
+  object _6BA0: ThtDatabaseItem
+    DisplayName = 'Db'
+    ImageIndex = 0
+    Database = 'test'
+    ODBC = 
+      'DRIVER={MySQL ODBC 3.51 Driver};USER=root;PASSWORD=;DATABASE=test;'
+    Password = ''
+    User = 'root'
+    Vendor = dvMySQL
+  end
+end

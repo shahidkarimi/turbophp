@@ -1,0 +1,199 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 600
+  ClientWidth = 788
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htPanel1: ThtPanel
+    Left = 0
+    Top = 0
+    Width = 788
+    Height = 92
+    Align = alTop
+    Outline = False
+    Style.Font.FontDecoration = []
+    Transparent = True
+    object query: ThtInput
+      Left = 0
+      Top = 22
+      Width = 497
+      Height = 18
+      AutoSize = False
+      HAlign = haDefault
+      Value = 'SELECT * FROM testtbl'
+      Outline = False
+      Password = False
+      Style.Border.Edges.BorderLeft.BorderStyle = bsNone
+      Style.Border.Edges.BorderRight.BorderStyle = bsNone
+      Style.Border.Edges.BorderTop.BorderStyle = bsNone
+      Style.Border.Edges.BorderBottom.BorderWidth = '1'
+      Style.Border.Edges.BorderBottom.BorderStyle = bsDashed
+      Style.Font.FontDecoration = []
+      Style.Font.FontFamily = 'Arial'
+      Style.Font.FontSizePx = 14
+      WordWrap = False
+    end
+    object htButton2: ThtButton
+      Left = 0
+      Top = 53
+      Width = 78
+      Height = 24
+      ExtraAttributes = 'onclick="QueryClick();"'
+      AutoSize = False
+      Caption = 'Query'
+      Outline = False
+      Style.Border.BorderWidth = '1'
+      Style.Border.BorderColor = clSilver
+      Style.Border.BorderStyle = bsDotted
+      Style.Font.FontDecoration = []
+      Style.Font.FontFamily = 'Arial'
+      Style.Font.FontSizePx = 12
+    end
+  end
+  object htPanel2: ThtPanel
+    Left = 0
+    Top = 528
+    Width = 788
+    Height = 72
+    Align = alTop
+    Outline = False
+    Style.Font.FontDecoration = []
+    Transparent = True
+    Visible = False
+    object htLabel4: ThtLabel
+      Left = 0
+      Top = 0
+      Width = 22
+      Height = 72
+      Align = alLeft
+      AutoSize = False
+      HAlign = haDefault
+      Outline = True
+      Style.Font.FontDecoration = []
+      WordWrap = False
+    end
+  end
+  object tpGrid1: TtpGrid
+    Left = 0
+    Top = 92
+    Width = 788
+    Height = 300
+    ExtraAttributes = 'style="overflow:hidden;"'
+    Align = alTop
+    Connected = True
+    ConnectionStatus = 'Connected'
+    DataSource = 'MySql - Test'
+    TableName = 'testtbl'
+    Style.Border.BorderWidth = '1'
+    Style.Border.BorderColor = clInactiveCaptionText
+    Style.Border.BorderStyle = bsSolidBorder
+    Style.Font.FontDecoration = []
+    Style.Font.FontFamily = 'Arial'
+    Style.Font.FontSizePx = 11
+    Style.Padding.PaddingDetails.PadLeft = 22
+  end
+  object Console: ThtPanel
+    Left = 0
+    Top = 456
+    Width = 788
+    Height = 64
+    Align = alTop
+    Outline = False
+    Style.Font.FontDecoration = []
+    Transparent = True
+  end
+  object htPanel3: ThtPanel
+    Left = 0
+    Top = 392
+    Width = 788
+    Height = 64
+    Align = alTop
+    Outline = True
+    Style.Font.FontDecoration = []
+    Transparent = True
+    object htButton1: ThtButton
+      Left = 0
+      Top = 12
+      Width = 78
+      Height = 24
+      ExtraAttributes = 'onclick="AddRowClick();"'
+      AutoSize = False
+      Caption = 'Add Row'
+      Outline = False
+      Style.Border.BorderWidth = '1'
+      Style.Border.BorderColor = clSilver
+      Style.Border.BorderStyle = bsDotted
+      Style.Font.FontDecoration = []
+      Style.Font.FontFamily = 'Arial'
+      Style.Font.FontSizePx = 12
+    end
+    object htButton3: ThtButton
+      Left = 94
+      Top = 12
+      Width = 75
+      Height = 24
+      AutoSize = False
+      Caption = 'htButton3'
+      Outline = False
+      Style.Font.FontDecoration = []
+    end
+  end
+  object DesignController1: TDesignController
+    Container = Owner
+    OnChange = DesignController1Change
+    OnGetAddClass = DesignController1GetAddClass
+    OnSelectionChange = DesignController1SelectionChange
+    Left = 40
+    Top = 20
+  end
+  object Document: TTurboPhpDocumentData
+    BodyStyle.Font.FontDecoration = []
+    JavaScript.Strings = (
+      '// JavaScript'
+      ''
+      'function QueryClick()'
+      '{'
+      '  var q = document.getElementById("query");'
+      '  grid.Query = q.value;'
+      '  grid.FillGrid();'
+      '}'
+      ''
+      'function AddRowClick()'
+      '{'
+      '  grid.ExecuteSql('#39'INSERT INTO testtbl () VALUES ()'#39');'
+      '  //tpGrid1Grid.FillGrid();'
+      '}')
+    PHP.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/Page%%.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TPage%% extends TTpPage'
+      '{'
+      '  // Implementation'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$Page%% = new TPage%%($tpTemplateFile);'
+      '$Page%%->Run();'
+      ''
+      '?>')
+  end
+end

@@ -1,0 +1,90 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <html>
+    <head>
+      <style type="text/css">
+        td { vertical-align: top; }
+#DesignSurface_Row_1 { width:99%; height:24px; }
+#DesignSurface_Row_2 { width:99%; height:44px; }
+#DesignSurface_Row_2 { font:24px Arial; text-decoration:underline overline; }
+#htPanel1 { position: relative; width: 100%; height: 176px; }
+#htLabel1 { border: 1px dashed silver; position:absolute; left: 1px; top: 0px; width: 222px; height:44px; }
+#htLabel5 { border: 1px dashed silver; position:absolute; left: 439px; top: 79px; width: 124px; height:40px; }
+#htLabel5 { font:32px Trebuchet MS; color:#FFFFE1; background-color:#800000; }
+#htLabel6 { border: 1px dashed silver; position:absolute; left: 0px; top: 132px; width: 788px; height:44px; }
+#tpTooltip1 { border: 1px dashed silver; position:absolute; left: 675px; top: 9px; width: 86px; height:80px; }
+#DesignSurfaceColumns { height:272px; table-layout: fixed; }
+#DesignSurface_Cell_5 { width:68px; border: 1px dashed silver;  }
+#DesignSurface_Cell_6 { width:86px; border: 1px dashed silver;  }
+#DesignSurface_Cell_7 { width:76px; border: 1px dashed silver;  }
+#DesignSurface_Cell_8 { border: 1px dashed silver;  }
+#htImage2 { height: 272px }
+#DesignSurface_Cell_1 { width:86px; border: 1px dashed silver;  }
+      </style>
+      <script src="lib/jttl.js">
+      </script>
+      <script type="text/JavaScript">
+        var objTooltip;
+function InitTooltips()
+{
+  if (typeof(Tooltips) == "function")
+  {
+    objTooltip = new Tooltips();
+    objTooltip.registerElements(document.body);
+    objTooltip.activate();
+  }
+}
+      </script>
+    </head>
+    <body onload="InitTooltips()">
+      <div id="DesignSurface_Row_1">
+        <div hint="JS Tooltips!">
+        </div>
+      </div>
+      <div id="DesignSurface_Row_2">
+        <div hint="JS Tooltips!">
+          htLabel3
+        </div>
+      </div>
+      <div id="htPanel1">
+        <div id="htLabel1">
+          <div hint="JS Tooltips!">
+            htLabel1
+          </div>
+        </div>
+        <div id="htLabel5">
+          <div hint="JS Tooltips!">
+            htLabel5
+          </div>
+        </div>
+        <div id="htLabel6">
+          <div hint="JS Tooltips!">
+            htLabel6
+          </div>
+        </div>
+        <div id="tpTooltip1">
+        </div>
+      </div>
+      <table id="DesignSurfaceColumns" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td id="DesignSurface_Cell_5">
+            <img id="htImage1" src="file:///D:\Assets\IconExperience\business\48x48\shadow\calendar_preferences.png" alt="htImage1" />
+          </td>
+          <td id="DesignSurface_Cell_6">
+            <div hint="JS Tooltips!">
+              htLabel7
+            </div>
+          </td>
+          <td id="DesignSurface_Cell_7">
+          </td>
+          <td id="DesignSurface_Cell_8">
+            <img id="htImage2" src="file:///D:\Pictures\BlackWidow\www.andrewblake.com\members\1004-01.jpg" alt="htImage2" />
+          </td>
+          <td id="DesignSurface_Cell_1">
+            <div hint="JS Tooltips!">
+              htLabel8
+            </div>
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>

@@ -1,0 +1,147 @@
+object TurboDocumentHostForm: TTurboDocumentHostForm
+  Left = 330
+  Top = 114
+  Width = 529
+  Height = 470
+  Caption = 'TurboDocumentHostForm'
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Arial'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 14
+  object dxDockSite1: TdxDockSite
+    Left = 0
+    Top = 0
+    Width = 521
+    Height = 436
+    ManagerColor = False
+    ParentColor = True
+    Align = alClient
+    DockType = 0
+    OriginalWidth = 521
+    OriginalHeight = 436
+    object dxLayoutDockSite1: TdxLayoutDockSite
+      Left = 0
+      Top = 0
+      Width = 521
+      Height = 436
+      DockType = 1
+      OriginalWidth = 300
+      OriginalHeight = 200
+    end
+    object dxTabContainerDockSite2: TdxTabContainerDockSite
+      Left = 0
+      Top = 0
+      Width = 521
+      Height = 436
+      ActiveChildIndex = 0
+      AllowFloating = True
+      AutoHide = False
+      ShowCaption = False
+      DockType = 1
+      OriginalWidth = 185
+      OriginalHeight = 140
+      object DesignDock: TdxDockPanel
+        Left = 0
+        Top = 0
+        Width = 517
+        Height = 402
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ManagerColor = False
+        ManagerFont = False
+        ParentColor = True
+        AllowFloating = True
+        AutoHide = False
+        Caption = 'Design'
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 336
+        OriginalHeight = 140
+      end
+      object PhpDock: TdxDockPanel
+        Left = 0
+        Top = 0
+        Width = 517
+        Height = 402
+        AllowFloating = True
+        AutoHide = False
+        Caption = 'PHP'
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 336
+        OriginalHeight = 136
+      end
+      object JavaScriptDock: TdxDockPanel
+        Left = 0
+        Top = 0
+        Width = 517
+        Height = 402
+        AllowFloating = True
+        AutoHide = False
+        Caption = 'JavaScript'
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 336
+        OriginalHeight = 140
+      end
+      object PreviewDock: TdxDockPanel
+        Left = 0
+        Top = 0
+        Width = 517
+        Height = 402
+        AllowFloating = True
+        AutoHide = False
+        Caption = 'Preview'
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 336
+        OriginalHeight = 140
+      end
+      object DebugDock: TdxDockPanel
+        Left = 0
+        Top = 0
+        Width = 517
+        Height = 402
+        AllowFloating = True
+        AutoHide = False
+        Caption = 'Debug'
+        CaptionButtons = [cbMaximize]
+        DockType = 1
+        OriginalWidth = 185
+        OriginalHeight = 140
+      end
+    end
+  end
+  object dxDockingManager1: TdxDockingManager
+    Color = clBtnFace
+    DefaultHorizContainerSiteProperties.CaptionButtons = [cbMaximize]
+    DefaultHorizContainerSiteProperties.Dockable = True
+    DefaultHorizContainerSiteProperties.ImageIndex = -1
+    DefaultVertContainerSiteProperties.CaptionButtons = [cbMaximize]
+    DefaultVertContainerSiteProperties.Dockable = True
+    DefaultVertContainerSiteProperties.ImageIndex = -1
+    DefaultTabContainerSiteProperties.CaptionButtons = [cbMaximize]
+    DefaultTabContainerSiteProperties.Dockable = True
+    DefaultTabContainerSiteProperties.ImageIndex = -1
+    DefaultTabContainerSiteProperties.ShowCaption = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Options = [doActivateAfterDocking, doDblClickDocking, doFloatingOnTop, doTabContainerCanAutoHide, doSideContainerCanClose, doSideContainerCanAutoHide, doTabContainerCanInSideContainer, doSideContainerCanInTabContainer, doSideContainerCanInSideContainer, doUseCaptionAreaToClientDocking]
+    ViewStyle = vsXP
+    Left = 107
+    Top = 59
+  end
+end

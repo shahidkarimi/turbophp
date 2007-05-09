@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = LrCollectionD7.bpl LrCollectionInstallD7.bpl LrBarD7.bpl LrLibD7.bpl \
+  LrProjectTest.exe LrIDE.exe LrDesignerTest.exe LrDesignerFormTest.exe \
+  LrDesignerD7.bpl LrDesignerPackageTest.exe LrWorkshop.exe TurboHtml4.bpl \
+  TurboHtml5.bpl TurboPhp.exe TurboAjax.exe AjaxRender.exe EditTest.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+TurboPhp.exe: TurboPhp\bin\TurboPhp.dpr
+  $(DCC)
+
+TurboHtml5.bpl: TurboHtml\TurboHtml5.dpk
+  $(DCC)
+
+LrBarD7.bpl: ..\Components\LrBar\LrBarD7.dpk
+  $(DCC)
+
+LrDesignerD7.bpl: ..\Components\LrDesigner\LrDesignerD7.dpk
+  $(DCC)
+
+LrCollectionInstallD7.bpl: ..\Components\LrCollection\LrCollectionInstallD7.dpk
+  $(DCC)
+
+LrCollectionD7.bpl: ..\Components\LrCollection\LrCollectionD7.dpk
+  $(DCC)
+
+LrLibD7.bpl: ..\Components\LrLib\LrLibD7.dpk
+  $(DCC)
+
+TurboHtml4.bpl: ..\Turbo4\TurboHtml.4\D7\TurboHtml4.dpk
+  $(DCC)
+
+TurboAjax.exe: TurboAjax\bin\TurboAjax.dpr
+  $(DCC)
+
+LrIDE.exe: ..\Components\LrIDE\IdeTest\bin\LrIDE.dpr
+  $(DCC)
+
+LrProjectTest.exe: ..\Components\LrIDE\ProjectTest\LrProjectTest.dpr
+  $(DCC)
+
+LrWorkshop.exe: ..\Components\LrWorkshop\WorkshopTest\LrWorkshop.dpr
+  $(DCC)
+
+LrDesignerTest.exe: ..\Components\LrDesigner\NoPackageTest\LrDesignerTest.dpr
+  $(DCC)
+
+LrDesignerPackageTest.exe: ..\Components\LrDesigner\PackageTest\LrDesignerPackageTest.dpr
+  $(DCC)
+
+LrDesignerFormTest.exe: ..\Components\LrDesigner\NoPackageFormTest\LrDesignerFormTest.dpr
+  $(DCC)
+
+AjaxRender.exe: AjaxRender\Bin\AjaxRender.dpr
+  $(DCC)
+
+EditTest.exe: AjaxRender\Bin\EditTest.dpr
+  $(DCC)
+
+

@@ -1,0 +1,340 @@
+object DesignSurface: TDesignForm
+  Left = 12
+  Top = 12
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 818
+  ClientWidth = 807
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object htAjaxPanel1: ThtAjaxPanel
+    Left = 0
+    Top = 0
+    Width = 807
+    Height = 754
+    JavaScript = <
+      item
+        Name = 'onKeyDown'
+      end
+      item
+        Name = 'onKeyPress'
+      end
+      item
+        Name = 'onKeyUp'
+      end
+      item
+        Name = 'onMouseDown'
+      end
+      item
+        Name = 'onMouseUp'
+      end
+      item
+        Name = 'onMouseMove'
+      end
+      item
+        Name = 'onMouseOver'
+      end
+      item
+        Name = 'onMouseOut'
+      end
+      item
+        Name = 'onClick'
+      end
+      item
+        Name = 'onDblClick'
+      end
+      item
+        Name = 'onLoad'
+      end
+      item
+        Name = 'onAbort'
+      end
+      item
+        Name = 'onError'
+      end
+      item
+        Name = 'onMove'
+      end
+      item
+        Name = 'onResize'
+      end
+      item
+        Name = 'onScroll'
+      end
+      item
+        Name = 'onReset'
+      end
+      item
+        Name = 'onSubmit'
+      end
+      item
+        Name = 'onBlur'
+      end
+      item
+        Name = 'onChange'
+      end
+      item
+        Name = 'onFocus'
+      end
+      item
+        Name = 'onSelect'
+      end>
+    Align = alClient
+    Outline = False
+    Style.Border.BorderWidth = '1'
+    Style.Border.BorderStyle = bsSolidBorder
+    Style.Color = 52377
+    Style.Font.FontDecoration = []
+    Transparent = True
+    object htAjaxPanel2: ThtAjaxPanel
+      Left = 0
+      Top = 64
+      Width = 144
+      Height = 690
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alLeft
+      Outline = False
+      Style.Border.BorderWidth = '1'
+      Style.Border.BorderStyle = bsSolidBorder
+      Style.Color = clRed
+      Style.Font.FontDecoration = []
+      Transparent = True
+    end
+    object htAjaxPanel3: ThtAjaxPanel
+      Left = 0
+      Top = 0
+      Width = 807
+      Height = 64
+      JavaScript = <
+        item
+          Name = 'onKeyDown'
+        end
+        item
+          Name = 'onKeyPress'
+        end
+        item
+          Name = 'onKeyUp'
+        end
+        item
+          Name = 'onMouseDown'
+        end
+        item
+          Name = 'onMouseUp'
+        end
+        item
+          Name = 'onMouseMove'
+        end
+        item
+          Name = 'onMouseOver'
+        end
+        item
+          Name = 'onMouseOut'
+        end
+        item
+          Name = 'onClick'
+        end
+        item
+          Name = 'onDblClick'
+        end
+        item
+          Name = 'onLoad'
+        end
+        item
+          Name = 'onAbort'
+        end
+        item
+          Name = 'onError'
+        end
+        item
+          Name = 'onMove'
+        end
+        item
+          Name = 'onResize'
+        end
+        item
+          Name = 'onScroll'
+        end
+        item
+          Name = 'onReset'
+        end
+        item
+          Name = 'onSubmit'
+        end
+        item
+          Name = 'onBlur'
+        end
+        item
+          Name = 'onChange'
+        end
+        item
+          Name = 'onFocus'
+        end
+        item
+          Name = 'onSelect'
+        end>
+      Align = alTop
+      Outline = False
+      Style.Border.BorderWidth = '3'
+      Style.Border.BorderStyle = bsDotted
+      Style.Color = clFuchsia
+      Style.Font.FontDecoration = []
+      Transparent = True
+    end
+  end
+  object dojoDebug: ThtAjaxPanel
+    Left = 0
+    Top = 754
+    Width = 807
+    Height = 64
+    JavaScript = <
+      item
+        Name = 'onKeyDown'
+      end
+      item
+        Name = 'onKeyPress'
+      end
+      item
+        Name = 'onKeyUp'
+      end
+      item
+        Name = 'onMouseDown'
+      end
+      item
+        Name = 'onMouseUp'
+      end
+      item
+        Name = 'onMouseMove'
+      end
+      item
+        Name = 'onMouseOver'
+      end
+      item
+        Name = 'onMouseOut'
+      end
+      item
+        Name = 'onClick'
+      end
+      item
+        Name = 'onDblClick'
+      end
+      item
+        Name = 'onLoad'
+      end
+      item
+        Name = 'onAbort'
+      end
+      item
+        Name = 'onError'
+      end
+      item
+        Name = 'onMove'
+      end
+      item
+        Name = 'onResize'
+      end
+      item
+        Name = 'onScroll'
+      end
+      item
+        Name = 'onReset'
+      end
+      item
+        Name = 'onSubmit'
+      end
+      item
+        Name = 'onBlur'
+      end
+      item
+        Name = 'onChange'
+      end
+      item
+        Name = 'onFocus'
+      end
+      item
+        Name = 'onSelect'
+      end>
+    Align = alBottom
+    Outline = False
+    Style.Border.BorderWidth = '1'
+    Style.Border.BorderStyle = bsSolidBorder
+    Style.ExtraStyles = 'overflow: auto;'
+    Style.Font.FontDecoration = []
+    Transparent = True
+  end
+end
