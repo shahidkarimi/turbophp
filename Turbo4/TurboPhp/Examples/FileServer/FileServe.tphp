@@ -1,0 +1,450 @@
+object DesignForm_3_1: TDesignForm_3_1
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 768
+  ClientWidth = 380
+  Color = clWhite
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TpLabel1: TTpLabel
+    Left = 0
+    Top = 15
+    Width = 380
+    Height = 17
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    Caption = 'Download Notification'
+    DesignOpaque = False
+    FitStyleToText = False
+    Style.Color = clWhite
+    Style.Font.FontSizePx = 14
+    Style.Font.FontWeight = fwNormal
+  end
+  object ThSpacer1: TThSpacer
+    Left = 0
+    Top = 0
+    Width = 380
+    Height = 15
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+  end
+  object TpLabel2: TTpLabel
+    Left = 0
+    Top = 42
+    Width = 380
+    Height = 84
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    AutoSize = False
+    Caption = 
+      'Package {%PackageLabel} was sent on {%DateLabel} to user at {%IP' +
+      'Label}.'
+    DesignOpaque = False
+    FitStyleToText = False
+    Style.Font.FontSizePx = 11
+    WordWrap = True
+  end
+  object ThSpacer2: TThSpacer
+    Left = 0
+    Top = 32
+    Width = 380
+    Height = 10
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = PhpPage
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnInsertComponent = DCLiteDesignerInsertComponent
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object PhpPage: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    Width = 400
+    PageLayout = plFixedLeft
+    Style.Font.FontFamily = 'Verdana'
+    Style.Font.FontSizePx = 12
+    OnGenerate = 'PhpPageGenerate'
+    PreviewOnPublish = False
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/FileServe.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TFileServe extends TTpPage'
+      '{'
+      '  function PhpPageGenerate(&$inSender)'
+      '  {'
+      '    if (array_key_exists('#39'f'#39', $_REQUEST))'
+      '      $this->Package = TpCleanInput($_REQUEST['#39'f'#39']);'
+      '    else'
+      '      $this->Package = '#39#39';'
+      '    $inSender->Blocks['#39'PackageLabel'#39'] = "<b>$this->Package</b>";'
+      
+        '    $inSender->Blocks['#39'DateLabel'#39'] = '#39'<b>'#39'.date("F j, Y, g:i a")' +
+        '.'#39'</b>'#39';'
+      
+        '    $inSender->Blocks['#39'IPLabel'#39'] = '#39'<b>'#39'.$_SERVER['#39'REMOTE_ADDR'#39']' +
+        '.'#39'</b>'#39';'
+      '  }'
+      ''
+      '  function SendEmail(&$inMessage)'
+      '  {'
+      '    $addr = '#39'downloads@domain.com'#39';'
+      '    if ($this->Package <> '#39#39')'
+      '    {'
+      '      $recipient = $addr;'
+      '      $subject = "Download - $this->Package";'
+      '      $headers = "From: Download Manager <$addr>\n";'
+      
+        '      $headers .= "Return-Path: <$addr>\n";  // Return path for ' +
+        'errors'
+      '      //$headers .= "MIME-Version: 1.0\n";'
+      
+        '      $headers .= "Content-Type: text/html; charset=iso-8859-1\n' +
+        '"; // Mime type'
+      '      mail($recipient, $subject, $inMessage, $headers);'
+      '    }'
+      '  }'
+      ''
+      '  function SendFile($inPath)'
+      '  {'
+      '    $inPath .= $this->Package;'
+      '    if (is_file($inPath))'
+      '    {'
+      '      header("Location: $inPath");'
+      '      //    header("Content-type: application/octet-stream") ;'
+      
+        '      //    header("Content-disposition: inline; filename=$inPac' +
+        'kage") ;'
+      '      //    header("Content-length: ".filesize($inPath)) ;'
+      '      //    readfile($inPath);'
+      '    }'
+      '    else'
+      
+        '      echo '#39'<p>Package "'#39'.$this->Package.'#39'" cannot be found.</p>' +
+        #39';'
+      '  }'
+      ''
+      '  function Run()'
+      '  {'
+      '    $this->ParseTemplate();'
+      '    $this->SendEmail($this->Generate());'
+      '    $this->SendFile('#39'..\\images\\'#39');'
+      '  }'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$FileServe = new TFileServe($tpTemplateFile);'
+      '$FileServe->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+end

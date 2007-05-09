@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpFileList</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpFileList</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Collect information about items in a file system directory.</p>
+<p class="description"><p>Builds an array of records about entries in a given  file-system directory.</p><p>Set the <a href="../TurboPhpLib/TTpFileList.html#var$Folder">$Folder</a> field to the pathname to examine.</p><p>The list is automatically built when <a href="../TurboPhpLib/TTpSilentObj.html#methodGenerate">Generate</a> is called, or  the list can be built at any time by calling the <a href="../TurboPhpLib/TTpFileList.html#methodListFiles">ListFiles</a> method.</p><p>The <a href="../TurboPhpLib/TTpFileList.html#var$Files">$Files</a> field is an array of file names  (or complete paths if <a href="../TurboPhpLib/TTpFileList.html#var$FullPath">$FullPath</a> is true)  in the directory.</p><p>The <a href="../TurboPhpLib/TTpFileList.html#var$Infos">$Infos</a> field is an array of information records.  Both the $Files and $Infos arrays contain <a href="../TurboPhpLib/TTpFileList.html#var$Count">$Count</a> records.</p><p>The list can be sorted by calling the <a href="../TurboPhpLib/TTpFileList.html#methodSort">Sort</a> method and specifying  one of the info record field names (see <a href="../TurboPhpLib/TTpFileList.html#var$Infos">$Infos</a> documentation).</p></p>
+		<p class="notes">
+			Located in <a class="field" href="_TpLib_php.html">/TpLib.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1581">1581</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a>
+      |
+      --<a href="../TurboPhpLib/TTpListSource.html">TTpListSource</a>
+         |
+         --TTpFileList</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Count" title="details" class="var-name">$Count</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$File" title="details" class="var-name">$File</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$Files" title="details" class="var-name">$Files</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Folder" title="details" class="var-name">$Folder</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$FullPath" title="details" class="var-name">$FullPath</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$Info" title="details" class="var-name">$Info</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Infos" title="details" class="var-name">$Infos</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnFilter" title="details" class="var-name">$OnFilter</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetItems" title="details" class="method-name">GetItems</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$outItems</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ListFiles" title="details" class="method-name">ListFiles</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Sort" title="details" class="method-name">Sort</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$inField</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Count" id="$Count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Count</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1587">1587</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of files in the list.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$File" id="$File"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$File</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1592">1592</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Name of current file for use by the <a href="../TurboPhpLib/TTpFileList.html#var$OnFilter">OnFilter</a> event.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Files" id="$Files"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$Files</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1598">1598</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of file names  (or complete paths if <a href="../TurboPhpLib/TTpFileList.html#var$FullPath">$FullPath</a> is true)  in the directory.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Folder" id="$Folder"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Folder</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1622">1622</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Folder to enumerate.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$FullPath" id="$FullPath"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$FullPath</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1628">1628</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">If true, then the <a href="../TurboPhpLib/TTpFileList.html#var$Files">Files</a> array contains full pathnames instead of  just filenames.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Info" id="$Info"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$Info</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1604">1604</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Information about the current file.</p>
+<p class="description"><p>See <a href="../TurboPhpLib/TTpFileList.html#var$Infos">$Infos</a> for members.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Infos" id="$Infos"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Infos</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1617">1617</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array of information records.</p>
+<p class="description"><p>Each record is an array with the following fields: <ul><li><strong>name</strong> =&gt; name of the file</li><li><strong>size</strong> =&gt; size of the file in bytes</li><li><strong>time</strong> =&gt; modification date for the file</li><li><strong>dir</strong> =&gt; true if the file is a directory</li><li><strong>ext</strong> =&gt; file's extension</li></ul> E.g., the extension of the third entry in the directory is  accessible as:  <pre><ol><code><pre><li><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id"><a href="../TurboPhpLib/TTpFileList.html#var$Infos">Infos</a></span><span class="src-sym">[</span><span class="src-num">2</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'ext'</span><span class="src-sym">]</span></li>
+</pre></code></ol></pre></p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnFilter" id="$OnFilter"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnFilter</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1637">1637</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">List filter event.</p>
+<p class="description"><p>Called once for each item found while enumerating the  folder. The event handler can examine the <a href="../TurboPhpLib/TTpFileList.html#var$File">$File</a> property for the  name of the current file. If the current file should be filtered out of  the list, the handler sets $File to the empty string ('').</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Element">TTpObj::$Element</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Page">TTpObj::$Page</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$RawAttrs">TTpObj::$RawAttrs</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodGetItems" id="GetItems"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetItems</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1720">1720</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetItems
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$outItems</span>)
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpListSource.html#methodGetItems">TTpListSource::GetItems()</a></dt>
+					</dl>
+		
+	</div>
+<a name="methodListFiles" id="ListFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ListFiles</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1648">1648</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enumerate the files.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ListFiles
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodSort" id="Sort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Sort</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpLib.php.html#a1712">1712</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sort the item arrays by $inField.</p>
+<p class="description"><p>See <a href="../TurboPhpLib/TTpFileList.html#var$Infos">$Infos</a> for a list of  acceptable field values.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Sort
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$inField</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$inField</span>			</li>
+				</ul>
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpListSource.html">TTpListSource</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpListSource.html#methodGetItems">TTpListSource::GetItems()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpSilentObj.html#methodGenerate">TTpSilentObj::Generate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignAttributes">TTpObj::AssignAttributes()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssignTag">TTpObj::AssignTag()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDumpVar">TTpObj::DumpVar()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 16 Jan 2005 21:18:54 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

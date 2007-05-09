@@ -1,0 +1,508 @@
+object DesignForm_3_1: TDesignForm_3_1
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 768
+  ClientWidth = 580
+  Color = clWhite
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LogoutForm: TTpForm
+    Left = 0
+    Top = 0
+    Width = 580
+    Height = 768
+    DesignOnly = False
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alClient
+    DesignOpaque = False
+    Inputs = <>
+    Method = fmPost
+    Style.Color = clDefault
+    object TpButton1: TTpButton
+      Left = 2
+      Top = 68
+      Width = 58
+      Height = 25
+      DesignOnly = False
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onLoad'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Submit'
+    end
+    object TpPanel2: TTpPanel
+      Left = 0
+      Top = 0
+      Width = 580
+      Height = 40
+      DesignOnly = False
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onLoad'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alTop
+      DesignOpaque = False
+      Style.Color = 15925234
+      object LogoutButton: TTpButton
+        Left = 500
+        Top = 8
+        Width = 57
+        Height = 25
+        DesignOnly = False
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onLoad'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'Logout'
+        OnClick = 'LogoutButtonClick'
+      end
+      object UserLabel: TTpLabel
+        Left = 9
+        Top = 12
+        Width = 231
+        Height = 19
+        DesignOnly = False
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onLoad'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoSize = False
+        Caption = 'UserLabel'
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'UserLabelGenerate'
+      end
+    end
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = Page
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnInsertComponent = DCLiteDesignerInsertComponent
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object Page: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    PageLayout = plFixedLeft
+    Style.Font.FontFamily = 'Arial'
+    Style.Font.FontSizePx = 12
+    Debug = True
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/AuthPage.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TAuthPage extends TTpPage'
+      '{'
+      '  function UserLabelGenerate(&$inSender)'
+      '  {'
+      '    $inSender->Content = '#39'Welcome user '#39
+      
+        '      . '#39'"<i><b>'#39'. $this->TpDbAuthenticator1->Login . '#39'"</b></i>' +
+        #39';'
+      '  }'
+      ''
+      '  function LogoutButtonClick(&$inSender)'
+      '  {'
+      '    $this->TpDbAuthenticator1->Logout();'
+      '  }'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$AuthPage = new TAuthPage($tpTemplateFile);'
+      '$AuthPage->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+  object TpMySql1: TTpMySql
+    Debug = True
+    Database = 'turbophp'
+    DesignConnection.Connected = False
+    DesignConnection.ConnectionString = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Data Source=MySQL' +
+      ' - TurboPhp'
+    DesignConnection.LoginPrompt = False
+    Host = 'localhost'
+    Persistent = False
+    Left = 392
+    Top = 108
+  end
+  object TpDbAuthenticator1: TTpDbAuthenticator
+    FailureUrl = 'LoginPage.php'
+    Db = TpMySql1
+    Left = 392
+    Top = 168
+  end
+end

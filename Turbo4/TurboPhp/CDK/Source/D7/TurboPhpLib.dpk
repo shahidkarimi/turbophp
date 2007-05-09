@@ -1,0 +1,75 @@
+package TurboPhpLib;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TurboPhp CDK Lib D7'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  TurboHtml4,
+  dbrtl,
+  vclx,
+  vcldb,
+  adortl,
+  DCPdelphi7,
+  dcctd7rt,
+  TurboHtml4Db;
+
+contains
+  TpControls in '..\TpControls.pas',
+  TpWebVariable in '..\TpWebVariable.pas',
+  TpAnchor in '..\TpAnchor.pas',
+  TpButton in '..\TpButton.pas',
+  TpCheckBox in '..\TpCheckBox.pas',
+  TpColorProperty in '..\TpColorProperty.pas',
+  TpDb in '..\TpDb.pas',
+  TpDbEdit in '..\TpDbEdit.pas',
+  TpDbListSource in '..\TpDbListSource.pas',
+  TpDbText in '..\TpDbText.pas',
+  TpDbTextArea in '..\TpDbTextArea.pas',
+  TpForm in '..\TpForm.pas',
+  TpImage in '..\TpImage.pas',
+  TpImageButton in '..\TpImageButton.pas',
+  TpImageList in '..\TpImageList.pas',
+  TpInput in '..\TpInput.pas',
+  TpInterfaces in '..\TpInterfaces.pas',
+  TpLabel in '..\TpLabel.pas',
+  TpMySql in '..\TpMysql.pas',
+  TpPanel in '..\TpPanel.pas',
+  TpPersistComponent in '..\TpPersistComponent.pas',
+  TpSelect in '..\TpSelect.pas',
+  TpTable in '..\TpTable.pas',
+  TpTextArea in '..\TpTextArea.pas',
+  TpFileList in '..\TpFileList.pas',
+  TpRepeater in '..\TpRepeater.pas',
+  TpStrings in '..\TpStrings.pas',
+  TpGenericComponent in '..\TpGenericComponent.pas',
+  TpAuthenticator in '..\TpAuthenticator.pas',
+  TpPageControl in '..\TpPageControl.pas',
+  TpGenericControl in '..\TpGenericControl.pas',
+  TpODBC in '..\TpODBC.pas',
+  TpClassInfo in '..\TpClassInfo.pas',
+  TpDbConnectionStrings in '..\TpDbConnectionStrings.pas';
+
+end.

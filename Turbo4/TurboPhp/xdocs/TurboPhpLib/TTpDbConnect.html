@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpDbConnect</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpDbConnect</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generic database connection object.</p>
+		<p class="notes">
+			Located in <a class="field" href="_TpDb_php.html">/TpDb.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a31">31</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a>
+      |
+      --TTpDbConnect</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../TurboPhpLib/TTpMySql.html">TTpMySql</a></td>
+					<td>
+											MySql database connection.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$ConfigFile" title="details" class="var-name">$ConfigFile</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Connection" title="details" class="var-name">$Connection</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$ConnectManually" title="details" class="var-name">$ConnectManually</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Database" title="details" class="var-name">$Database</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Host" title="details" class="var-name">$Host</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$OnConnect" title="details" class="var-name">$OnConnect</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Password" title="details" class="var-name">$Password</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$Persistent" title="details" class="var-name">$Persistent</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$UserName" title="details" class="var-name">$UserName</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#AutoConnect" title="details" class="method-name">AutoConnect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Close" title="details" class="method-name">Close</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Connect" title="details" class="method-name">Connect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ConnectOrDie" title="details" class="method-name">ConnectOrDie</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inMessage</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Dump" title="details" class="method-name">Dump</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#SelectDatabase" title="details" class="method-name">SelectDatabase</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$ConfigFile" id="$ConfigFile"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$ConfigFile</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a42">42</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Path to configuration file.</p>
+<p class="description"><p>Database access data (server address, login, password) is stored  separately so: <ol><li>Configuration files can be stored off the browsable folder tree.</li><li>Database connections can be altered by replacing or editing the configuration file.</li><li>Source code can be shared without regard to database security details.</li></ol></p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Connection" id="$Connection"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Connection</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract connection object.</p>
+<p class="description"><p>Represents a database connection identifier or handle.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$ConnectManually" id="$ConnectManually"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$ConnectManually</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a57">57</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">True if connections will be initiated manually.</p>
+<p class="description"><p>By default database connections are automatically opened  after application object parsing. If $ConnectManually is  true, the connection will instead need to be opened by  an explicit call to the <a href="../TurboPhpLib/TTpDbConnect.html#methodConnect">Connect</a> function.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Database" id="$Database"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Database</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a62">62</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Name of the connected database.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Host" id="$Host"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Host</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a68">68</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Address of the database server.</p>
+<p class="description"><p>Normally loaded from configuration file.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$OnConnect" id="$OnConnect"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$OnConnect</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a74">74</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Event fired just before openeing the connection.</p>
+<p class="description"><p>Normally loaded from configuration file.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Password" id="$Password"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Password</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a80">80</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Password for database access.</p>
+<p class="description"><p>Normally loaded from configuration file.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$Persistent" id="$Persistent"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$Persistent</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a87">87</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specifies whether the connection to the database should be persistent.</p>
+<p class="description"><p>When the connection is opened, this property is checked to determine if  the connection should be opened in persistent mode.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$UserName" id="$UserName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$UserName</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a93">93</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">User name or login for database access.</p>
+<p class="description"><p>Normally loaded from configuration file.</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$App">TTpObj::$App</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$DebugFlag">TTpObj::$DebugFlag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Elt">TTpObj::$Elt</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodAutoConnect" id="AutoConnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">AutoConnect</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a181">181</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Open the database connection and select the databse.</p>
+<p class="description"><p>Called after application object parsing unless <a href="../TurboPhpLib/TTpDbConnect.html#var$ConnectManually">$ConnectManually</a>  is true.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			AutoConnect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodClose" id="Close"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Close</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a198">198</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Close the database server connection.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Close
+		</span>
+				()
+			</div>
+	
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../TurboPhpLib/TTpMySql.html#methodClose">TTpMySql::Close()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodConnect" id="Connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Connect</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a166">166</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Open the database server connection, if it's not already open.</p>
+<p class="description"><p>Before opening a database connection, the <a href="../TurboPhpLib/TTpDbConnect.html#var$OnConnect">OnConnect</a> event  is fired, and then an attempt is made to load the configuration file.  See also <a href="../TurboPhpLib/TTpDbConnect.html#var$ConfigFile">$ConfigFile</a> and <a href="../TurboPhpLib/TTpDbConnect.html#var$Persistent">$Persistent</a>.</p><p>Note: before access, a database should be selected on the  connection. See <a href="../TurboPhpLib/TTpDbConnect.html#var$Database">$Database</a> and <a href="../TurboPhpLib/TTpDbConnect.html#methodSelectDatabase">SelectDatabase</a>.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Connect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodConnectOrDie" id="ConnectOrDie"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ConnectOrDie</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a189">189</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the database server, halting the application on error.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ConnectOrDie
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inMessage</span> = <span class="var-default">''</span>])
+			</div>
+	
+		
+		
+	</div>
+<a name="methodDump" id="Dump"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Dump</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a202">202</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Dump
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></dt>
+						<dd>Dump object information to the standard output.</dd>
+					</dl>
+		
+	</div>
+<a name="methodSelectDatabase" id="SelectDatabase"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">SelectDatabase</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpDb.php.html#a146">146</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Select the database <a href="../TurboPhpLib/TTpDbConnect.html#var$Database">$Database</a>.</p>
+<p class="description"><p>Connection must be open to select a databse.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SelectDatabase
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpSilentObj.html#methodGenerate">TTpSilentObj::Generate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 12 Nov 2004 16:33:37 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,6737 @@
+object DesignForm_2_2: TDesignForm_2_2
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 708
+  ClientWidth = 740
+  Color = clWhite
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ThSpacer1: TThSpacer
+    Left = 0
+    Top = 63
+    Width = 740
+    Height = 1
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    ShowHash = False
+    Style.Color = 16757612
+  end
+  object ThSpacer2: TThSpacer
+    Left = 0
+    Top = 62
+    Width = 740
+    Height = 1
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    ShowHash = False
+    Style.Color = clBlack
+  end
+  object ThSpacer3: TThSpacer
+    Left = 0
+    Top = 37
+    Width = 740
+    Height = 1
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    ShowHash = False
+    Style.Color = 14803425
+  end
+  object ThSpacer4: TThSpacer
+    Left = 0
+    Top = 36
+    Width = 740
+    Height = 1
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    ShowHash = False
+    Style.Color = clBlack
+  end
+  object ThSpacer5: TThSpacer
+    Left = 0
+    Top = 307
+    Width = 740
+    Height = 5
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+  end
+  object ThSpacer6: TThSpacer
+    Left = 546
+    Top = 312
+    Width = 4
+    Height = 328
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alRight
+  end
+  object ThSpacer7: TThSpacer
+    Left = 0
+    Top = 640
+    Width = 740
+    Height = 4
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alBottom
+  end
+  object TpPanel1: TTpPanel
+    Left = 0
+    Top = 0
+    Width = 740
+    Height = 36
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = True
+    ShowOutline = False
+    object TpLabel1: TTpLabel
+      Left = 4
+      Top = 8
+      Width = 150
+      Height = 16
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Choose A Country/Region'
+      DesignOpaque = False
+      FitStyleToText = False
+      Style.Font.FontColor = clBlack
+      Style.Font.FontSizePx = 13
+    end
+    object TpImage1: TTpImage
+      Left = 625
+      Top = 8
+      Width = 21
+      Height = 17
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/primary.gif'
+      Picture.PicturePath = 'images\primary.gif'
+      UseAbsoluteUrl = False
+    end
+    object TpLabel2: TTpLabel
+      Left = 648
+      Top = 8
+      Width = 55
+      Height = 15
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Anchor.Href = '?'
+      Anchor.Target = '_blank'
+      Caption = 'About Bell'
+      DesignOpaque = False
+      FitStyleToText = False
+    end
+    object TpSelect1: TTpSelect
+      Left = 163
+      Top = 4
+      Width = 197
+      Height = 23
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      ItemIndex = 79
+      Items.Strings = (
+        'Anguilla'
+        'Antigua &amp; Barbuda'
+        'Argentina'
+        'Aruba'
+        'Asia Pacific'
+        'Australia'
+        'Austria'
+        'Bahamas'
+        'Barbados'
+        'Belgium'
+        'Belize'
+        'Bermuda'
+        'Bolivia'
+        'Brazil'
+        'British Virgin Islands'
+        'Canada'
+        'Cayman Islands'
+        'Chile'
+        'China'
+        'Colombia'
+        'Costa Rica'
+        'Czech Republic'
+        'Dell EMEA'
+        'Denmark'
+        'Dominica'
+        'Dominican Republic'
+        'Ecuador'
+        'El Salvador'
+        'EMEA Distribution Business'
+        'Finland'
+        'France'
+        'Germany'
+        'Greece'
+        'Grenada'
+        'Guatemala'
+        'Guyana'
+        'Haiti'
+        'Honduras'
+        'Hong Kong'
+        'Hungary'
+        'India'
+        'Ireland'
+        'Israel'
+        'Italy'
+        'Jamaica'
+        'Japan'
+        'Korea'
+        'Malaysia'
+        'Mexico'
+        'Netherlands'
+        'Netherlands Antilles/Cura&#231;&#227;o'
+        'New Zealand'
+        'Nicaragua'
+        'Norway'
+        'Panama'
+        'Paraguay'
+        'Peru'
+        'Poland'
+        'Portugal'
+        'Puerto Rico'
+        'Russia'
+        'Saudi Arabia'
+        'Singapore'
+        'Slovak Republic'
+        'South Africa'
+        'Spain'
+        'St. Kitts &amp; Nevis'
+        'St. Lucia'
+        'St. Vincent &amp; Grenadines'
+        'Suriname'
+        'Sweden'
+        'Switzerland'
+        'Taiwan'
+        'Thailand'
+        'Trinidad &amp; Tobago'
+        'Turkey'
+        'Turks &amp; Caicos Islands'
+        'United Arab Emirates'
+        'United Kingdom'
+        'United States'
+        'Uruguay'
+        'US Virgin Islands'
+        'Venezuela')
+    end
+  end
+  object TpPanel2: TTpPanel
+    Left = 0
+    Top = 64
+    Width = 740
+    Height = 64
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = False
+    ShowOutline = False
+    Style.Color = 13395456
+    object TpImage3: TTpImage
+      Left = 0
+      Top = 0
+      Width = 155
+      Height = 64
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alLeft
+      AutoAspect = False
+      Picture.PictureUrl = 'images/en.png'
+      Picture.PicturePath = 'images\en.png'
+      UseAbsoluteUrl = False
+      VAlign = vaMiddle
+    end
+    object TpImage4: TTpImage
+      Left = 155
+      Top = 0
+      Width = 35
+      Height = 64
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alLeft
+      AutoAspect = False
+      Picture.PictureUrl = 'images/usa.gif'
+      Picture.PicturePath = 'images\usa.gif'
+      UseAbsoluteUrl = False
+      VAlign = vaMiddle
+    end
+  end
+  object TpPanel3: TTpPanel
+    Left = 0
+    Top = 38
+    Width = 740
+    Height = 24
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = False
+    ShowOutline = False
+    Style.Color = 9211020
+    object TpLabel22: TTpLabel
+      Left = 464
+      Top = 4
+      Width = 250
+      Height = 16
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Buy Online or Call 1-800-WWW-BELL'
+      DesignOpaque = False
+      FitStyleToText = False
+      Style.Font.FontColor = clWhite
+      Style.Font.FontSizePx = 14
+      Style.Font.FontWeight = fwBold
+    end
+  end
+  object TpPanel4: TTpPanel
+    Left = 0
+    Top = 128
+    Width = 740
+    Height = 30
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = False
+    ShowOutline = False
+    Style.Background.Picture.PictureUrl = 'images/pn_shader.gif'
+    Style.Background.Picture.PicturePath = 'images\pn_shader.gif'
+  end
+  object TpPanel5: TTpPanel
+    Left = 0
+    Top = 158
+    Width = 740
+    Height = 149
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    DesignOpaque = True
+    object TpImage2: TTpImage
+      Left = 0
+      Top = 0
+      Width = 483
+      Height = 149
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end
+        item
+          FunctionName = 'TpImage2Load'
+          EventName = 'onLoad'
+        end
+        item
+          EventName = 'onBlork'
+        end>
+      Align = alLeft
+      AutoAspect = False
+      Picture.PictureUrl = 'images/img.jpg'
+      Picture.PicturePath = 'images\img.jpg'
+      UseAbsoluteUrl = False
+    end
+    object TpPanel6: TTpPanel
+      Left = 483
+      Top = 0
+      Width = 257
+      Height = 149
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alClient
+      DesignOpaque = False
+      object TpLabel31: TTpLabel
+        Left = 24
+        Top = 9
+        Width = 106
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'What'#39's New at Bell'
+        DesignOpaque = False
+        FitStyleToText = False
+        Style.Font.FontWeight = fwBold
+      end
+      object TpLabel32: TTpLabel
+        Left = 40
+        Top = 28
+        Width = 193
+        Height = 30
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Introducing Three New Bell Color Laser Printers'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage24: TTpImage
+        Left = 28
+        Top = 63
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel33: TTpLabel
+        Left = 40
+        Top = 63
+        Width = 189
+        Height = 30
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Bell Outlet: Delivers Huge Savings on Top Quality Systems'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage26: TTpImage
+        Left = 28
+        Top = 118
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel34: TTpLabel
+        Left = 40
+        Top = 98
+        Width = 195
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'New! Bell Bimension 3000 Desktop'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage28: TTpImage
+        Left = 28
+        Top = 28
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel35: TTpLabel
+        Left = 40
+        Top = 118
+        Width = 201
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Next-Generation PowerEdge Servers'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage29: TTpImage
+        Left = 28
+        Top = 97
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+    end
+  end
+  object TpPanel7: TTpPanel
+    Left = 0
+    Top = 312
+    Width = 546
+    Height = 328
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alClient
+    DesignOpaque = True
+    ShowOutline = False
+    object TpPanel10: TTpPanel
+      Left = 0
+      Top = 0
+      Width = 546
+      Height = 37
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alTop
+      DesignOpaque = False
+      Style.Border.BorderWidth = '1'
+      Style.Border.BorderColor = clBlack
+      Style.Border.BorderStyle = bsSolidBorder
+      Style.Color = 16750848
+      object TpImage5: TTpImage
+        Left = 11
+        Top = 11
+        Width = 232
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img.gif'
+        Picture.PicturePath = 'images\img.gif'
+        UseAbsoluteUrl = False
+      end
+    end
+    object TpPanel11: TTpPanel
+      Left = 344
+      Top = 37
+      Width = 202
+      Height = 291
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alClient
+      DesignOpaque = False
+      ShowOutline = False
+      Style.Border.Edges.BorderRight.BorderWidth = '1'
+      Style.Border.Edges.BorderRight.BorderColor = clBlack
+      Style.Border.Edges.BorderRight.BorderStyle = bsSolidBorder
+      object TpImage6: TTpImage
+        Left = 28
+        Top = 16
+        Width = 152
+        Height = 36
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img(5).gif'
+        Picture.PicturePath = 'images\img(5).gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel3: TTpLabel
+        Left = 28
+        Top = 52
+        Width = 140
+        Height = 45
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'Special purchase programs and contracts for organizations.'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage7: TTpImage
+        Left = 3
+        Top = 16
+        Width = 21
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/primary.gif'
+        Picture.PicturePath = 'images\primary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel4: TTpLabel
+        Left = 28
+        Top = 104
+        Width = 142
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'State & Local Government'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage8: TTpImage
+        Left = 16
+        Top = 104
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel9: TTpLabel
+        Left = 28
+        Top = 128
+        Width = 112
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Federal Government'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage16: TTpImage
+        Left = 16
+        Top = 128
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel10: TTpLabel
+        Left = 28
+        Top = 152
+        Width = 84
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'K-12 Education'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage17: TTpImage
+        Left = 16
+        Top = 152
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel11: TTpLabel
+        Left = 28
+        Top = 176
+        Width = 95
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Higher Education'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage18: TTpImage
+        Left = 16
+        Top = 176
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel12: TTpLabel
+        Left = 28
+        Top = 200
+        Width = 60
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Healthcare'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage19: TTpImage
+        Left = 16
+        Top = 200
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+    end
+    object TpPanel12: TTpPanel
+      Left = 0
+      Top = 37
+      Width = 168
+      Height = 291
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alLeft
+      DesignOpaque = False
+      ShowOutline = False
+      Style.Border.Edges.BorderLeft.BorderWidth = '0'
+      Style.Border.Edges.BorderLeft.BorderColor = 15592941
+      Style.Border.Edges.BorderLeft.BorderStyle = bsNone
+      Style.Border.Edges.BorderRight.BorderWidth = '1'
+      Style.Border.Edges.BorderRight.BorderColor = 15592941
+      Style.Border.Edges.BorderRight.BorderStyle = bsSolidBorder
+      object TpImage9: TTpImage
+        Left = 28
+        Top = 16
+        Width = 126
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img(2).gif'
+        Picture.PicturePath = 'images\img(2).gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel5: TTpLabel
+        Left = 28
+        Top = 36
+        Width = 140
+        Height = 45
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'Exciting products and services for you and your family.'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage10: TTpImage
+        Left = 3
+        Top = 16
+        Width = 21
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/primary.gif'
+        Picture.PicturePath = 'images\primary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel6: TTpLabel
+        Left = 28
+        Top = 92
+        Width = 116
+        Height = 15
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Home & Home Office'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpImage11: TTpImage
+        Left = 16
+        Top = 92
+        Width = 4
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/secondary.gif'
+        Picture.PicturePath = 'images\secondary.gif'
+        UseAbsoluteUrl = False
+      end
+    end
+    object TpPanel13: TTpPanel
+      Left = 168
+      Top = 37
+      Width = 176
+      Height = 291
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alLeft
+      DesignOpaque = False
+      ShowOutline = False
+      Style.Border.Edges.BorderLeft.BorderWidth = '0'
+      Style.Border.Edges.BorderLeft.BorderColor = 15592941
+      Style.Border.Edges.BorderLeft.BorderStyle = bsNone
+      Style.Border.Edges.BorderRight.BorderWidth = '1'
+      Style.Border.Edges.BorderRight.BorderColor = 15592941
+      Style.Border.Edges.BorderRight.BorderStyle = bsSolidBorder
+      object TpImage12: TTpImage
+        Left = 28
+        Top = 16
+        Width = 93
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img(3).gif'
+        Picture.PicturePath = 'images\img(3).gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel7: TTpLabel
+        Left = 28
+        Top = 36
+        Width = 140
+        Height = 45
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'Technology solutions for businesses from 1 to 200 employees.'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage13: TTpImage
+        Left = 3
+        Top = 16
+        Width = 21
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/primary.gif'
+        Picture.PicturePath = 'images\primary.gif'
+        UseAbsoluteUrl = False
+      end
+      object TpImage14: TTpImage
+        Left = 28
+        Top = 92
+        Width = 101
+        Height = 36
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img(4).gif'
+        Picture.PicturePath = 'images\img(4).gif'
+        UseAbsoluteUrl = False
+      end
+      object TpLabel8: TTpLabel
+        Left = 28
+        Top = 132
+        Width = 140
+        Height = 45
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Caption = 'Scalable enterprise solutions for businesses over 200 employees.'
+        DesignOpaque = False
+        FitStyleToText = False
+        WordWrap = True
+      end
+      object TpImage15: TTpImage
+        Left = 3
+        Top = 92
+        Width = 21
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/primary.gif'
+        Picture.PicturePath = 'images\primary.gif'
+        UseAbsoluteUrl = False
+      end
+    end
+  end
+  object TpPanel8: TTpPanel
+    Left = 0
+    Top = 644
+    Width = 740
+    Height = 64
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alBottom
+    DesignOpaque = False
+    Style.Border.Edges.BorderTop.BorderWidth = '1'
+    Style.Border.Edges.BorderTop.BorderColor = clSilver
+    Style.Border.Edges.BorderTop.BorderStyle = bsSolidBorder
+    Style.Border.Edges.BorderBottom.BorderWidth = '1'
+    Style.Border.Edges.BorderBottom.BorderColor = clSilver
+    Style.Border.Edges.BorderBottom.BorderStyle = bsSolidBorder
+    Style.Color = 15592941
+    object TpLabel15: TTpLabel
+      Left = 87
+      Top = 12
+      Width = 52
+      Height = 15
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Anchor.Href = '?'
+      Anchor.Target = '_blank'
+      Caption = 'Copyright'
+      DesignOpaque = False
+      FitStyleToText = False
+    end
+    object TpLabel17: TTpLabel
+      Left = 143
+      Top = 12
+      Width = 499
+      Height = 15
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 
+        '1999-2004 Bell Inc. For customers of the 50 United States and th' +
+        'e District of Columbia only.'
+      DesignOpaque = False
+      FitStyleToText = False
+    end
+    object TpPanel15: TTpPanel
+      Left = 107
+      Top = 30
+      Width = 515
+      Height = 24
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      DesignOpaque = False
+      object TpLabel19: TTpLabel
+        Left = 233
+        Top = 0
+        Width = 9
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Caption = ' | '
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'SeperatorGenerate'
+      end
+      object TpLabel20: TTpLabel
+        Left = 69
+        Top = 0
+        Width = 164
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Terms and Conditions of Sale'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel21: TTpLabel
+        Left = 458
+        Top = 0
+        Width = 47
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Site Map'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel23: TTpLabel
+        Left = 0
+        Top = 0
+        Width = 60
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Site Terms'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel24: TTpLabel
+        Left = 60
+        Top = 0
+        Width = 9
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Caption = ' | '
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'SeperatorGenerate'
+      end
+      object TpLabel25: TTpLabel
+        Left = 242
+        Top = 0
+        Width = 73
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Privacy Policy'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel26: TTpLabel
+        Left = 315
+        Top = 0
+        Width = 9
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Caption = ' | '
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'SeperatorGenerate'
+      end
+      object TpLabel27: TTpLabel
+        Left = 324
+        Top = 0
+        Width = 55
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'About Bell'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel28: TTpLabel
+        Left = 379
+        Top = 0
+        Width = 9
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Caption = ' | '
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'SeperatorGenerate'
+      end
+      object TpLabel29: TTpLabel
+        Left = 388
+        Top = 0
+        Width = 61
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Anchor.Href = '?'
+        Anchor.Target = '_blank'
+        Caption = 'Contact Us'
+        DesignOpaque = False
+        FitStyleToText = False
+      end
+      object TpLabel30: TTpLabel
+        Left = 449
+        Top = 0
+        Width = 9
+        Height = 24
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        Align = alLeft
+        Caption = ' | '
+        DesignOpaque = False
+        FitStyleToText = False
+        OnGenerate = 'SeperatorGenerate'
+      end
+    end
+  end
+  object TpPanel9: TTpPanel
+    Left = 550
+    Top = 312
+    Width = 190
+    Height = 328
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alRight
+    DesignOpaque = True
+    ShowOutline = False
+    Style.Border.Edges.BorderRight.BorderWidth = '1'
+    Style.Border.Edges.BorderRight.BorderColor = clBlack
+    Style.Border.Edges.BorderRight.BorderStyle = bsSolidBorder
+    object TpImage21: TTpImage
+      Left = 32
+      Top = 53
+      Width = 120
+      Height = 36
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/img(6).gif'
+      Picture.PicturePath = 'images\img(6).gif'
+      UseAbsoluteUrl = False
+    end
+    object TpLabel13: TTpLabel
+      Left = 32
+      Top = 89
+      Width = 140
+      Height = 30
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Solve problems by using Bell'#39's online tools.'
+      DesignOpaque = False
+      FitStyleToText = False
+      WordWrap = True
+    end
+    object TpImage22: TTpImage
+      Left = 7
+      Top = 53
+      Width = 21
+      Height = 17
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/primary.gif'
+      Picture.PicturePath = 'images\primary.gif'
+      UseAbsoluteUrl = False
+    end
+    object TpLabel14: TTpLabel
+      Left = 32
+      Top = 129
+      Width = 142
+      Height = 45
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Anchor.Href = '?'
+      Anchor.Target = '_blank'
+      Caption = 'Learn more about Microsoft'#174' Windows'#174'  XP Service Pack 2'
+      DesignOpaque = False
+      FitStyleToText = False
+      WordWrap = True
+    end
+    object TpImage23: TTpImage
+      Left = 20
+      Top = 129
+      Width = 4
+      Height = 17
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/secondary.gif'
+      Picture.PicturePath = 'images\secondary.gif'
+      UseAbsoluteUrl = False
+    end
+    object TpLabel16: TTpLabel
+      Left = 32
+      Top = 185
+      Width = 142
+      Height = 30
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Anchor.Href = '?'
+      Anchor.Target = '_blank'
+      Caption = 'Get the latest on Virus alerts'
+      DesignOpaque = False
+      FitStyleToText = False
+      WordWrap = True
+    end
+    object TpImage25: TTpImage
+      Left = 20
+      Top = 185
+      Width = 4
+      Height = 17
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/secondary.gif'
+      Picture.PicturePath = 'images\secondary.gif'
+      UseAbsoluteUrl = False
+    end
+    object TpLabel18: TTpLabel
+      Left = 32
+      Top = 225
+      Width = 136
+      Height = 15
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Anchor.Href = '?'
+      Anchor.Target = '_blank'
+      Caption = 'Resolve Spyware issues'
+      DesignOpaque = False
+      FitStyleToText = False
+    end
+    object TpImage27: TTpImage
+      Left = 20
+      Top = 225
+      Width = 4
+      Height = 17
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoAspect = False
+      Picture.PictureUrl = 'images/secondary.gif'
+      Picture.PicturePath = 'images\secondary.gif'
+      UseAbsoluteUrl = False
+    end
+    object TpPanel14: TTpPanel
+      Left = 0
+      Top = 0
+      Width = 189
+      Height = 37
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Align = alTop
+      DesignOpaque = False
+      Style.Border.BorderWidth = '1'
+      Style.Border.BorderColor = clBlack
+      Style.Border.BorderStyle = bsSolidBorder
+      Style.Color = 13395456
+      object TpImage20: TTpImage
+        Left = 11
+        Top = 11
+        Width = 74
+        Height = 17
+        JavaScript = <
+          item
+            EventName = 'onKeyDown'
+          end
+          item
+            EventName = 'onKeyPress'
+          end
+          item
+            EventName = 'onKeyUp'
+          end
+          item
+            EventName = 'onMouseDown'
+          end
+          item
+            EventName = 'onMouseUp'
+          end
+          item
+            EventName = 'onMouseMove'
+          end
+          item
+            EventName = 'onMouseOver'
+          end
+          item
+            EventName = 'onMouseOut'
+          end
+          item
+            EventName = 'onClick'
+          end
+          item
+            EventName = 'onDblClick'
+          end
+          item
+            EventName = 'onAbort'
+          end
+          item
+            EventName = 'onError'
+          end
+          item
+            EventName = 'onMove'
+          end
+          item
+            EventName = 'onResize'
+          end
+          item
+            EventName = 'onScroll'
+          end
+          item
+            EventName = 'onReset'
+          end
+          item
+            EventName = 'onSubmit'
+          end
+          item
+            EventName = 'onBlur'
+          end
+          item
+            EventName = 'onChange'
+          end
+          item
+            EventName = 'onFocus'
+          end
+          item
+            EventName = 'onSelect'
+          end>
+        AutoAspect = False
+        Picture.PictureUrl = 'images/img(1).gif'
+        Picture.PicturePath = 'images\img(1).gif'
+        UseAbsoluteUrl = False
+      end
+    end
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = Page
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnInsertComponent = DCLiteDesignerInsertComponent
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object Page: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    Height = 740
+    Width = 760
+    PageLayout = plFixedLeft
+    Style.Font.FontColor = clDefault
+    Style.Font.FontFamily = 'Arial'
+    Style.Font.FontSizePx = 12
+    StyleSheet = ThStyleSheet1
+    AnchorStyles.Link = 'Link'
+    AnchorStyles.Hover = 'Hover'
+    AnchorStyles.Visited = 'Link'
+    JsSource.Strings = (
+      'idx = -1;'
+      'srcs = new Array(3);'
+      'srcs[0] = "images/img2.jpg";'
+      'srcs[1] = "images/img3.jpg";'
+      'srcs[2] = "images/img.jpg";'
+      ''
+      'function TpImage2Load(inSender, inIndex)'
+      '{'
+      '  img = inSender;'
+      '  if (idx < 0)'
+      '    Recycle();'
+      '}'
+      ''
+      'function Recycle()'
+      '{'
+      '  // cycle every 3 seconds'
+      '  setTimeout( "Cycle()", 3000 );'
+      '}'
+      ''
+      'function Cycle()'
+      '{'
+      '  if (img.filters)'
+      '  {'
+      '    img.style.filter ='
+      
+        '      "blendTrans(duration=1.5) revealTrans(duration=1.0,transit' +
+        'ion=7)";'
+      '    img.filters(0).apply();'
+      '    img.filters(1).apply();'
+      '  }'
+      '  //'
+      '  idx = (idx + 1) % 3;'
+      '  img.src = srcs[idx];'
+      '  //'
+      '  if (img.filters)'
+      '  {'
+      '    img.filters(0).play();'
+      '    img.filters(1).play();'
+      '  }'
+      '  //'
+      '  Recycle();'
+      '}'
+      ''
+      '')
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/CompanyExample3.config.php");'
+      ''
+      '// Define page class'
+      ''
+      'class TCompanyExample3 extends TTpPage'
+      '{'
+      '  function SeperatorGenerate(&$inSender)'
+      '  {'
+      '    $inSender->Content = "&nbsp;|&nbsp;";'
+      '  }'
+      ''
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$CompanyExample3 = new TCompanyExample3($tpTemplateFile);'
+      '$CompanyExample3->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+  object ThStyleSheet1: TThStyleSheet
+    Styles = <
+      item
+        Name = 'Link'
+        Style.Font.FontColor = 16724736
+        Style.Font.FontDecoration = fdNone
+        Style.Font.FontSizePx = 12
+      end
+      item
+        Name = 'Hover'
+        Style.Font.FontColor = 16724736
+        Style.Font.FontDecoration = fdUnderline
+        Style.Font.FontSizePx = 12
+      end>
+    Left = 52
+    Top = 496
+  end
+end

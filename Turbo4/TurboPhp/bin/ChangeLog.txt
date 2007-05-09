@@ -1,0 +1,4 @@
+4.0.6 Beta
+
+- Added TThPanel.VAlign property
+- ToDo: design-time support for TThPanel.VALign

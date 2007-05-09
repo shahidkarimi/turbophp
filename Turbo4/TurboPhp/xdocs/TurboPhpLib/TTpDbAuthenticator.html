@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TTpDbAuthenticator</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TTpDbAuthenticator</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">User authentication via database.</p>
+		<p class="notes">
+			Located in <a class="field" href="_TpUserLib_php.html">/TpUserLib.php</a> (line <span class="field"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a279">279</a></span>)
+		</p>
+		
+				
+		<pre><a href="../TurboPhpLib/TTpObj.html">TTpObj</a>
+   |
+   --<a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a>
+      |
+      --<a href="../TurboPhpLib/TTpAuthenticator.html">TTpAuthenticator</a>
+         |
+         --TTpDbAuthenticator</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Db" title="details" class="var-name">$Db</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$LoginField" title="details" class="var-name">$LoginField</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$PasswordField" title="details" class="var-name">$PasswordField</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Query" title="details" class="var-name">$Query</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$UserIdField" title="details" class="var-name">$UserIdField</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$UsersTbl" title="details" class="var-name">$UsersTbl</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#AfterParse" title="details" class="method-name">AfterParse</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#CreateQueryObject" title="details" class="method-name">CreateQueryObject</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#CreateUserTable" title="details" class="method-name">CreateUserTable</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#DoCreateUser" title="details" class="method-name">DoCreateUser</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$inLogin</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">&$inPassword</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetCreateUserTableSQL" title="details" class="method-name">GetCreateUserTableSQL</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Init" title="details" class="method-name">Init</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#QueryUserByLogin" title="details" class="method-name">QueryUserByLogin</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inLogin</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#QueryUserByUserId" title="details" class="method-name">QueryUserByUserId</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Db" id="$Db"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Db</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a281">281</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$LoginField" id="$LoginField"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$LoginField</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a285">285</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$PasswordField" id="$PasswordField"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$PasswordField</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a286">286</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$Query" id="$Query"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Query</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a282">282</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$UserIdField" id="$UserIdField"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$UserIdField</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a284">284</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$UsersTbl" id="$UsersTbl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$UsersTbl</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a283">283</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpAuthenticator.html">TTpAuthenticator</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$Auto">TTpAuthenticator::$Auto</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$ErrorCode">TTpAuthenticator::$ErrorCode</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$FailureUrl">TTpAuthenticator::$FailureUrl</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$LoginInput">TTpAuthenticator::$LoginInput</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$LogoutUrl">TTpAuthenticator::$LogoutUrl</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">TTpAuthenticator::$Ok</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnError">TTpAuthenticator::$OnError</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnFailure">TTpAuthenticator::$OnFailure</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnLogout">TTpAuthenticator::$OnLogout</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnQueryFailure">TTpAuthenticator::$OnQueryFailure</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnSuccess">TTpAuthenticator::$OnSuccess</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">TTpAuthenticator::$Passcode</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$PasswordInput">TTpAuthenticator::$PasswordInput</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$SuccessUrl">TTpAuthenticator::$SuccessUrl</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">TTpAuthenticator::$UserId</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$App">TTpObj::$App</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Attributes">TTpObj::$Attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Content">TTpObj::$Content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$DebugFlag">TTpObj::$DebugFlag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Elt">TTpObj::$Elt</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Hidden">TTpObj::$Hidden</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Name">TTpObj::$Name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$OnGenerate">TTpObj::$OnGenerate</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../TurboPhpLib/TTpObj.html#var$Styles">TTpObj::$Styles</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodAfterParse" id="AfterParse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">AfterParse</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a307">307</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			AfterParse
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpAuthenticator.html#methodAfterParse">TTpAuthenticator::AfterParse()</a></dt>
+					</dl>
+		
+	</div>
+<a name="methodCreateQueryObject" id="CreateQueryObject"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateQueryObject</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a299">299</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			CreateQueryObject
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodCreateUserTable" id="CreateUserTable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateUserTable</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a346">346</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			CreateUserTable
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodDoCreateUser" id="DoCreateUser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">DoCreateUser</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a352">352</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			DoCreateUser
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$inLogin</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">&$inPassword</span>)
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpAuthenticator.html#methodDoCreateUser">TTpAuthenticator::DoCreateUser()</a></dt>
+					</dl>
+		
+	</div>
+<a name="methodGetCreateUserTableSQL" id="GetCreateUserTableSQL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetCreateUserTableSQL</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a328">328</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetCreateUserTableSQL
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodInit" id="Init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Init</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a290">290</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Init
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpAuthenticator.html#methodInit">TTpAuthenticator::Init()</a></dt>
+					</dl>
+		
+	</div>
+<a name="methodQueryUserByLogin" id="QueryUserByLogin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">QueryUserByLogin</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a365">365</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			QueryUserByLogin
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inLogin</span>)
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByLogin">TTpAuthenticator::QueryUserByLogin()</a></dt>
+					</dl>
+		
+	</div>
+<a name="methodQueryUserByUserId" id="QueryUserByUserId"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">QueryUserByUserId</span> (line <span class="line-number"><a href="..//__filesource/fsource_TurboPhpLib__TpUserLib.php.html#a316">316</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			QueryUserByUserId
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByUserId">TTpAuthenticator::QueryUserByUserId()</a></dt>
+					</dl>
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpAuthenticator.html">TTpAuthenticator</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodAfterParse">TTpAuthenticator::AfterParse()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthenticate">TTpAuthenticator::Authenticate()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthFailure">TTpAuthenticator::AuthFailure()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthSuccess">TTpAuthenticator::AuthSuccess()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodBeforeInput">TTpAuthenticator::BeforeInput()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodClear">TTpAuthenticator::Clear()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodCreateUser">TTpAuthenticator::CreateUser()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodDoCreateUser">TTpAuthenticator::DoCreateUser()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodError">TTpAuthenticator::Error()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetInputLoginValues">TTpAuthenticator::GetInputLoginValues()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetSessionToken">TTpAuthenticator::GetSessionToken()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodInit">TTpAuthenticator::Init()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodLogin">TTpAuthenticator::Login()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginFailure">TTpAuthenticator::LoginFailure()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginSuccess">TTpAuthenticator::LoginSuccess()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodLogout">TTpAuthenticator::Logout()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodNeedSession">TTpAuthenticator::NeedSession()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByLogin">TTpAuthenticator::QueryUserByLogin()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByUserId">TTpAuthenticator::QueryUserByUserId()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodStoreClientToken">TTpAuthenticator::StoreClientToken()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpAuthenticator.html#methodVerifyPassword">TTpAuthenticator::VerifyPassword()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpSilentObj.html#methodGenerate">TTpSilentObj::Generate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../TurboPhpLib/TTpObj.html">TTpObj</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodTTpObj">TTpObj::TTpObj()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodAssign">TTpObj::Assign()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDebug">TTpObj::Debug()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodDump">TTpObj::Dump()</a></span><br>
+													<span class="method-name"><a href="../TurboPhpLib/TTpObj.html#methodGetDefaultValue">TTpObj::GetDefaultValue()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 12 Nov 2004 16:34:16 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

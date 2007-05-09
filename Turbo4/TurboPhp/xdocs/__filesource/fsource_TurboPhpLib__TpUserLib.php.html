@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for TpUserLib.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file TpUserLib.php</h1>
+<p>Documentation is available at <a href="../TurboPhpLib/_TpUserLib_php.html">TpUserLib.php</a></p>
+<div class="src-code">
+<pre><ol><li><a name="a1"></a><span class="src-php">&lt;?php</span></li>
+<li><a name="a2"></a>&nbsp;</li>
+<li><a name="a3"></a><span class="src-doc">/**</span></li>
+<li><a name="a4"></a><span class="src-doc"> *  TurboPhp 4 - User Management Library</span></li>
+<li><a name="a5"></a><span class="src-doc"> *  Version 4.0.1 Beta</span></li>
+<li><a name="a6"></a><span class="src-doc"> *</span></li>
+<li><a name="a7"></a><span class="src-doc"> *  Copyright (c) 2004 Least-Resistance Software</span></li>
+<li><a name="a8"></a><span class="src-doc"> *</span></li>
+<li><a name="a9"></a><span class="src-doc"> *  This source file is subject to the terms of the TurboPhp license,</span></li>
+<li><a name="a10"></a><span class="src-doc"> *  that is bundled with this package in the file LICENSE.TXT, and is</span></li>
+<li><a name="a11"></a><span class="src-doc"> *  available at through the world-wide-web at</span></li>
+<li><a name="a12"></a><span class="src-doc"> *  http://www.turbophp.com/turbophp/license.txt</span></li>
+<li><a name="a13"></a><span class="src-doc"> *</span></li>
+<li><a name="a14"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@package</span><span class="src-doc"> TurboPhpLib</span></li>
+<li><a name="a15"></a><span class="src-doc"> */</span></li>
+<li><a name="a16"></a>&nbsp;</li>
+<li><a name="a17"></a><span class="src-doc-template">/**#@+</span></li>
+<li><a name="a18"></a><span class="src-doc-template"> * </span><span class="src-doc-coretag">@access</span><span class="src-doc-template"> private</span></li>
+<li><a name="a19"></a><span class="src-doc-template"> */</span></li>
+<li><a name="a20"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;USERS_TBL&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;UsersTbl&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a21"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;F_USERID&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;UserId&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a22"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;F_LOGIN&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Login&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a23"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;F_PASSWORD&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Password&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a24"></a>&nbsp;</li>
+<li><a name="a25"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;AUTH_TBL&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;AuthTbl&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a26"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;F_TOKEN&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Token&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a27"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;F_TIME&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Time&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a28"></a>&nbsp;</li>
+<li><a name="a29"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;S_AUTH_TOKEN&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Auth&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a30"></a>&nbsp;</li>
+<li><a name="a31"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;E_BAD_LOGIN&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Bad login&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a32"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;E_BAD_PASSWORD&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Bad password&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a33"></a><a href="http://www.php.net/define">define</a><span class="src-sym">(</span><span class="src-str">&quot;E_ALREADY_LOGGEDIN&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;User already logged in&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a37"></a><span class="src-doc-close-template">/**#@-*/</span><span class="src-comm"> * Create an SQL insert command.</span></li>
+<li><a name="a38"></a><span class="src-comm"> * Converts a table name and an array of name-value pairs</span></li>
+<li><a name="a39"></a><span class="src-comm"> * into an SQL insert statment.</span></li>
+<li><a name="a40"></a><span class="src-comm"> * @param $inTable string Table name for the query.</span></li>
+<li><a name="a41"></a><span class="src-comm"> * @param $inData array Data to insert, array of (fieldname =&gt; value) records.</span></li>
+<li><a name="a42"></a><span class="src-comm"> * @return string SQL insert command.</span></li>
+<li><a name="a43"></a><span class="src-comm"> */</span></li>
+<li><a name="a44"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpUserLib_php.html#functiontpGetInsertSql">tpGetInsertSql</a><span class="src-sym">(</span><span class="src-var">$inTable</span><span class="src-sym">, </span><span class="src-var">$inData</span><span class="src-sym">)</span></li>
+<li><a name="a45"></a><span class="src-sym">{</span></li>
+<li><a name="a46"></a>  <span class="src-var">$p </span>= <a href="http://www.php.net/implode">implode</a><span class="src-sym">(</span><span class="src-str">&quot;,&quot;</span><span class="src-sym">, </span><a href="http://www.php.net/array_keys">array_keys</a><span class="src-sym">(</span><span class="src-var">$inData</span><span class="src-sym">))</span><span class="src-sym">;</span></li>
+<li><a name="a47"></a>  <span class="src-var">$v </span>= <span class="src-str">&quot;'&quot; </span>. <a href="http://www.php.net/implode">implode</a><span class="src-sym">(</span><span class="src-str">&quot;','&quot;</span><span class="src-sym">, </span><a href="http://www.php.net/array_values">array_values</a><span class="src-sym">(</span><span class="src-var">$inData</span><span class="src-sym">)) </span>. <span class="src-str">&quot;'&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a48"></a>  <span class="src-key">return </span><a href="http://www.php.net/sprintf">sprintf</a><span class="src-sym">(</span><span class="src-str">&quot;INSERT INTO %s (%s) VALUES (%s)&quot;</span><span class="src-sym">, </span><span class="src-var">$inTable</span><span class="src-sym">, </span><span class="src-var">$p</span><span class="src-sym">, </span><span class="src-var">$v</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a49"></a><span class="src-sym">}</span></li>
+<li><a name="a50"></a>&nbsp;</li>
+<li><a name="a51"></a><span class="src-doc">/**</span></li>
+<li><a name="a52"></a><span class="src-doc"> * Destroy the PHP session.</span></li>
+<li><a name="a53"></a><span class="src-doc"> * 1. Erases the session cookie.</span></li>
+<li><a name="a54"></a><span class="src-doc"> * 2. Unsets the $_SESSION array.</span></li>
+<li><a name="a55"></a><span class="src-doc"> * 3. Invokes session_destroy().</span></li>
+<li><a name="a56"></a><span class="src-doc"> */</span></li>
+<li><a name="a57"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpUserLib_php.html#functiontpUnsession">tpUnsession</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a58"></a><span class="src-sym">{</span></li>
+<li><a name="a59"></a>  <span class="src-comm">// Destroy the session cookie</span></li>
+<li><a name="a60"></a>  <a href="http://www.php.net/setcookie">setcookie</a><span class="src-sym">(</span><a href="http://www.php.net/session_name">session_name</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">, </span><span class="src-str">''</span><span class="src-sym">, </span><span class="src-num">0</span><span class="src-sym">, </span><span class="src-str">'/'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a61"></a>  <span class="src-comm">// Unset all of the session variables.</span></li>
+<li><a name="a62"></a>  <span class="src-var">$_SESSION </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a63"></a>  <span class="src-comm">// Finally, destroy the session.</span></li>
+<li><a name="a64"></a>  <a href="http://www.php.net/session_destroy">session_destroy</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a65"></a>  <span class="src-comm">//session_regenerate_id();</span></li>
+<li><a name="a66"></a><span class="src-sym">}</span></li>
+<li><a name="a67"></a>&nbsp;</li>
+<li><a name="a68"></a><span class="src-doc">/**</span></li>
+<li><a name="a69"></a><span class="src-doc"> * User authentication object.</span></li>
+<li><a name="a70"></a><span class="src-doc"> */</span></li>
+<li><a name="a71"></a><span class="src-key">class </span><a href="../TurboPhpLib/TTpAuthenticator.html">TTpAuthenticator</a> <span class="src-key">extends </span><a href="../TurboPhpLib/TTpSilentObj.html">TTpSilentObj</a></li>
+<li><a name="a72"></a><span class="src-sym">{</span></li>
+<li><a name="a73"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Auto">$Auto</a><span class="src-sym">;</span></li>
+<li><a name="a74"></a>  <span class="src-comm">//</span></li>
+<li><a name="a74"></a>  </li>
+<li><a name="a75"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LoginInput">$LoginInput</a><span class="src-sym">;</span></li>
+<li><a name="a76"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$PasswordInput">$PasswordInput</a><span class="src-sym">;</span></li>
+<li><a name="a77"></a>  <span class="src-comm">//</span></li>
+<li><a name="a77"></a>  </li>
+<li><a name="a78"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnError">$OnError</a><span class="src-sym">;</span></li>
+<li><a name="a79"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnFailure">$OnFailure</a><span class="src-sym">;</span></li>
+<li><a name="a80"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnSuccess">$OnSuccess</a><span class="src-sym">;</span></li>
+<li><a name="a81"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnLogout">$OnLogout</a><span class="src-sym">;</span></li>
+<li><a name="a82"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnQueryFailure">$OnQueryFailure</a><span class="src-sym">;</span></li>
+<li><a name="a83"></a>  <span class="src-comm">//</span></li>
+<li><a name="a83"></a>  </li>
+<li><a name="a84"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$SuccessUrl">$SuccessUrl</a><span class="src-sym">;</span></li>
+<li><a name="a85"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$FailureUrl">$FailureUrl</a><span class="src-sym">;</span></li>
+<li><a name="a86"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LogoutUrl">$LogoutUrl</a><span class="src-sym">;</span></li>
+<li><a name="a87"></a>  <span class="src-comm">//</span></li>
+<li><a name="a87"></a>  </li>
+<li><a name="a88"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">$Ok</a><span class="src-sym">;</span></li>
+<li><a name="a89"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$ErrorCode">$ErrorCode</a><span class="src-sym">;</span></li>
+<li><a name="a90"></a>  <span class="src-comm">//</span></li>
+<li><a name="a90"></a>  </li>
+<li><a name="a91"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">$UserId</a><span class="src-sym">;</span></li>
+<li><a name="a92"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">$Passcode</a><span class="src-sym">;</span></li>
+<li><a name="a93"></a>&nbsp;</li>
+<li><a name="a94"></a>  <span class="src-comm">// Authentication Functions</span></li>
+<li><a name="a95"></a>&nbsp;</li>
+<li><a name="a94"></a>  </li>
+<li><a name="a95"></a>&nbsp;</li>
+<li><a name="a96"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodInit">Init</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a97"></a>  <span class="src-sym">{</span></li>
+<li><a name="a98"></a>    <span class="src-id">parent</span><span class="src-sym">::</span><span class="src-id">Init</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a99"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$DebugFlag">DebugFlag</a> = <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a100"></a>  <span class="src-sym">}</span></li>
+<li><a name="a101"></a>&nbsp;</li>
+<li><a name="a102"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAfterParse">AfterParse</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a103"></a>  <span class="src-sym">{</span></li>
+<li><a name="a104"></a>    <span class="src-id">parent</span><span class="src-sym">::</span><span class="src-id">AfterParse</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a105"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">MarshallObject</span><span class="src-sym">(</span><span class="src-str">'LoginInput'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a106"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">MarshallObject</span><span class="src-sym">(</span><span class="src-str">'PasswordInput'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a107"></a>  <span class="src-sym">}</span></li>
+<li><a name="a108"></a>&nbsp;</li>
+<li><a name="a109"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodBeforeInput">BeforeInput</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a110"></a>  <span class="src-sym">{</span></li>
+<li><a name="a111"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Auto">Auto</a><span class="src-sym">)</span></li>
+<li><a name="a112"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthenticate">Authenticate</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a113"></a>  <span class="src-sym">}</span></li>
+<li><a name="a114"></a>&nbsp;</li>
+<li><a name="a115"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodNeedSession">NeedSession</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a116"></a>  <span class="src-sym">{</span></li>
+<li><a name="a117"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span>isset<span class="src-sym">(</span><span class="src-var">$_SESSION</span><span class="src-sym">))</span></li>
+<li><a name="a118"></a>      <a href="http://www.php.net/session_start">session_start</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a119"></a>  <span class="src-sym">}</span></li>
+<li><a name="a120"></a>&nbsp;</li>
+<li><a name="a121"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodClear">Clear</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a122"></a>  <span class="src-sym">{</span></li>
+<li><a name="a123"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a124"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a> = <span class="src-str">''</span><span class="src-sym">;</span></li>
+<li><a name="a125"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a> = <span class="src-str">''</span><span class="src-sym">;</span></li>
+<li><a name="a126"></a>    <span class="src-key">if </span><span class="src-sym">(</span>isset<span class="src-sym">(</span><span class="src-var">$_SESSION</span><span class="src-sym">))</span></li>
+<li><a name="a127"></a>      unset<span class="src-sym">(</span><span class="src-var">$_SESSION</span><span class="src-sym">[</span><span class="src-id">S_AUTH_TOKEN</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a128"></a>  <span class="src-sym">}</span></li>
+<li><a name="a129"></a>&nbsp;</li>
+<li><a name="a130"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodError">Error</a><span class="src-sym">(</span><span class="src-var">$inErrorCode</span><span class="src-sym">)</span></li>
+<li><a name="a131"></a>  <span class="src-sym">{</span></li>
+<li><a name="a132"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$ErrorCode">ErrorCode</a> = <span class="src-var">$inErrorCode</span><span class="src-sym">;</span></li>
+<li><a name="a133"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnError">OnError</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a134"></a>  <span class="src-sym">}</span></li>
+<li><a name="a135"></a>&nbsp;</li>
+<li><a name="a136"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetSessionToken">GetSessionToken</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a137"></a>  <span class="src-sym">{</span></li>
+<li><a name="a138"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodNeedSession">NeedSession</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a139"></a>    <span class="src-key">return </span><a href="../TurboPhpLib/_TpLib_php.html#functionTpSafeArrayGet">TpSafeArrayGet</a><span class="src-sym">(</span><span class="src-id">S_AUTH_TOKEN</span><span class="src-sym">, </span><span class="src-var">$_SESSION</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a140"></a>  <span class="src-sym">}</span></li>
+<li><a name="a141"></a>&nbsp;</li>
+<li><a name="a142"></a>  <span class="src-doc">/**</span></li>
+<li><a name="a143"></a><span class="src-doc">   * </span><span class="src-doc-coretag">@abstract</span></li>
+<li><a name="a144"></a><span class="src-doc">   */</span></li>
+<li><a name="a145"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByUserId">QueryUserByUserId</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a146"></a>  <span class="src-sym">{</span></li>
+<li><a name="a147"></a>    <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a148"></a>  <span class="src-sym">}</span></li>
+<li><a name="a149"></a>&nbsp;</li>
+<li><a name="a150"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthenticate">Authenticate</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a151"></a>  <span class="src-sym">{</span></li>
+<li><a name="a152"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a153"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a> = <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetSessionToken">GetSessionToken</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a154"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByUserId">QueryUserByUserId</a><span class="src-sym">(</span><span class="src-sym">))</span></li>
+<li><a name="a155"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthSuccess">AuthSuccess</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a156"></a>    <span class="src-key">else</span></li>
+<li><a name="a157"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthFailure">AuthFailure</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a158"></a>    <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a><span class="src-sym">;</span></li>
+<li><a name="a159"></a>  <span class="src-sym">}</span></li>
+<li><a name="a160"></a>&nbsp;</li>
+<li><a name="a161"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthFailure">AuthFailure</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a162"></a>  <span class="src-sym">{</span></li>
+<li><a name="a163"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodClear">Clear</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a164"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnFailure">OnFailure</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a165"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$FailureUrl">FailureUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a166"></a>  <span class="src-sym">}</span></li>
+<li><a name="a167"></a>&nbsp;</li>
+<li><a name="a168"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAuthSuccess">AuthSuccess</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a169"></a>  <span class="src-sym">{</span></li>
+<li><a name="a170"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a171"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnSuccess">OnSuccess</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a172"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$SuccessUrl">SuccessUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a173"></a>  <span class="src-sym">}</span></li>
+<li><a name="a174"></a>&nbsp;</li>
+<li><a name="a175"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLogout">Logout</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a176"></a>  <span class="src-sym">{</span></li>
+<li><a name="a177"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodClear">Clear</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a178"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnLogout">OnLogout</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a179"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LogoutUrl">LogoutUrl</a> &lt;&gt; <span class="src-str">''</span><span class="src-sym">)</span></li>
+<li><a name="a180"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LogoutUrl">LogoutUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a181"></a>    <span class="src-key">else</span></li>
+<li><a name="a182"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$FailureUrl">FailureUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a183"></a>  <span class="src-sym">}</span></li>
+<li><a name="a184"></a>&nbsp;</li>
+<li><a name="a185"></a>  <span class="src-comm">// Login Functions</span></li>
+<li><a name="a186"></a>&nbsp;</li>
+<li><a name="a185"></a>  </li>
+<li><a name="a186"></a>&nbsp;</li>
+<li><a name="a187"></a>  <span class="src-doc">/**</span></li>
+<li><a name="a188"></a><span class="src-doc">   * </span><span class="src-doc-coretag">@abstract</span></li>
+<li><a name="a189"></a><span class="src-doc">   */</span></li>
+<li><a name="a190"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodDoCreateUser">DoCreateUser</a><span class="src-sym">(</span><span class="src-sym">&amp;</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-sym">&amp;</span><span class="src-var">$inPassword</span><span class="src-sym">)</span></li>
+<li><a name="a191"></a>  <span class="src-sym">{</span></li>
+<li><a name="a192"></a>    <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a193"></a>  <span class="src-sym">}</span></li>
+<li><a name="a194"></a>&nbsp;</li>
+<li><a name="a195"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetInputLoginValues">GetInputLoginValues</a><span class="src-sym">(</span><span class="src-sym">&amp;</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-sym">&amp;</span><span class="src-var">$inPassword</span><span class="src-sym">)</span></li>
+<li><a name="a196"></a>  <span class="src-sym">{</span></li>
+<li><a name="a197"></a>    <span class="src-key">if </span><span class="src-sym">((</span><span class="src-var">$inLogin </span>== <span class="src-str">''</span><span class="src-sym">) </span>&amp;&amp; <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LoginInput">LoginInput</a><span class="src-sym">)</span></li>
+<li><a name="a198"></a>      <span class="src-var">$inLogin </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$LoginInput">LoginInput</a><span class="src-sym">-&gt;</span><span class="src-id">Value</span><span class="src-sym">;</span></li>
+<li><a name="a199"></a>    <span class="src-comm">//</span></li>
+<li><a name="a200"></a>    <span class="src-key">if </span><span class="src-sym">((</span><span class="src-var">$inPassword </span>== <span class="src-str">''</span><span class="src-sym">) </span>&amp;&amp; <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$PasswordInput">PasswordInput</a><span class="src-sym">)</span></li>
+<li><a name="a201"></a>      <span class="src-var">$inPassword </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$PasswordInput">PasswordInput</a><span class="src-sym">-&gt;</span><span class="src-id">Value</span><span class="src-sym">;</span></li>
+<li><a name="a202"></a>  <span class="src-sym">}</span></li>
+<li><a name="a203"></a>&nbsp;</li>
+<li><a name="a204"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodCreateUser">CreateUser</a><span class="src-sym">(</span><span class="src-var">$inLogin </span>= <span class="src-str">''</span><span class="src-sym">, </span><span class="src-var">$inPassword </span>= <span class="src-str">''</span><span class="src-sym">)</span></li>
+<li><a name="a205"></a>  <span class="src-sym">{</span></li>
+<li><a name="a206"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetInputLoginValues">GetInputLoginValues</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-var">$inPassword</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a207"></a>    <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodDoCreateUser">DoCreateUser</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-var">$inPassword</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a208"></a>  <span class="src-sym">}</span></li>
+<li><a name="a209"></a>&nbsp;</li>
+<li><a name="a210"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodVerifyPassword">VerifyPassword</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">)</span></li>
+<li><a name="a211"></a>  <span class="src-sym">{</span></li>
+<li><a name="a212"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#methodDebug">Debug</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a213"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#methodDebug">Debug</a><span class="src-sym">(</span><a href="http://www.php.net/crypt">crypt</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a><span class="src-sym">))</span><span class="src-sym">;</span></li>
+<li><a name="a214"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#methodDebug">Debug</a><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a215"></a>    <span class="src-key">return </span><span class="src-sym">(</span><a href="http://www.php.net/crypt">crypt</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a><span class="src-sym">) </span>== <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a216"></a>  <span class="src-sym">}</span></li>
+<li><a name="a217"></a>&nbsp;</li>
+<li><a name="a218"></a>  <span class="src-doc">/**</span></li>
+<li><a name="a219"></a><span class="src-doc">   * </span><span class="src-doc-coretag">@abstract</span></li>
+<li><a name="a220"></a><span class="src-doc">   */</span></li>
+<li><a name="a221"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByLogin">QueryUserByLogin</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">)</span></li>
+<li><a name="a222"></a>  <span class="src-sym">{</span></li>
+<li><a name="a223"></a>    <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a224"></a>  <span class="src-sym">}</span></li>
+<li><a name="a225"></a>&nbsp;</li>
+<li><a name="a226"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodStoreClientToken">StoreClientToken</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a227"></a>  <span class="src-sym">{</span></li>
+<li><a name="a228"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodNeedSession">NeedSession</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a229"></a>    <span class="src-var">$_SESSION</span><span class="src-sym">[</span><span class="src-id">S_AUTH_TOKEN</span><span class="src-sym">] </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a><span class="src-sym">;</span></li>
+<li><a name="a230"></a>  <span class="src-sym">}</span></li>
+<li><a name="a231"></a>&nbsp;</li>
+<li><a name="a232"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLogin">Login</a><span class="src-sym">(</span><span class="src-var">$inLogin </span>= <span class="src-str">''</span><span class="src-sym">, </span><span class="src-var">$inPassword </span>= <span class="src-str">''</span><span class="src-sym">)</span></li>
+<li><a name="a233"></a>  <span class="src-sym">{</span></li>
+<li><a name="a234"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodClear">Clear</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a235"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodGetInputLoginValues">GetInputLoginValues</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-var">$inPassword</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a236"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodQueryUserByLogin">QueryUserByLogin</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">))</span></li>
+<li><a name="a237"></a>    <span class="src-sym">{</span></li>
+<li><a name="a238"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#methodDebug">Debug</a><span class="src-sym">(</span><span class="src-str">'Bad login.'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a239"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodError">Error</a><span class="src-sym">(</span><span class="src-id">E_BAD_LOGIN</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a240"></a>    <span class="src-sym">}</span></li>
+<li><a name="a241"></a>    <span class="src-key">else</span></li>
+<li><a name="a242"></a>    <span class="src-sym">{</span></li>
+<li><a name="a243"></a>      <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodVerifyPassword">VerifyPassword</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">))</span></li>
+<li><a name="a244"></a>      <span class="src-sym">{</span></li>
+<li><a name="a245"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#methodDebug">Debug</a><span class="src-sym">(</span><span class="src-str">'Bad Password.'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a246"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodError">Error</a><span class="src-sym">(</span><span class="src-id">E_BAD_PASSWORD</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a247"></a>      <span class="src-sym">}</span></li>
+<li><a name="a248"></a>      <span class="src-key">else</span></li>
+<li><a name="a249"></a>      <span class="src-sym">{</span></li>
+<li><a name="a250"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodStoreClientToken">StoreClientToken</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a251"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a252"></a>      <span class="src-sym">}</span></li>
+<li><a name="a253"></a>    <span class="src-sym">}</span></li>
+<li><a name="a254"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a><span class="src-sym">)</span></li>
+<li><a name="a255"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginSuccess">LoginSuccess</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a256"></a>    <span class="src-key">else</span></li>
+<li><a name="a257"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginFailure">LoginFailure</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a258"></a>    <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a><span class="src-sym">;</span></li>
+<li><a name="a259"></a>  <span class="src-sym">}</span></li>
+<li><a name="a260"></a>&nbsp;</li>
+<li><a name="a261"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginFailure">LoginFailure</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a262"></a>  <span class="src-sym">{</span></li>
+<li><a name="a263"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a264"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnFailure">OnFailure</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a265"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$FailureUrl">FailureUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a266"></a>  <span class="src-sym">}</span></li>
+<li><a name="a267"></a>&nbsp;</li>
+<li><a name="a268"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpAuthenticator.html#methodLoginSuccess">LoginSuccess</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a269"></a>  <span class="src-sym">{</span></li>
+<li><a name="a270"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Ok">Ok</a> = <span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a271"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">DoEvent</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnSuccess">OnSuccess</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a272"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$App">App</a><span class="src-sym">-&gt;</span><span class="src-id">Redirect</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$SuccessUrl">SuccessUrl</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a273"></a>  <span class="src-sym">}</span></li>
+<li><a name="a274"></a><span class="src-sym">}</span></li>
+<li><a name="a275"></a>&nbsp;</li>
+<li><a name="a276"></a><span class="src-doc">/**</span></li>
+<li><a name="a277"></a><span class="src-doc"> * User authentication via database.</span></li>
+<li><a name="a278"></a><span class="src-doc"> */</span></li>
+<li><a name="a279"></a><span class="src-key">class </span><a href="../TurboPhpLib/TTpDbAuthenticator.html">TTpDbAuthenticator</a> <span class="src-key">extends </span><a href="../TurboPhpLib/TTpAuthenticator.html">TTpAuthenticator</a></li>
+<li><a name="a280"></a><span class="src-sym">{</span></li>
+<li><a name="a281"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Db">$Db</a><span class="src-sym">;</span></li>
+<li><a name="a282"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">$Query</a><span class="src-sym">;</span></li>
+<li><a name="a283"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">$UsersTbl</a><span class="src-sym">;</span></li>
+<li><a name="a284"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">$UserIdField</a><span class="src-sym">;</span></li>
+<li><a name="a285"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">$LoginField</a><span class="src-sym">;</span></li>
+<li><a name="a286"></a>  <span class="src-key">var </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">$PasswordField</a><span class="src-sym">;</span></li>
+<li><a name="a287"></a>&nbsp;</li>
+<li><a name="a288"></a>  <span class="src-comm">// Authentication Functions</span></li>
+<li><a name="a289"></a>&nbsp;</li>
+<li><a name="a288"></a>  </li>
+<li><a name="a289"></a>&nbsp;</li>
+<li><a name="a290"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodInit">Init</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a291"></a>  <span class="src-sym">{</span></li>
+<li><a name="a292"></a>    <span class="src-id">parent</span><span class="src-sym">::</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodInit">Init</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a293"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">UsersTbl</a> = <span class="src-id">USERS_TBL</span><span class="src-sym">;</span></li>
+<li><a name="a294"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">UserIdField</a> = <span class="src-id">F_USERID</span><span class="src-sym">;</span></li>
+<li><a name="a295"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">LoginField</a> = <span class="src-id">F_LOGIN</span><span class="src-sym">;</span></li>
+<li><a name="a296"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">PasswordField</a> = <span class="src-id">F_PASSWORD</span><span class="src-sym">;</span></li>
+<li><a name="a297"></a>  <span class="src-sym">}</span></li>
+<li><a name="a298"></a>&nbsp;</li>
+<li><a name="a299"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodCreateQueryObject">CreateQueryObject</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a300"></a>  <span class="src-sym">{</span></li>
+<li><a name="a301"></a>     <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a> = <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Db">Db</a><span class="src-sym">-&gt;</span><span class="src-id">CreateNewQuery</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a302"></a>     <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Class </span>= <span class="src-str">'TpAuthQuery'</span><span class="src-sym">;</span></li>
+<li><a name="a303"></a>     <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Name </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpObj.html#var$Name">Name</a> . <span class="src-str">'Query'</span><span class="src-sym">;</span></li>
+<li><a name="a304"></a>     <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">OnFailure </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$OnQueryFailure">OnQueryFailure</a><span class="src-sym">;</span></li>
+<li><a name="a305"></a>  <span class="src-sym">}</span></li>
+<li><a name="a306"></a>&nbsp;</li>
+<li><a name="a307"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodAfterParse">AfterParse</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a308"></a>  <span class="src-sym">{</span></li>
+<li><a name="a309"></a>    <span class="src-id">parent</span><span class="src-sym">::</span><a href="../TurboPhpLib/TTpAuthenticator.html#methodAfterParse">AfterParse</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a310"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">MarshallObject</span><span class="src-sym">(</span><span class="src-str">'Db'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a311"></a>    <a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgMsg">TpDbgMsg</a><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Db">Db</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a312"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Db">Db</a><span class="src-sym">)</span></li>
+<li><a name="a313"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodCreateQueryObject">CreateQueryObject</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a314"></a>  <span class="src-sym">}</span></li>
+<li><a name="a315"></a>&nbsp;</li>
+<li><a name="a316"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodQueryUserByUserId">QueryUserByUserId</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a317"></a>  <span class="src-sym">{</span></li>
+<li><a name="a318"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a> == <span class="src-str">''</span><span class="src-sym">)</span></li>
+<li><a name="a319"></a>      <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a320"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">SQL </span>= <a href="http://www.php.net/sprintf">sprintf</a><span class="src-sym">(</span></li>
+<li><a name="a321"></a>        <span class="src-str">&quot;SELECT %s FROM %s WHERE %s='%s'&quot;</span><span class="src-sym">,</span></li>
+<li><a name="a322"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">LoginField</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">UsersTbl</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">UserIdField</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a></li>
+<li><a name="a323"></a>      <span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a324"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Execute</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a325"></a>    <span class="src-key">return </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Next</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a326"></a>  <span class="src-sym">}</span></li>
+<li><a name="a327"></a>&nbsp;</li>
+<li><a name="a328"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodGetCreateUserTableSQL">GetCreateUserTableSQL</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a329"></a>  <span class="src-sym">{</span></li>
+<li><a name="a330"></a><span class="src-var">$sql </span>=&lt;&lt;&lt;ESQL</li>
+<li><a name="a331"></a>  <span class="src-id">CREATE TABLE </span>`%<span class="src-id">s</span>` (</li>
+<li><a name="a332"></a>    `%<span class="src-id">s</span>` <span class="src-id">int</span>(11) <span class="src-id">NOT NULL auto_increment</span>,</li>
+<li><a name="a333"></a>    `%<span class="src-id">s</span>` <span class="src-id">varchar</span>(64) <span class="src-id">NOT NULL default</span> '',</li>
+<li><a name="a334"></a>    `%<span class="src-id">s</span>` <span class="src-id">varchar</span>(64) <span class="src-id">NOT NULL default</span> '',</li>
+<li><a name="a335"></a>    <span class="src-id">PRIMARY KEY</span>  (`%2\$<span class="src-id">s</span>`),</li>
+<li><a name="a336"></a>    <span class="src-id">UNIQUE KEY </span>`%3\$<span class="src-id">s</span>` (`%3\$<span class="src-id">s</span>`)</li>
+<li><a name="a337"></a>  );</li>
+<li><a name="a338"></a>ESQL<span class="src-sym">;    </span><span class="src-key">return </span><a href="http://www.php.net/sprintf">sprintf</a><span class="src-sym">(</span><span class="src-var">$sql</span><span class="src-sym">,</span></li>
+<li><a name="a339"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">UsersTbl</a><span class="src-sym">,</span></li>
+<li><a name="a340"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">UserIdField</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">LoginField</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">PasswordField</a><span class="src-sym">,</span></li>
+<li><a name="a341"></a>      <span class="src-str">''</span></li>
+<li><a name="a342"></a>    <span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a343"></a>  <span class="src-sym">}</span></li>
+<li><a name="a344"></a>&nbsp;</li>
+<li><a name="a345"></a>  <span class="src-comm">// Login Functions</span></li>
+<li><a name="a346"></a>&nbsp;</li>
+<li><a name="a345"></a>  </li>
+<li><a name="a346"></a>&nbsp;</li>
+<li><a name="a347"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodCreateUserTable">CreateUserTable</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a348"></a>  <span class="src-sym">{</span></li>
+<li><a name="a349"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">SQL </span>= <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodGetCreateUserTableSQL">GetCreateUserTableSQL</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a350"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Execute</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a351"></a>  <span class="src-sym">}</span></li>
+<li><a name="a352"></a>&nbsp;</li>
+<li><a name="a353"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodDoCreateUser">DoCreateUser</a><span class="src-sym">(</span><span class="src-sym">&amp;</span><span class="src-var">$inLogin</span><span class="src-sym">, </span><span class="src-sym">&amp;</span><span class="src-var">$inPassword</span><span class="src-sym">)</span></li>
+<li><a name="a354"></a>  <span class="src-sym">{</span></li>
+<li><a name="a355"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">SQL </span>= <a href="../TurboPhpLib/_TpUserLib_php.html#functiontpGetInsertSql">tpGetInsertSql</a><span class="src-sym">(</span></li>
+<li><a name="a356"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">UsersTbl</a><span class="src-sym">,</span></li>
+<li><a name="a357"></a>        <span class="src-key">array</span><span class="src-sym">(</span></li>
+<li><a name="a358"></a>              <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">LoginField</a> =&gt; <span class="src-var">$inLogin</span><span class="src-sym">,</span></li>
+<li><a name="a359"></a>              <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">PasswordField</a> =&gt; <a href="http://www.php.net/crypt">crypt</a><span class="src-sym">(</span><span class="src-var">$inPassword</span><span class="src-sym">)</span></li>
+<li><a name="a360"></a>        <span class="src-sym">)</span></li>
+<li><a name="a361"></a>      <span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a362"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Execute</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a363"></a>    <span class="src-key">return </span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Result </span>!= <span class="src-id">false</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a364"></a>  <span class="src-sym">}</span></li>
+<li><a name="a365"></a>&nbsp;</li>
+<li><a name="a366"></a>  <span class="src-key">function </span><a href="../TurboPhpLib/TTpDbAuthenticator.html#methodQueryUserByLogin">QueryUserByLogin</a><span class="src-sym">(</span><span class="src-var">$inLogin</span><span class="src-sym">)</span></li>
+<li><a name="a367"></a>  <span class="src-sym">{</span></li>
+<li><a name="a368"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">SQL </span>= <a href="http://www.php.net/sprintf">sprintf</a><span class="src-sym">(</span></li>
+<li><a name="a369"></a>        <span class="src-str">&quot;SELECT %s, %s FROM %s WHERE %s='%s'&quot;</span><span class="src-sym">,</span></li>
+<li><a name="a370"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">UserIdField</a><span class="src-sym">, </span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">PasswordField</a><span class="src-sym">,</span></li>
+<li><a name="a371"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UsersTbl">UsersTbl</a><span class="src-sym">,</span></li>
+<li><a name="a372"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$LoginField">LoginField</a><span class="src-sym">, </span><span class="src-var">$inLogin</span></li>
+<li><a name="a373"></a>      <span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a374"></a>    <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Execute</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a375"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">Next</span><span class="src-sym">(</span><span class="src-sym">))</span></li>
+<li><a name="a376"></a>      <span class="src-key">return </span><span class="src-id">false</span><span class="src-sym">;</span></li>
+<li><a name="a377"></a>    <span class="src-key">else</span></li>
+<li><a name="a378"></a>    <span class="src-sym">{</span></li>
+<li><a name="a379"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$UserId">UserId</a> = <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">GetField</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$UserIdField">UserIdField</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a380"></a>      <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpAuthenticator.html#var$Passcode">Passcode</a> = <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$Query">Query</a><span class="src-sym">-&gt;</span><span class="src-id">GetField</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../TurboPhpLib/TTpDbAuthenticator.html#var$PasswordField">PasswordField</a><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a381"></a>      <span class="src-key">return </span><span class="src-id">true</span><span class="src-sym">;</span></li>
+<li><a name="a382"></a>    <span class="src-sym">}</span></li>
+<li><a name="a383"></a>  <span class="src-sym">}</span></li>
+<li><a name="a384"></a><span class="src-sym">}</span></li>
+<li><a name="a385"></a>&nbsp;</li>
+<li><a name="a386"></a><span class="src-php">?&gt;</span></li>
+</ol></pre>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 12 Nov 2004 16:34:15 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</body>
+</html>

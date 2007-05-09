@@ -1,0 +1,958 @@
+object DesignForm_1_1_1_1_1: TDesignForm_1_1_1_1_1
+  Left = 10
+  Top = 16
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  ClientHeight = 768
+  ClientWidth = 580
+  Color = clBtnFace
+  TransparentColorValue = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TpLabel1: TTpLabel
+    Left = 0
+    Top = 0
+    Width = 580
+    Height = 31
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    AutoSize = False
+    Caption = 'Connection failed'
+    DesignOpaque = False
+    FitStyleToText = False
+    Style.Border.Edges.BorderBottom.BorderColor = clLime
+    Style.Border.Edges.BorderBottom.BorderStyle = bsDouble
+    Style.Color = 14024661
+    Style.Padding.PaddingDetails.PadLeft = 4
+    VAlign = vaMiddle
+    OnGenerate = 'TpLabel1Generate'
+  end
+  object TableLabel: TTpLabel
+    Left = 0
+    Top = 253
+    Width = 580
+    Height = 31
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+    AutoSize = False
+    Caption = 'Table'
+    DesignOpaque = False
+    FitStyleToText = False
+    Style.Border.Edges.BorderBottom.BorderColor = clLime
+    Style.Border.Edges.BorderBottom.BorderStyle = bsDouble
+    Style.Color = 14024661
+    Style.Font.FontStyle = fstItalic
+    Style.Padding.PaddingDetails.PadLeft = 4
+    VAlign = vaMiddle
+    OnGenerate = 'TableLabelGenerate'
+  end
+  object ThSpacer3: TThSpacer
+    Left = 0
+    Top = 248
+    Width = 580
+    Height = 5
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+  end
+  object ThSpacer2: TThSpacer
+    Left = 0
+    Top = 284
+    Width = 580
+    Height = 5
+    JavaScript = <
+      item
+        EventName = 'onKeyDown'
+      end
+      item
+        EventName = 'onKeyPress'
+      end
+      item
+        EventName = 'onKeyUp'
+      end
+      item
+        EventName = 'onMouseDown'
+      end
+      item
+        EventName = 'onMouseUp'
+      end
+      item
+        EventName = 'onMouseMove'
+      end
+      item
+        EventName = 'onMouseOver'
+      end
+      item
+        EventName = 'onMouseOut'
+      end
+      item
+        EventName = 'onClick'
+      end
+      item
+        EventName = 'onDblClick'
+      end
+      item
+        EventName = 'onAbort'
+      end
+      item
+        EventName = 'onError'
+      end
+      item
+        EventName = 'onMove'
+      end
+      item
+        EventName = 'onResize'
+      end
+      item
+        EventName = 'onScroll'
+      end
+      item
+        EventName = 'onReset'
+      end
+      item
+        EventName = 'onSubmit'
+      end
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onChange'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onSelect'
+      end>
+    Align = alTop
+  end
+  object TpForm1: TTpForm
+    Left = 0
+    Top = 31
+    Width = 580
+    Height = 217
+    JavaScript = <
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end>
+    Align = alTop
+    DesignOpaque = False
+    Inputs = <>
+    Method = fmPost
+    ShowOutline = False
+    Style.Border.BorderWidth = '0'
+    Style.Border.BorderColor = clBlack
+    Style.Color = clBtnFace
+    object DbLabel: TTpLabel
+      Left = 232
+      Top = 8
+      Width = 163
+      Height = 19
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoSize = False
+      Caption = 'Database Name'
+      DesignOpaque = False
+      FitStyleToText = False
+      Style.Font.FontStyle = fstItalic
+      OnGenerate = 'DbLabelGenerate'
+    end
+    object TpLabel2: TTpLabel
+      Left = 0
+      Top = 8
+      Width = 67
+      Height = 19
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      AutoSize = False
+      Caption = 'Databases'
+      DesignOpaque = False
+      FitStyleToText = False
+      Style.Font.FontStyle = fstItalic
+    end
+    object ApplyDbButton: TTpButton
+      Left = 0
+      Top = 172
+      Width = 53
+      Height = 26
+      JavaScript = <
+        item
+          EventName = 'onKeyDown'
+        end
+        item
+          EventName = 'onKeyPress'
+        end
+        item
+          EventName = 'onKeyUp'
+        end
+        item
+          EventName = 'onMouseDown'
+        end
+        item
+          EventName = 'onMouseUp'
+        end
+        item
+          EventName = 'onMouseMove'
+        end
+        item
+          EventName = 'onMouseOver'
+        end
+        item
+          EventName = 'onMouseOut'
+        end
+        item
+          EventName = 'onClick'
+        end
+        item
+          EventName = 'onDblClick'
+        end
+        item
+          EventName = 'onAbort'
+        end
+        item
+          EventName = 'onError'
+        end
+        item
+          EventName = 'onMove'
+        end
+        item
+          EventName = 'onResize'
+        end
+        item
+          EventName = 'onScroll'
+        end
+        item
+          EventName = 'onReset'
+        end
+        item
+          EventName = 'onSubmit'
+        end
+        item
+          EventName = 'onBlur'
+        end
+        item
+          EventName = 'onChange'
+        end
+        item
+          EventName = 'onFocus'
+        end
+        item
+          EventName = 'onSelect'
+        end>
+      Caption = 'Apply'
+    end
+    object DbSelect: TTpListBox
+      Left = 0
+      Top = 32
+      Width = 220
+      Height = 136
+      JavaScript = <
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end>
+      ItemIndex = 6
+      Rows = 8
+      Source = TpODBCDbList1
+      ListSource = TpODBCDbList1
+    end
+    object TableSelect: TTpListBox
+      Left = 232
+      Top = 32
+      Width = 348
+      Height = 136
+      JavaScript = <
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end
+        item
+        end>
+      ItemIndex = 0
+      Rows = 8
+      Source = TpODBCTableList1
+      ListSource = TpODBCTableList1
+    end
+  end
+  object TpTable1: TTpTable
+    Left = 0
+    Top = 289
+    Width = 580
+    Height = 101
+    JavaScript = <
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end
+      item
+      end>
+    Align = alTop
+    Border = 1
+    OnCell = 'TpTable1Cell'
+    OnGenerate = 'TpTable1Generate'
+    Style.Color = clWhite
+    Style.Font.FontFamily = 'Small Fonts'
+    Style.Font.FontSizePx = 9
+  end
+  object DCLiteDesigner: TDCLiteDesigner
+    AllowUndo = True
+    GridStepX = 4
+    GridStepY = 4
+    LimitInfos = <
+      item
+        Component = Owner
+        AllowedActions = []
+      end
+      item
+        Component = PhpPage
+        AllowedActions = [atSelect, atEdit]
+      end>
+    PopupMenu = MainForm.DesignPopup
+    ShowInspector = False
+    ShowCaptions = True
+    SnapToGrid = True
+    StartHotKey = 16507
+    ShowHints = True
+    StopHotKey = 16507
+    ShowPalette = False
+    ShowAlignPalette = False
+    IsStored = True
+    OnInsertComponent = DCLiteDesignerInsertComponent
+    OnSelectionChanged = DCLiteDesignerSelectionChanged
+    Left = 28
+    Top = 16
+  end
+  object PhpPage: TPhpPage
+    JavaScript = <
+      item
+        EventName = 'onBlur'
+      end
+      item
+        EventName = 'onFocus'
+      end
+      item
+        EventName = 'onLoad'
+      end
+      item
+        EventName = 'onUnload'
+      end>
+    UseMargins = True
+    PageLayout = plCenter
+    Style.Border.BorderWidth = '1'
+    Style.Border.BorderColor = clSilver
+    Style.Border.BorderStyle = bsNone
+    Style.Color = clBtnFace
+    Debug = True
+    PhpSource.Strings = (
+      '<?php'
+      ''
+      '// Configure'
+      ''
+      'include_once("support/DbShowODBC.config.php");'
+      '//include_once($tpLibPath . '#39'TpDebug.php'#39');'
+      ''
+      '// Define page class'
+      ''
+      'class TDbShowODBC extends TTpPage'
+      '{'
+      '  function TpLabel1Generate(&$inSender)'
+      '  {'
+      '    if ($this->DB->Connection)'
+      '      $inSender->Content = '#39'Connection successful'#39';'
+      '  }'
+      ''
+      '  function TpMySqlTableList1BeforeExecute(&$inSender)'
+      '  {'
+      
+        '    //$this->DB->SelectDatabase($this->DbSelect->GetSelectedValu' +
+        'e());'
+      '  }'
+      ''
+      '  function DbLabelGenerate(&$inSender)'
+      '  {'
+      
+        '    $inSender->Content = '#39'['#39'.$this->DbSelect->GetSelectedValue()' +
+        '.'#39']'#39';'
+      '  }'
+      ''
+      '  function TableLabelGenerate(&$inSender)'
+      '  {'
+      
+        '    $inSender->Content = '#39'['#39'.$this->TableSelect->GetSelectedValu' +
+        'e().'#39']'#39';'
+      '  }'
+      ''
+      '  function TpTable1Generate(&$inSender)'
+      '  {'
+      '    $t = $this->TableSelect->GetSelectedValue();'
+      '    if ($t == '#39#39')'
+      '      $t = '#39'games'#39';'
+      '    $this->TableQuery->Params['#39'Table'#39'] = $t;'
+      '    $this->TableQuery->Execute();'
+      '    //'
+      '    $this->TpTable1->Cols = $this->TableQuery->GetColCount();'
+      '    $this->TpTable1->Rows = $this->TableQuery->GetRowCount();'
+      '    //'
+      '    $this->TpTable1->Attributes['#39'cellpadding'#39'] = 4;'
+      '    $this->TpTable1->Attributes['#39'width'#39'] = '#39'100%'#39';'
+      '  }'
+      ''
+      '  function TpTable1Cell(&$inSender)'
+      '  {'
+      '    $inSender->HeaderCell = ($inSender->Row == 0);'
+      '    //'
+      '    if ($inSender->HeaderCell)'
+      '      $bg = '#39'#ECE9D8'#39';'
+      '    else if (($inSender->Row & 1) == 1)'
+      '      $bg = '#39'F0F5FF'#39';'
+      '    else'
+      '      $bg = '#39'white'#39';'
+      '    $inSender->CellAttributes['#39'bgcolor'#39'] = $bg;'
+      '    //'
+      '    $attrs = '#39#39';'
+      '    //'
+      '    if ($inSender->Row == 0)'
+      '      $value = $this->TableQuery->GetFieldName($inSender->Col);'
+      '    else'
+      '    {'
+      '      if ($inSender->Col == 0)'
+      '        $this->TableQuery->Next();'
+      '      //'
+      '      $n = $this->TableQuery->GetFieldName($inSender->Col);'
+      '      $value = $this->TableQuery->GetField($n);'
+      '      //'
+      '      if ($value == '#39#39')'
+      '        $value = '#39'null'#39';'
+      '      //'
+      '  /*'
+      '      // Other formatting possibilities'
+      '      //'
+      '      // Column sizing'
+      '      switch($inSender->Col)'
+      '      {'
+      '        case 1:'
+      '          $width = 128;'
+      '          break;'
+      '        default:'
+      '          $width = 64;'
+      '      }'
+      '      // Turn off word wrap, force width, clipped'
+      '      //$attrs = '#39' nowrap="nowrap"'#39';'
+      
+        '      //$attrs = '#39' nowrap="nowrap" style="width: '#39'.$width.'#39'px;"'#39 +
+        ';'
+      
+        '      //$attrs = '#39' nowrap="nowrap" style="width: '#39'.$width.'#39'px; o' +
+        'verflow: hidden;"'#39';'
+      '  */'
+      '    }'
+      '    $inSender->Content = "<div$attrs>$value</div>";'
+      '  }'
+      '}'
+      ''
+      '// Create and display page'
+      ''
+      '$dbshowODBC = new TDbShowODBC($tpTemplateFile);'
+      '$dbshowODBC->Run();'
+      ''
+      '?>')
+    ShowCaptions = True
+    ShowGrid = True
+    ShowComponents = True
+  end
+  object DB: TTpODBC
+    Debug = True
+    DesignConnection.Connected = False
+    DesignConnection.ConnectionString = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Data Source=myodb' +
+      'c3-test'
+    DesignConnection.LoginPrompt = False
+    Host = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Data Source=myodb' +
+      'c3-test'
+    Persistent = False
+    Left = 507
+    Top = 407
+  end
+  object TableQuery: TTpODBCQuery
+    Debug = True
+    Db = DB
+    Params.Strings = (
+      'Table=skutable')
+    SQL.Strings = (
+      'SELECT * FROM {%Table}')
+    Left = 508
+    Top = 528
+  end
+  object TpODBCTableList1: TTpODBCTableList
+    Debug = True
+    Db = DB
+    SQL.Strings = (
+      'SHOW TABLES')
+    Left = 508
+    Top = 468
+  end
+  object TpODBCDbList1: TTpODBCDbList
+    Debug = False
+    Db = DB
+    SQL.Strings = (
+      'SHOW DATABASES')
+    Left = 412
+    Top = 468
+  end
+end

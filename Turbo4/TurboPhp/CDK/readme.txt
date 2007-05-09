@@ -1,0 +1,1 @@
+Download the RepoBinaries file to get Delphi7 compiled BPLs and DCPs.

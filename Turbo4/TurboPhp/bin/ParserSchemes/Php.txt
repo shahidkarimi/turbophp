@@ -1,0 +1,175 @@
+//Language: PHP                      
+
+// states
+State=snormal
+State=sstring1
+State=sstring2
+State=sstring3
+State=sstring4
+State=sstring5
+State=scomment1
+State=scomment2
+State=scomment3
+State=scomment4
+State=shtmltag
+State=shtmlPHP
+State=smember
+// tokens
+Token=tnone
+Token=tstring
+Token=tcomment
+Token=tident
+Token=tinteger
+Token=tfloat
+Token=tresword
+Token=tassembler
+Token=turl
+Token=twhitespace
+Token=tresword1
+Token=tsuperglobal
+Token=tindirect
+Token=tmember
+Token=tvariable
+//delims
+Delimiters=;.,:'"{}[]()?!@#%^&*-+=|\/<>
+
+
+//Common
+snormal <                          shtmltag  tresword1
+shtmltag [^\>^\'^\"^\0-9^#32^\=][^\>^\'^\"^#32^\=]* shtmltag  tresword1
+shtmltag >                         snormal   tresword1
+
+
+//white space
+snormal #32*                      snormal   twhitespace
+
+
+//strings
+shtmltag   \'                     sstring1   tstring
+sstring1   [^\']*                 sstring1   tstring
+sstring1   \'                     shtmltag   tstring
+sstring1   \'\'                   sstring1   tstring
+sstring1   $                      shtmltag   tstring
+
+shtmltag    \"                    sstring2   tstring
+sstring2   [^\"]*                 sstring2   tstring
+sstring2   \"                     shtmltag   tstring
+sstring2   \"\"                   sstring2   tstring
+sstring2   $                      shtmltag   tstring
+
+
+// numbers
+shtmltag [0-9][0-9]*              shtmltag  tinteger
+shtmltag \#[0-9A-F]+              shtmltag  tinteger
+shtmltag [1-9][0-9]*\.[0-9]*                    shtmltag  tfloat
+shtmltag [1-9][0-9]*{\.[0-9]+}|e{[\+\-]}|[0-9]+ shtmltag   tfloat
+
+
+//comments
+shtmltag   <\!--                    scomment1 tcomment
+scomment1 [^\-]*                   scomment1 tcomment
+scomment1  -->                     shtmltag   tcomment
+
+//idents
+shtmlPHP   [a-z_A-Z][a-z_A-Z0-9]*  shtmlPHP   tident
+shtmlPHP   [\$][a-z_A-Z][a-z_A-Z0-9]*  shtmlPHP   tvariable
+
+// reswords
+shtmlPHP '.'        shtmlPHP tresword
+shtmlPHP 'break'        shtmlPHP tresword
+shtmlPHP 'case'         shtmlPHP tresword
+shtmlPHP 'class'        shtmlPHP tresword
+shtmlPHP 'continue'     shtmlPHP tresword
+shtmlPHP 'default'      shtmlPHP tresword
+shtmlPHP 'define'       shtmlPHP tresword
+shtmlPHP 'do'           shtmlPHP tresword
+shtmlPHP 'else'         shtmlPHP tresword
+shtmlPHP 'elseif'       shtmlPHP tresword
+shtmlPHP 'endfor'       shtmlPHP tresword
+shtmlPHP 'endif'        shtmlPHP tresword
+shtmlPHP 'endswitch'    shtmlPHP tresword
+shtmlPHP 'endwhile'     shtmlPHP tresword
+shtmlPHP 'extends'      shtmlPHP tresword
+shtmlPHP 'for'          shtmlPHP tresword
+shtmlPHP 'function'     shtmlPHP tresword
+shtmlPHP 'global'       shtmlPHP tresword
+shtmlPHP 'if'           shtmlPHP tresword
+shtmlPHP 'include'       shtmlPHP tresword
+shtmlPHP 'include_once'       shtmlPHP tresword
+shtmlPHP 'int'          shtmlPHP tresword
+shtmlPHP 'new'          shtmlPHP tresword
+shtmlPHP 'old_function' shtmlPHP tresword
+shtmlPHP 'pval'         shtmlPHP tresword
+shtmlPHP 'require'       shtmlPHP tresword
+shtmlPHP 'require_once'       shtmlPHP tresword
+shtmlPHP 'return'       shtmlPHP tresword
+shtmlPHP 'static'       shtmlPHP tresword
+shtmlPHP 'string'       shtmlPHP tresword
+shtmlPHP 'switch'       shtmlPHP tresword
+shtmlPHP 'this'       shtmlPHP tresword
+shtmlPHP 'var'          shtmlPHP tresword
+shtmlPHP 'void'         shtmlPHP tresword
+shtmlPHP 'while'        shtmlPHP tresword
+
+//superglobals
+shtmlPHP   [\$]GLOBALS  shtmlPHP   tsuperglobal
+shtmlPHP   [\$]REQUEST  shtmlPHP   tsuperglobal
+
+//members
+shtmlPHP   [\$[a-z_A-Z][a-z_A-Z0-9]*->  smember   tindirect
+smember [a-z_A-Z][a-z_A-Z0-9]*  shtmlPHP   tmember
+
+// numbers
+shtmlPHP [0-9][0-9]*              shtmlPHP  tinteger
+shtmlPHP 0x[0-9A-F]+              shtmlPHP  tinteger
+shtmlPHP [1-9][0-9]*\.[0-9]*                    shtmlPHP  tfloat
+shtmlPHP [1-9][0-9]*{\.[0-9]+}|e{[\+\-]}|[0-9]+ shtmlPHP   tfloat
+
+//strings
+shtmlPHP  \'                     sstring3   tstring
+sstring3  [^\']*                 sstring3   tstring
+sstring3  \'                     shtmlPHP   tstring
+sstring3  \'\'                   sstring3   tstring
+sstring3   \\                    sstring3   tstring
+sstring3   \\\'                  sstring3   tstring
+sstring3  $                      shtmlPHP   tstring
+
+shtmlPHP  \"                     sstring4   tstring
+sstring4  [^\"]*                 sstring4   tstring
+sstring4  \"                     shtmlPHP   tstring
+sstring4  \"\"                   sstring4   tstring
+sstring4   \\                    sstring4   tstring
+sstring4   \\\"                  sstring4   tstring
+sstring4  $                      shtmlPHP   tstring
+
+shtmlPHP    \`                    sstring5   tstring
+sstring5   [^\`]*                 sstring5   tstring
+sstring5   \`                     shtmlPHP   tstring
+sstring5   \`\`                   sstring5   tstring
+sstring5   \\                     sstring5   tstring
+sstring5   \\\`                   sstring5   tstring
+sstring5   $                      shtmlPHP   tstring
+
+//comments
+shtmlPHP   //                      scomment2  tcomment
+scomment2  [#1-#255]*              shtmlPHP   tcomment
+scomment2 $                        shtmlPHP   tcomment
+
+shtmlPHP   \#                      scomment3  tcomment
+scomment3  [#1-#255]*              shtmlPHP   tcomment
+scomment3 $                        shtmlPHP   tcomment
+
+shtmlPHP   /\*                     scomment4  tcomment
+scomment4  [^\*]*                  scomment4  tcomment
+scomment4  \*[^/]                  scomment4  tcomment
+scomment4  [\*]*/                  shtmlPHP   tcomment
+
+//PHP
+snormal  <?                        shtmlPHP  tresword
+shtmlPHP ?>                        snormal   tresword
+
+snormal  <%                        shtmlPHP  tresword
+shtmlPHP %>                        snormal   tresword
+
+snormal  <script#32language="php">   shtmlPHP  tresword
+shtmlPHP </script>                   snormal   tresword

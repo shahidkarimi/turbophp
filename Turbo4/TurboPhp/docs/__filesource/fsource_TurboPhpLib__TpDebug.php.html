@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for TpDebug.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file TpDebug.php</h1>
+<p>Documentation is available at <a href="../TurboPhpLib/_TpDebug_php.html">TpDebug.php</a></p>
+<div class="src-code">
+<pre><ol><li><a name="a1"></a><span class="src-php">&lt;?php</span></li>
+<li><a name="a2"></a>&nbsp;</li>
+<li><a name="a3"></a><span class="src-doc">/**</span></li>
+<li><a name="a4"></a><span class="src-doc"> *  TurboPhp 4 - TpDebug</span></li>
+<li><a name="a5"></a><span class="src-doc"> *  Version 4.1 Beta</span></li>
+<li><a name="a6"></a><span class="src-doc"> *</span></li>
+<li><a name="a7"></a><span class="src-doc"> *  Routines to access the TurboPhp debugging display (via FTP).</span></li>
+<li><a name="a8"></a><span class="src-doc"> *</span></li>
+<li><a name="a9"></a><span class="src-doc"> *  Copyright (c) 2004 Least-Resistance Software</span></li>
+<li><a name="a10"></a><span class="src-doc"> *</span></li>
+<li><a name="a11"></a><span class="src-doc"> *  This source file is subject to the terms of the TurboPhp license,</span></li>
+<li><a name="a12"></a><span class="src-doc"> *  that is bundled with this package in the file LICENSE.TXT, and is</span></li>
+<li><a name="a13"></a><span class="src-doc"> *  available at through the world-wide-web at</span></li>
+<li><a name="a14"></a><span class="src-doc"> *  http://www.turbophp.com/turbophp/license.txt</span></li>
+<li><a name="a15"></a><span class="src-doc"> *</span></li>
+<li><a name="a16"></a><span class="src-doc"> * </span><span class="src-doc-coretag">@package</span><span class="src-doc"> TurboPhpLib</span></li>
+<li><a name="a17"></a><span class="src-doc"> */</span></li>
+<li><a name="a18"></a>&nbsp;</li>
+<li><a name="a19"></a><span class="src-doc">/**</span></li>
+<li><a name="a20"></a><span class="src-doc"> */</span></li>
+<li><a name="a21"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgConnect">TpDbgConnect</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a22"></a><span class="src-sym">{</span></li>
+<li><a name="a23"></a>  <span class="src-key">global </span><span class="src-var">$TpDbg</span><span class="src-sym">;</span></li>
+<li><a name="a24"></a>  <span class="src-key">if </span><span class="src-sym">(</span><span class="src-sym">!</span>isset<span class="src-sym">(</span><span class="src-var">$TpDbg</span><span class="src-sym">))</span></li>
+<li><a name="a25"></a>  <span class="src-sym">{</span></li>
+<li><a name="a26"></a>    <span class="src-var">$TpDbg </span>= <a href="http://www.php.net/ftp_connect">ftp_connect</a><span class="src-sym">(</span><span class="src-str">&quot;localhost&quot;</span><span class="src-sym">, </span><span class="src-num">999</span><span class="src-sym">, </span><span class="src-num">20</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a27"></a>    <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$TpDbg</span><span class="src-sym">)</span></li>
+<li><a name="a28"></a>      <a href="http://www.php.net/ftp_login">ftp_login</a><span class="src-sym">(</span><span class="src-var">$TpDbg</span><span class="src-sym">, </span><span class="src-str">&quot;PHP&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;TURBO&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a29"></a>   <span class="src-key">else</span></li>
+<li><a name="a30"></a>      echo <span class="src-str">&quot;TurboPhp: Could not connect to debug server.&lt;br&gt;&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a31"></a>  <span class="src-sym">}</span></li>
+<li><a name="a32"></a>  <span class="src-key">return </span><span class="src-var">$TpDbg</span><span class="src-sym">;</span></li>
+<li><a name="a33"></a><span class="src-sym">}</span></li>
+<li><a name="a34"></a>&nbsp;</li>
+<li><a name="a35"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgSend">TpDbgSend</a><span class="src-sym">(</span><span class="src-var">$inMsg</span><span class="src-sym">)</span></li>
+<li><a name="a36"></a><span class="src-sym">{</span></li>
+<li><a name="a37"></a>  <span class="src-key">global </span><span class="src-var">$TpDbg</span><span class="src-sym">;</span></li>
+<li><a name="a38"></a>  <span class="src-key">if </span><span class="src-sym">(</span><span class="src-var">$inMsg </span>!= <span class="src-str">''</span><span class="src-sym">)</span></li>
+<li><a name="a39"></a>    <span class="src-sym">@</span><a href="http://www.php.net/ftp_site">ftp_site</a><span class="src-sym">(</span><span class="src-var">$TpDbg</span><span class="src-sym">, </span><span class="src-var">$inMsg</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a40"></a><span class="src-sym">}</span></li>
+<li><a name="a41"></a>&nbsp;</li>
+<li><a name="a42"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgMsg">TpDbgMsg</a><span class="src-sym">(</span><span class="src-var">$inMsg</span><span class="src-sym">)</span></li>
+<li><a name="a43"></a><span class="src-sym">{</span></li>
+<li><a name="a44"></a>  <span class="src-key">if </span><span class="src-sym">(</span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgConnect">TpDbgConnect</a><span class="src-sym">(</span><span class="src-sym">))</span></li>
+<li><a name="a45"></a>    <a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgSend">TpDbgSend</a><span class="src-sym">(</span><span class="src-var">$inMsg</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a46"></a><span class="src-sym">}</span></li>
+<li><a name="a47"></a>&nbsp;</li>
+<li><a name="a48"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgLines">TpDbgLines</a><span class="src-sym">(</span><span class="src-var">$inLines</span><span class="src-sym">)</span></li>
+<li><a name="a49"></a><span class="src-sym">{</span></li>
+<li><a name="a50"></a>  <span class="src-key">if </span><span class="src-sym">(</span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgConnect">TpDbgConnect</a><span class="src-sym">(</span><span class="src-sym">))</span></li>
+<li><a name="a51"></a>  <span class="src-sym">{</span></li>
+<li><a name="a52"></a>    <span class="src-var">$inLines </span>= <a href="http://www.php.net/str_replace">str_replace</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;\n&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;\r&quot;</span><span class="src-sym">)</span><span class="src-sym">, </span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;&lt;br&gt;&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;&quot;</span><span class="src-sym">)</span><span class="src-sym">, </span><span class="src-var">$inLines</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a53"></a>    <span class="src-var">$sa </span>= <a href="http://www.php.net/explode">explode</a><span class="src-sym">(</span><span class="src-str">&quot;&lt;br&gt;&quot;</span><span class="src-sym">, </span><span class="src-var">$inLines</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a54"></a>    <span class="src-key">foreach </span><span class="src-sym">(</span><span class="src-var">$sa </span><span class="src-key">as </span><span class="src-var">$line</span><span class="src-sym">)</span></li>
+<li><a name="a55"></a>      <a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgMsg">TpDbgMsg</a><span class="src-sym">(</span><span class="src-var">$line</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a56"></a>  <span class="src-sym">}</span></li>
+<li><a name="a57"></a><span class="src-sym">}</span></li>
+<li><a name="a58"></a>&nbsp;</li>
+<li><a name="a59"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgStart">TpDbgStart</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a60"></a><span class="src-sym">{</span></li>
+<li><a name="a61"></a>  <a href="http://www.php.net/ob_start">ob_start</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a62"></a><span class="src-sym">}</span></li>
+<li><a name="a63"></a>&nbsp;</li>
+<li><a name="a64"></a><span class="src-key">function </span><a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgEnd">TpDbgEnd</a><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li><a name="a65"></a><span class="src-sym">{</span></li>
+<li><a name="a66"></a>  <span class="src-var">$s </span>= <a href="http://www.php.net/ob_get_contents">ob_get_contents</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a67"></a>  <a href="http://www.php.net/ob_end_clean">ob_end_clean</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a68"></a>  <a href="../TurboPhpLib/_TpDebug_php.html#functionTpDbgLines">TpDbgLines</a><span class="src-sym">(</span><span class="src-var">$s</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a69"></a><span class="src-sym">}</span></li>
+<li><a name="a70"></a>&nbsp;</li>
+<li><a name="a71"></a><span class="src-php">?&gt;</span></li>
+</ol></pre>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 16 Jan 2005 21:18:22 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</body>
+</html>
