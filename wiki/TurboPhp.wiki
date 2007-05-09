@@ -9,10 +9,9 @@ Binaries (including EXEs, DCPs, BPLs) were removed from the SVN repo. You can gr
 
 = Details =
 
-You *will have trouble* compiling the code because the original projects used several commercial Delphi libraries, including LMD, Dream Controls, and AQ Docking. These systems will have to be replaced with custom or open source variations before the tools are buildable.
+You *will have trouble* compiling the code because the original projects used several commercial Delphi libraries, including LMD, Dream Controls, and AQ Docking. These systems will have to be replaced with custom or open source variations before the projects are buildable.
 
 The biggest issues there are the docking system and the designer. Copious work was done on writing a custom designer implementation (most of which was also licensed to the JVCL), most of that work can be found in the Turbo5 folders. The docking system can likely be replaced by other objects in the JVCL.
 
 There is a lot of potential here, but also perhaps a lot of work to get this project buildable. I hope the community can make use of this code.
-
 
