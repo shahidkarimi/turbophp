@@ -1,0 +1,43 @@
+package TurboHtml4Db;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TurboHtml4 Db Runtime D7'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  TurboHtml4,
+  dbrtl,
+  vcldb,
+  adortl;
+
+contains
+  ThDataConnection in '..\ThDataConnection.pas',
+  ThDbListSource in '..\ThDbListSource.pas',
+  ThDbData in '..\ThDbData.pas',
+  ThDbText in '..\ThDbText.pas',
+  ThDbEdit in '..\ThDbEdit.pas',
+  ThDbTextArea in '..\ThDbTextArea.pas';
+
+end.

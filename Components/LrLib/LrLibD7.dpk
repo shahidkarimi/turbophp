@@ -1,0 +1,51 @@
+package LrLibD7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcljpg,
+  vclie;
+
+contains
+  LrObserverList in 'LrObserverList.pas',
+  LrParser in 'LrParser.pas',
+  LrTagParser in 'LrTagParser.pas',
+  LrVclUtils in 'LrVclUtils.pas',
+  LrTextPainter in 'LrTextPainter.pas',
+  LrComponentIterator in 'LrComponentIterator.pas',
+  LrControlIterator in 'LrControlIterator.pas',
+  LrGraphics in 'LrGraphics.pas',
+  LrIterator in 'LrIterator.pas',
+  LrStreamable in '..\..\Turbo5\TurboHtml\LrStreamable.pas',
+  LrWebBrowserUtils in 'LrWebBrowserUtils.pas',
+  LrWebBrowser in 'LrWebBrowser.pas',
+  LrPersistComponent in 'LrPersistComponent.pas',
+  LrComponentClip in 'LrComponentClip.pas',
+  LrDynamicProperties in 'LrDynamicProperties.pas';
+
+end.
