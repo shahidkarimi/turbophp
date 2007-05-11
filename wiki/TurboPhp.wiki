@@ -3,7 +3,7 @@
 
 After numerous requests we have decided to release the source code to our TurboPhp project for Delphi (Windows). 
 
-You may grab up the code from the Google SVN server. There are a lot of goodies there, including component and framework code and alpha work on an unreleased ajax IDE.
+You may grab up the code from the [http://code.google.com/p/turbophp/downloads/list Downloads page] or from the Google SVN server. There are a lot of goodies there, including component and framework code and alpha work on an unreleased ajax IDE.
 
 Binaries (including EXEs, DCPs, BPLs) were removed from the SVN repo. You can grab those up as separate [http://code.google.com/p/turbophp/downloads/list downloads].
 
